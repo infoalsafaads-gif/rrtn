@@ -56,10 +56,34 @@
           </a>
         </div>
 
-        <div class="portfolio-toolbar" aria-label="تصفية المشاريع">
-          <div class="portfolio-filters" id="portfolioFilters" role="group" aria-label="تصنيف الأعمال"></div>
-          <p class="portfolio-count" id="portfolioCount" aria-live="polite">يتم تجهيز الأعمال…</p>
+        <div class="portfolio-toolbar">
+          <div class="portfolio-filters" id="portfolioFilters" role="group" aria-label="تصفية حسب التصنيف"></div>
+          <div class="portfolio-tools">
+            <label class="portfolio-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+              <input id="portfolioSearch" type="search" placeholder="ابحث عن مشروع أو مجال…" autocomplete="off" aria-label="ابحث في المشاريع">
+              <kbd>/</kbd>
+            </label>
+            <label class="portfolio-sort-label" for="portfolioSort">ترتيب</label>
+            <select id="portfolioSort" class="portfolio-sort" aria-label="ترتيب المشاريع">
+              <option value="featured">المميزة أولًا</option>
+              <option value="newest">الأحدث</option>
+              <option value="oldest">الأقدم</option>
+              <option value="az">الاسم: أ–ي</option>
+              <option value="za">الاسم: ي–أ</option>
+            </select>
+            <div class="portfolio-view-toggle" role="group" aria-label="طريقة عرض المشاريع">
+              <button type="button" class="view-toggle is-active" data-view="grid" aria-label="عرض شبكي" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"></rect><rect x="13" y="3" width="8" height="8" rx="1"></rect><rect x="3" y="13" width="8" height="8" rx="1"></rect><rect x="13" y="13" width="8" height="8" rx="1"></rect></svg></button>
+              <button type="button" class="view-toggle" data-view="list" aria-label="عرض قائمة" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h12M9 12h12M9 19h12"></path><circle cx="4" cy="5" r="1"></circle><circle cx="4" cy="12" r="1"></circle><circle cx="4" cy="19" r="1"></circle></svg></button>
+            </div>
+          </div>
+          <div class="portfolio-status-row">
+            <p class="portfolio-count" id="portfolioCount" aria-live="polite">يتم تجهيز الأعمال…</p>
+            <button type="button" class="portfolio-reset" id="portfolioReset" hidden>مسح البحث والفلاتر ×</button>
+          </div>
         </div>
+
+
 
         <div class="portfolio-grid" id="portfolioGrid" aria-live="polite" aria-busy="true">
           <div class="portfolio-loading"><span class="loading-mark" aria-hidden="true"></span><p>نحمّل معرض الأعمال</p></div>
