@@ -1071,3 +1071,71 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
     radial-gradient(ellipse at 7% 70%,rgba(137,99,43,.055),transparent 27%);
 }
 .scroll-progress{background:linear-gradient(90deg,#8d6330,#d2ad6d,#f3dfb5)}
+
+
+/* FINAL BRAND LOCK — AL SAFA BLACK & GOLD */
+:root{
+  color-scheme:dark;
+  --paper:#080807;
+  --paper-deep:#100f0c;
+  --ink:#f3ede2;
+  --ink-soft:#d5c9b6;
+  --muted:#a99b84;
+  --line:rgba(214,177,112,.22);
+  --gold:#c69b58;
+  --gold-light:#ead3a7;
+  --violet:#d0aa6d;
+  --night:#090908;
+  --white:#f7f0e5;
+}
+html,body{background-color:#080807;color:var(--ink)}
+body{
+  background:
+    radial-gradient(ellipse at 12% 0%,rgba(198,155,88,.075),transparent 34%),
+    radial-gradient(ellipse at 88% 35%,rgba(198,155,88,.045),transparent 31%),
+    #080807;
+}
+.page-shell{color:var(--ink)}
+.site-header,.home-page .site-header,.work-page .site-header,.project-page .site-header{
+  background:rgba(8,8,7,.92);
+  border-bottom:1px solid rgba(214,177,112,.22);
+}
+.hero,.work-intro,.portfolio,.section-block,.contact-strip,.archive-contact{
+  color:var(--ink);
+}
+.hero h1,.section-heading h2,.portfolio-heading h2,.work-intro h1,
+.project-header h1,.project-content h2,.related-projects h2,
+.contact-copy h2,.final-cta h2,.service-title h3,.project-title{
+  color:#f3ede2;
+}
+.hero h1 span,.section-heading h2 span,.portfolio-heading h2 span,
+.work-intro h1 span,.final-cta h2 span,.section-kicker,.project-category,
+.service-number,.empty-kicker{color:var(--gold-light)}
+.hero-description,.section-heading-side p,.work-intro>p,
+.project-header>p,.project-content p,.service-description{color:#b7ad9d}
+.project-media,.hero-visual-frame,.project-cover,.related-card img,
+.project-media-error{background:#14110c}
+.portfolio-search,.portfolio-sort,.portfolio-view-toggle,.portfolio-profile-link{
+  background:#100f0c;color:#e8decd;border-color:var(--line)
+}
+.portfolio-sort option{background:#100f0c;color:#f3ede2}
+.portfolio-filter{color:#b9ad99}
+.portfolio-filter[aria-pressed="true"],.view-toggle.is-active{
+  background:linear-gradient(135deg,#f0d9a9,#bc8f4d);
+  border-color:#c69b58;color:#100d08;
+}
+.service-row,.services-list,.portfolio-toolbar,.portfolio-empty,
+.portfolio-no-results,.project-facts,.project-nav-link,.related-projects{
+  border-color:var(--line);
+}
+.service-row:hover{background:rgba(198,155,88,.06)}
+.approach,.menu-overlay{
+  background:
+    radial-gradient(ellipse at 50% 40%,rgba(171,125,55,.12),transparent 43%),
+    #090908;
+}
+.site-footer{background:transparent;color:#b7aa94}
+a:hover{transition-color:color .2s}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
