@@ -6,6 +6,7 @@
   const filtersRoot = document.getElementById("portfolioFilters");
   const gridRoot = document.getElementById("portfolioGrid");
   const countRoot = document.getElementById("portfolioCount");
+  const isFullPage = document.body.classList.contains("work-page");
 
   if (!filtersRoot || !gridRoot || !countRoot) return;
 
@@ -114,12 +115,14 @@
 
   const render = (projects) => {
     let activeFilter = "all";
-    const categories = [...new Set(projects.map((p) => p.category.trim()).filter(Boolean))];
+    const featured = projects.filter((project) => project.featured === true);
+    const displayedProjects = isFullPage ? projects : (featured.length ? featured.slice(0, 4) : projects.slice(0, 4));
+    const categories = [...new Set(displayedProjects.map((p) => p.category.trim()).filter(Boolean))];
 
     const draw = () => {
       const visible = activeFilter === "all"
-        ? projects
-        : projects.filter((project) => project.category.trim() === activeFilter);
+        ? displayedProjects
+        : displayedProjects.filter((project) => project.category.trim() === activeFilter);
 
       filtersRoot.querySelectorAll("button").forEach((button) => {
         button.setAttribute("aria-pressed", button.dataset.filter === activeFilter ? "true" : "false");
@@ -127,7 +130,9 @@
 
       gridRoot.replaceChildren();
       visible.forEach((project, index) => gridRoot.append(createCard(project, index)));
-      countRoot.textContent = visible.length + (visible.length === 1 ? " مشروع" : " مشاريع");
+      countRoot.textContent = isFullPage
+        ? visible.length + (visible.length === 1 ? " مشروع" : " مشاريع")
+        : visible.length + " من " + projects.length + " مشروع";
       gridRoot.setAttribute("aria-busy", "false");
 
       if (window.AlSafaSite && typeof window.AlSafaSite.observeReveals === "function") {
