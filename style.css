@@ -454,3 +454,29 @@ a:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px;border-ra
 .project-source-link{display:inline-flex;align-items:center;gap:9px;margin:0 auto 70px;color:var(--gold-light);font-size:12px;font-weight:800;text-decoration:none}
 .project-source-link:hover{text-decoration:underline}
 .project-media-error{background:radial-gradient(ellipse at center,rgba(139,85,197,.12),transparent 65%),#121a29}
+
+
+/* Dedicated work archive */
+.work-intro{padding:22px 0 65px}
+.work-intro .project-breadcrumbs{padding:12px 0 35px}
+.work-intro h1{margin:14px 0 15px;color:#fff;font-size:clamp(43px,7vw,82px);font-weight:900;line-height:1.15;letter-spacing:-2px}
+.work-intro h1 span{color:transparent;background:linear-gradient(100deg,#ffe4a9,#e9bb68 45%,#c08adf);-webkit-background-clip:text;background-clip:text}
+.work-intro>p{max-width:570px;margin:0;color:#a5b0c0;font-size:14px;line-height:2}
+.archive-portfolio{padding-top:10px}
+.archive-contact{
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  margin:10px 0 80px;padding:30px 34px;border:1px solid rgba(232,184,95,.22);border-radius:22px;
+  background:linear-gradient(110deg,rgba(28,35,52,.92),rgba(15,21,34,.95));
+}
+.archive-contact h2{margin:9px 0 0;color:#fff;font-size:clamp(19px,2.5vw,27px);line-height:1.5}
+.archive-contact .button{flex:0 0 auto}
+@media(max-width:700px){
+  .work-intro{padding:14px 0 48px}
+  .work-intro .project-breadcrumbs{padding:8px 0 28px}
+  .work-intro h1{font-size:48px}
+  .work-intro>p{font-size:12px}
+  .archive-contact{align-items:flex-start;flex-direction:column;margin-bottom:55px;padding:24px 20px}
+}
+@media(max-width:520px){
+  .work-page .main-nav a[href*="#approach"]{display:none}
+}
