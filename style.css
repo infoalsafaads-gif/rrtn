@@ -1139,3 +1139,121 @@ a:hover{transition-color:color .2s}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
 }
+
+
+/* =========================================================
+   AL SAFA — LUXURY BLACK & GOLD THEME
+   Global theme override — preserves existing layout & motion
+   ========================================================= */
+:root{
+  color-scheme:dark;
+  --paper:#080807;
+  --paper-deep:#10100e;
+  --ink:#f4efe4;
+  --ink-soft:#d2c8b7;
+  --muted:#a49b8b;
+  --line:rgba(214,176,105,.22);
+  --line-dark:rgba(214,176,105,.2);
+  --gold:#c9a15d;
+  --gold-light:#efd49a;
+  --violet:#c9a15d;
+  --night:#11100d;
+  --white:#f8f4eb;
+}
+html,body{background:#080807!important;color:#f4efe4}
+body{
+  background:
+    radial-gradient(ellipse at 78% 8%,rgba(201,161,93,.075),transparent 34%),
+    radial-gradient(ellipse at 8% 42%,rgba(201,161,93,.035),transparent 30%),
+    #080807!important;
+  color:var(--ink);
+}
+::selection{background:#c9a15d;color:#080807}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline-color:var(--gold)}
+.scroll-progress{background:linear-gradient(90deg,#8f6b35,#efd49a)}
+.site-header{
+  background:rgba(8,8,7,.88)!important;
+  border-bottom-color:rgba(201,161,93,.2);
+  box-shadow:0 8px 35px rgba(0,0,0,.16);
+}
+.brand-mark{color:var(--ink);background:#0d0c0a}
+.brand-copy strong,.footer-brand{color:var(--ink)}
+.brand-copy small{color:#9d927e}
+.nav-link{color:#aaa08f}
+.nav-link:after{background:var(--gold)}
+.nav-link:hover,.nav-link.active{color:var(--gold-light)}
+.header-cta,.button-primary,.portfolio-all-link,.empty-action,.empty-retry,.button-light{
+  color:#090806;background:linear-gradient(135deg,#efd49a,#b88b49);
+  border-color:#c9a15d;
+  box-shadow:0 7px 24px rgba(201,161,93,.12);
+}
+.header-cta:hover,.button-primary:hover,.portfolio-all-link:hover,.empty-action:hover,.empty-retry:hover,.button-light:hover{
+  color:#080807;background:#f2dcae;border-color:#efd49a;
+}
+.hero h1,.section-heading h2,.portfolio-heading h2,.work-intro h1,.final-cta h2,
+.contact-copy h2,.service-title h3,.project-title,.portfolio-empty h3,
+.no-results-copy h3,.approach-head h2{color:var(--ink)}
+.hero h1 span,.section-heading h2 span,.portfolio-heading h2 span,
+.work-intro h1 span,.final-cta h2 span,.approach-head h2 span{color:var(--gold-light)}
+.hero-description,.section-heading-side p,.service-description,
+.work-intro>p,.portfolio-heading-copy>p{color:#b2a895}
+.eyebrow,.section-kicker,.hero-visual-note,.hero-index,.hero-side-label{color:#a99b83}
+.hero-visual-frame,.hero-object{background:#11100d}
+.hero-visual-note,.contact-strip,.final-cta,.site-footer{border-color:var(--line)}
+.hero-index span:first-child{border-color:var(--line)}
+.contact-action-icon{border-color:rgba(201,161,93,.4);color:var(--gold-light)}
+.contact-action strong{color:var(--ink)}
+.contact-action small,.project-summary,.project-year{color:#a99f8e}
+.portfolio-toolbar,.portfolio-filters,.portfolio-status-row{border-color:var(--line)}
+.portfolio-filter{color:#b5aa98}
+.portfolio-filter:hover{color:var(--gold-light);border-color:rgba(201,161,93,.45)}
+.portfolio-filter[aria-pressed="true"],.view-toggle.is-active{
+  color:#080807;background:var(--gold);border-color:var(--gold)
+}
+.filter-count{background:rgba(201,161,93,.12);color:#c9b58f}
+.portfolio-filter[aria-pressed="true"] .filter-count{background:rgba(0,0,0,.14);color:#171109}
+.portfolio-search,.portfolio-sort,.portfolio-view-toggle,.view-toggle{border-color:var(--line)}
+.portfolio-search{background:rgba(255,255,255,.025);color:#b9ad98}
+.portfolio-search input,.portfolio-sort{color:var(--ink);background-color:#11100d}
+.portfolio-search input::placeholder,.portfolio-search kbd,.portfolio-sort-label,.portfolio-count{color:#968b79}
+.portfolio-search kbd{border-color:var(--line)}
+.portfolio-search:focus-within,.portfolio-sort:focus-visible{border-color:var(--gold)}
+.portfolio-reset,.text-link span{color:var(--gold-light)}
+.project-media{background:#171510}
+.project-open{background:var(--gold-light);color:#090806}
+.project-title{transition:color .2s}
+.project-card-link:hover .project-title{color:var(--gold-light)}
+.portfolio-empty,.portfolio-no-results{border-color:var(--line);background:rgba(255,255,255,.015)}
+.empty-art,.no-results-icon{border-color:rgba(201,161,93,.38);color:var(--gold-light)}
+.portfolio-empty p,.no-results-copy p{color:#aaa08f}
+.empty-retry,.portfolio-no-results .empty-action{background:transparent;color:var(--gold-light);border-color:rgba(201,161,93,.5)}
+.portfolio-loading{color:#b7aa96}
+.loading-mark{border-color:rgba(201,161,93,.22);border-top-color:var(--gold-light)}
+.services-list,.service-row{border-color:var(--line)}
+.service-row:hover{background:rgba(201,161,93,.045)}
+.service-title p,.service-description{color:#a99f8e}
+.service-arrow{color:#a88a55}
+.approach{background:linear-gradient(135deg,#17140e,#0d0c0a 70%);border:1px solid rgba(201,161,93,.24)}
+.approach .section-kicker,.approach-step>span{color:var(--gold-light)}
+.approach-steps,.approach-step{border-color:rgba(201,161,93,.2)}
+.approach-step h3{color:#f5efe3}
+.approach-step p{color:#b6aa96}
+.final-cta{background:linear-gradient(180deg,rgba(201,161,93,.025),transparent)}
+.footer-brand span,.site-footer,.footer-links a,.footer-top{color:#a99f8e}
+.footer-links a:hover,.footer-top:hover{color:var(--gold-light)}
+/* Archive and project detail pages */
+.work-intro h1 span{color:var(--gold-light)}
+.project-breadcrumbs{color:#918675}
+.project-breadcrumbs a{color:var(--gold-light)}
+.archive-contact{border-color:var(--line);background:rgba(201,161,93,.035)}
+.project-page main{color:var(--ink)}
+.project-page .project-detail,.project-page .project-content{color:var(--ink)}
+.project-page .project-detail p,.project-page .project-content p{color:#b2a895}
+.ambient{opacity:.2}
+@media(prefers-reduced-motion:no-preference){
+  .site-header{transition:background .25s,border-color .25s}
+}
+@media(max-width:760px){
+  .site-header{background:rgba(8,8,7,.94)!important}
+  .main-nav{background:#100f0c;border:1px solid rgba(201,161,93,.2)}
+}
