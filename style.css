@@ -1257,3 +1257,151 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
   .site-header{background:rgba(8,8,7,.94)!important}
   .main-nav{background:#100f0c;border:1px solid rgba(201,161,93,.2)}
 }
+
+
+/* =========================================================
+   AL SAFA BUSINESS CARD SYSTEM — MOBILE FIRST
+   Black canvas, fine gold rules, white typography.
+   ========================================================= */
+:root{
+  --paper:#080807;--paper-deep:#11100d;--ink:#f7f3eb;
+  --ink-soft:#d9cfbd;--muted:#a99d89;--line:rgba(207,169,102,.24);
+  --gold:#c9a15d;--gold-light:#efd49a;--violet:#c9a15d;
+  --night:#080807;--white:#fffdf8;
+}
+html,body{background:#080807!important;color:#f7f3eb}
+body{background:radial-gradient(ellipse at 50% -15%,rgba(201,161,93,.10),transparent 43%),#080807!important}
+.page-shell{width:min(1280px,calc(100% - 64px))}
+.site-header{min-height:76px;border-bottom:1px solid rgba(201,161,93,.3);background:rgba(8,8,7,.94)!important}
+.brand-mark{border-radius:2px;border:1px solid var(--gold);color:#fff;background:#080807}
+.brand-mark span{color:var(--gold-light)}
+.brand-copy strong{letter-spacing:2.8px}
+.brand-copy small{letter-spacing:2px;color:#b7a887}
+.header-cta{border-radius:2px;min-height:44px;padding-inline:20px}
+.hero{min-height:610px;padding-block:90px 76px;gap:clamp(36px,6vw,88px)}
+.hero h1{font-size:clamp(58px,7.6vw,100px);letter-spacing:-2px}
+.hero h1 span,.section-heading h2 span,.portfolio-heading h2 span,.final-cta h2 span{color:var(--gold-light)}
+.hero-visual-frame{border:1px solid rgba(201,161,93,.34);border-radius:0;box-shadow:14px 14px 0 rgba(201,161,93,.045)}
+.button,.header-cta,.contact-action,.portfolio-all-link{border-radius:2px}
+.button-primary{background:linear-gradient(110deg,#efd49a,#bd914f);color:#090806}
+.contact-strip{grid-template-columns:1fr;gap:24px;margin-bottom:110px;padding:34px 0;border-top:1px solid var(--gold);border-bottom:1px solid var(--line)}
+.contact-copy h2{font-size:clamp(24px,3vw,36px);max-width:720px}
+.contact-actions{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.contact-action{padding:13px 10px;border:1px solid rgba(201,161,93,.22);background:rgba(255,255,255,.018)}
+.contact-action:hover{border-color:var(--gold);background:rgba(201,161,93,.06)}
+.contact-whatsapp{border-color:rgba(201,161,93,.7);background:rgba(201,161,93,.075)}
+.contact-action-icon{border-radius:2px;border-color:rgba(201,161,93,.55)}
+.section-kicker,.eyebrow{color:#cbb487}
+.section-heading h2,.portfolio-heading h2,.final-cta h2{color:#f7f3eb}
+.services-list,.service-row,.portfolio-toolbar,.site-footer{border-color:var(--line)}
+.approach{border:1px solid rgba(201,161,93,.28);border-radius:0}
+.final-cta{border-top:1px solid var(--gold);border-bottom:1px solid var(--line)}
+.mobile-contact-dock{display:none}
+.intro-screen{background:#080807!important}
+.intro-screen:after{background:linear-gradient(90deg,transparent 0 18%,rgba(201,161,93,.8) 18% 18.15%,transparent 18.15% 100%)}
+.intro-brand{color:#fff}
+.intro-symbol{border-radius:2px;border:1px solid var(--gold);color:#fff}
+.intro-symbol span{color:var(--gold-light)}
+.intro-content h1 span{color:var(--gold-light)}
+.intro-progress{background:rgba(201,161,93,.18)}
+.intro-progress span{background:linear-gradient(90deg,#9b7139,#efd49a)}
+.intro-skip{border-color:rgba(201,161,93,.4);color:#ead8b6}
+@media(max-width:900px){
+  .page-shell{width:min(100% - 44px,720px)}
+  .hero{grid-template-columns:1fr;min-height:0;padding:68px 0 60px;gap:34px}
+  .hero-copy{max-width:100%}
+  .hero h1{font-size:clamp(54px,10vw,82px);margin-top:20px}
+  .hero-description{max-width:650px;font-size:14px}
+  .hero-index{margin-top:36px}
+  .hero-visual{max-width:680px;width:100%;margin-inline:auto}
+  .hero-side-label,.hero-coordinate{display:none}
+  .contact-strip{margin-bottom:86px}
+  .section-block{padding-bottom:100px}
+  .section-heading{gap:24px}
+}
+@media(max-width:640px){
+  html{scroll-padding-top:78px}
+  body{padding-bottom:74px}
+  .page-shell{width:calc(100% - 34px)}
+  .site-header{min-height:68px;padding:10px 0;gap:10px}
+  .brand{gap:9px}
+  .brand-mark{width:37px;height:37px;font-size:14px}
+  .brand-copy strong{font-size:13px}
+  .brand-copy small{font-size:7px;letter-spacing:1.5px}
+  .header-right{gap:8px}
+  .header-cta{min-height:39px;padding:0 12px;gap:8px;font-size:10px}
+  .menu-pill{min-height:39px;padding:0 11px;border-radius:2px}
+  .menu-pill-label{font-size:10px}
+  .hero{padding:56px 0 44px;gap:26px}
+  .eyebrow{font-size:8px;letter-spacing:1.6px;gap:7px}
+  .eyebrow-rule{width:23px}
+  .hero h1{font-size:clamp(48px,13vw,68px);line-height:1.2;letter-spacing:-1.7px;margin:19px 0 16px}
+  .hero-description{font-size:13px;line-height:2}
+  .hero-actions{margin-top:24px;gap:17px}
+  .button{min-height:48px;padding-inline:16px;font-size:11px}
+  .text-link{font-size:11px}
+  .hero-index{margin-top:26px;font-size:7px}
+  .hero-visual-frame{box-shadow:7px 7px 0 rgba(201,161,93,.06)}
+  .hero-visual-note{font-size:9px;padding:10px 0}
+  .hero-scroll-cue{display:none}
+  .contact-strip{padding:26px 0;margin-bottom:74px;gap:18px}
+  .contact-copy h2{font-size:23px;line-height:1.55}
+  .contact-actions{grid-template-columns:1fr;gap:8px}
+  .contact-action{padding:11px 12px;gap:12px}
+  .contact-action-icon{width:36px;height:36px;flex-basis:36px}
+  .contact-action strong{font-size:12px}
+  .contact-action small{font-size:10px}
+  .section-block{padding-bottom:78px}
+  .section-heading{display:block;margin-bottom:30px}
+  .section-heading h2,.portfolio-heading h2{font-size:clamp(42px,11vw,58px);margin-top:10px}
+  .section-heading-side{margin-top:16px;max-width:100%}
+  .section-heading-side p{font-size:11px;line-height:1.9;margin-bottom:12px}
+  .portfolio-toolbar{margin-top:20px}
+  .portfolio-tools{gap:8px;flex-wrap:wrap}
+  .portfolio-search{width:100%;min-height:44px}
+  .portfolio-sort{min-height:40px}
+  .portfolio-view-toggle{margin-inline-start:auto}
+  .portfolio-grid{grid-template-columns:1fr!important;gap:18px}
+  .portfolio-card,.project-card{min-width:0}
+  .service-row{grid-template-columns:34px 1fr 20px;gap:10px;padding:18px 0}
+  .service-description{grid-column:2/-1;font-size:11px;line-height:1.8}
+  .service-title h3{font-size:16px}
+  .service-title p{font-size:9px;line-height:1.8}
+  .approach{padding:26px 20px}
+  .approach-head h2{font-size:40px}
+  .approach-steps{margin-top:28px}
+  .approach-step{padding:17px 0;gap:14px}
+  .approach-step h3{font-size:14px}
+  .approach-step p{font-size:11px;line-height:1.9}
+  .final-cta{padding:48px 8px;text-align:center}
+  .final-cta h2{font-size:clamp(31px,8.5vw,44px)}
+  .site-footer{padding:25px 0 28px;display:flex;flex-direction:column;align-items:flex-start;gap:13px}
+  .footer-links{display:flex;flex-wrap:wrap;gap:16px}
+  .mobile-contact-dock{
+    display:grid;grid-template-columns:1.2fr 1fr;gap:8px;
+    position:fixed;z-index:90;bottom:0;right:0;left:0;
+    padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+    background:rgba(8,8,7,.96);border-top:1px solid rgba(201,161,93,.45);
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)
+  }
+  .mobile-contact-dock a{
+    min-height:46px;display:flex;align-items:center;justify-content:center;gap:9px;
+    border:1px solid var(--gold);border-radius:2px;text-decoration:none;
+    font-size:12px;font-weight:900
+  }
+  .mobile-contact-dock a span{font-size:17px}
+  .dock-whatsapp{background:linear-gradient(110deg,#efd49a,#bd914f);color:#090806}
+  .dock-call{background:transparent;color:#f1e5cf}
+  .menu-overlay{padding:22px 20px}
+  .menu-overlay-links a{font-size:clamp(28px,8vw,42px)}
+}
+@media(max-width:360px){
+  .page-shell{width:calc(100% - 26px)}
+  .brand-copy small{letter-spacing:1px}
+  .header-cta{padding:0 9px}
+  .menu-pill{padding:0 9px}
+  .hero h1{font-size:46px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
