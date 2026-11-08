@@ -297,7 +297,7 @@ a:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px;border-ra
 .portfolio-filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .portfolio-filter{
   min-height:34px;padding:0 13px;border:1px solid transparent;border-radius:30px;
-  background:transparent;color:#96a2b4;font:700 10px/1 inherit;cursor:pointer;
+  background:transparent;color:#96a2b4;font-family:inherit;font-size:10px;font-weight:700;line-height:1;cursor:pointer;
   transition:color .2s,border-color .2s,background .2s;
 }
 .portfolio-filter:hover{color:#fff;border-color:rgba(255,255,255,.15)}
@@ -451,3 +451,6 @@ a:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px;border-ra
   .reveal-on-scroll{opacity:1;transform:none;transition:none}
   .project-card{animation:none}
 }
+.project-source-link{display:inline-flex;align-items:center;gap:9px;margin:0 auto 70px;color:var(--gold-light);font-size:12px;font-weight:800;text-decoration:none}
+.project-source-link:hover{text-decoration:underline}
+.project-media-error{background:radial-gradient(ellipse at center,rgba(139,85,197,.12),transparent 65%),#121a29}
