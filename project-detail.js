@@ -52,7 +52,7 @@
       make("p", "", message || "قد يكون الرابط غير صحيح أو لم تتم إضافة بيانات هذا المشروع إلى معرض الصفا بعد.")
     );
     const link = make("a", "", "العودة إلى معرض الأعمال ←");
-    link.href = "./index.html#portfolio";
+    link.href = "./work.html";
     panel.append(link);
     root.append(panel);
   };
@@ -70,7 +70,7 @@
 
     const crumbs = make("div", "project-breadcrumbs");
     const allLink = make("a", "", "كل الأعمال");
-    allLink.href = "./index.html#portfolio";
+    allLink.href = "./work.html";
     crumbs.append(allLink, make("span", "", "／"), make("span", "", project.title));
 
     const header = make("header", "project-header");
@@ -120,7 +120,7 @@
       navigation.append(link);
     } else {
       const link = make("a", "project-nav-link");
-      link.href = "./index.html#portfolio";
+      link.href = "./work.html";
       link.append(make("small", "", "العودة للمعرض ↑"), make("strong", "", "كل المشاريع"));
       navigation.append(link);
     }
@@ -132,7 +132,7 @@
       navigation.append(link);
     } else if (projects.length > 1) {
       const link = make("a", "project-nav-link next");
-      link.href = "./index.html#portfolio";
+      link.href = "./work.html";
       link.append(make("small", "", "تابع الاستكشاف"), make("strong", "", "العودة لكل الأعمال"));
       navigation.append(link);
     }
