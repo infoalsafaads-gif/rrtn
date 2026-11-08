@@ -43,7 +43,7 @@
     };
 
     skipButton?.addEventListener("click", finish);
-    window.setTimeout(finish, 1450);
+    window.setTimeout(finish, 2200);
   };
 
   const setupMenu = () => {
