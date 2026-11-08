@@ -511,7 +511,7 @@ a:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px;border-ra
 }
 .portfolio-search:focus-within{border-color:rgba(232,184,95,.52);background:rgba(5,10,18,.58);box-shadow:0 0 0 3px rgba(232,184,95,.07)}
 .portfolio-search svg{width:17px;height:17px;flex:0 0 17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
-.portfolio-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#f5f2ed;font:500 11px/1.5 inherit}
+.portfolio-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#f5f2ed;font-family:inherit;font-size:11px;font-weight:500;line-height:1.5}
 .portfolio-search input::placeholder{color:#778398}
 .portfolio-search kbd{display:grid;place-items:center;width:22px;height:22px;border:1px solid rgba(255,255,255,.1);border-radius:6px;color:#69778b;font:700 11px Arial,sans-serif}
 .portfolio-search input:disabled,.portfolio-sort:disabled{opacity:.45;cursor:not-allowed}
@@ -532,7 +532,7 @@ a:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px;border-ra
 .portfolio-reset:hover{text-decoration:underline}
 .portfolio-reset[hidden]{display:none}
 .portfolio-toolbar.has-no-projects .portfolio-filters{display:none}
-.portfolio-toolbar.has-no-projects .portfolio-tools{opacity:.5}
+.portfolio-toolbar.has-no-projects .portfolio-tools{display:none}
 .portfolio-toolbar.has-no-projects .portfolio-status-row{display:none}
 .portfolio-empty{grid-template-columns:72px minmax(0,1fr) auto;gap:22px;min-height:218px;padding:34px 35px}
 .portfolio-empty-copy{max-width:620px}
