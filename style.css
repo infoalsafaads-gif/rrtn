@@ -813,3 +813,261 @@ body.intro-done .hero-visual{animation:hero-visual-enter .9s .15s var(--ease) bo
 @media(max-width:540px){
   .intro-sphere{width:min(82vw,520px)}
 }
+
+
+/* =========================================================
+   AL SAFA — COMPLETE BLACK & GOLD LUXURY THEME
+   Shared by home, work archive and project case-study pages
+   ========================================================= */
+:root{
+  color-scheme:dark;
+  --paper:#080807;
+  --paper-deep:#12100c;
+  --ink:#f3ede2;
+  --ink-soft:#d0c5b2;
+  --muted:#a69a86;
+  --line:rgba(214,177,112,.22);
+  --line-dark:rgba(214,177,112,.18);
+  --gold:#c69b58;
+  --gold-light:#ead3a7;
+  --violet:#d0aa6d;
+  --night:#0b0a08;
+  --white:#f7f0e5;
+  --surface:#100f0c;
+  --surface-raised:#17140f;
+}
+html{background:#080807;color-scheme:dark}
+body{
+  color:var(--ink);
+  background:
+    radial-gradient(ellipse at 10% 8%,rgba(176,128,57,.075),transparent 34%),
+    radial-gradient(ellipse at 92% 42%,rgba(176,128,57,.045),transparent 32%),
+    linear-gradient(180deg,#090908 0%,#080807 55%,#0a0907 100%);
+}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
+  outline-color:var(--gold-light);
+}
+::selection{background:#d2ad70;color:#100d08}
+
+/* Shared navigation */
+.site-header{
+  border-bottom-color:rgba(215,181,119,.2);
+  background:rgba(8,8,7,.9);
+  color:var(--ink);
+}
+.site-header:before{background:#080807}
+.brand-mark{color:var(--gold-light);border-color:rgba(228,197,143,.72)}
+.brand-mark span{color:var(--gold-light)}
+.brand-copy strong{color:#f7f0e5}
+.brand-copy small{color:#9d907a}
+.nav-link{color:#b6aa96}
+.nav-link:after{background:var(--gold)}
+.nav-link:hover,.nav-link.active{color:var(--gold-light)}
+.header-cta,.button-primary,.button-light,.portfolio-all-link,.empty-action,.empty-retry{
+  background:linear-gradient(135deg,#f0d9a9 0%,#c69b58 54%,#9f743a 100%);
+  border-color:#c69b58;
+  color:#100d08;
+  box-shadow:0 8px 24px rgba(183,132,57,.12);
+}
+.header-cta:hover,.button-primary:hover,.button-light:hover,.portfolio-all-link:hover,.empty-action:hover,.empty-retry:hover{
+  background:linear-gradient(135deg,#fff0cf 0%,#dfbd80 100%);
+  border-color:#e0bd80;
+  color:#100d08;
+}
+.home-page .site-header .header-cta{
+  background:linear-gradient(135deg,#f0d9a9 0%,#c69b58 54%,#9f743a 100%);
+  border-color:#c69b58;color:#100d08;
+}
+.home-page .site-header .header-cta:hover{
+  background:transparent;border-color:#d7b679;color:#f3dfb9;
+}
+.mobile-menu-toggle{border-color:var(--line);background:rgba(198,155,88,.04)}
+.mobile-menu-toggle span{background:var(--gold-light)}
+.main-nav{
+  background:#0d0c09;
+  box-shadow:0 12px 25px rgba(0,0,0,.3);
+}
+.nav-link{border-bottom-color:var(--line)}
+.menu-pill:hover,.menu-pill[aria-expanded="true"]{
+  background:rgba(198,155,88,.12);
+  border-color:rgba(228,197,143,.72);
+}
+.menu-overlay{
+  background:
+    radial-gradient(ellipse at 50% 45%,rgba(171,125,55,.12),transparent 42%),
+    #080807;
+}
+.menu-overlay-links a:hover{color:var(--gold-light)}
+.menu-overlay-top button:hover{color:var(--gold-light)}
+.menu-overlay-links a span{color:#88795e}
+.menu-overlay-bottom a{color:var(--gold-light)}
+
+/* Headings, copy and section accents */
+.eyebrow,.section-kicker{color:#b5a789}
+.eyebrow i{color:#8e8068}
+.hero h1,.section-heading h2,.portfolio-heading h2,.work-intro h1,
+.project-header h1,.project-content h2,.related-projects h2,
+.project-unavailable h1,.contact-copy h2,.final-cta h2{
+  color:var(--ink);
+}
+.hero h1 span,.section-heading h2 span,.portfolio-heading h2 span,
+.work-intro h1 span,.project-unavailable a,.project-source-link,
+.final-cta h2 span{color:var(--gold-light)}
+.hero-description,.section-heading-side p,.work-intro>p,
+.project-header>p,.project-content p,.project-unavailable p{
+  color:#b7ad9d;
+}
+.text-link{color:#eee5d6}
+.text-link span{color:var(--gold-light)}
+.hero-index{color:#968a76}
+.hero-index span:first-child{border-color:var(--line)}
+.hero-visual-note{color:#a99d89;border-color:var(--line)}
+.hero-visual-note span:first-child{color:var(--gold-light)}
+.hero-side-label,.hero-coordinate{color:#8c806a}
+.hero-scroll-cue{color:#b9a47e}
+.hero-scroll-cue i{background:var(--gold)}
+
+/* Contact strip and action links */
+.contact-strip{
+  border-top-color:var(--line);
+  border-bottom-color:var(--line);
+}
+.contact-copy h2{color:var(--ink)}
+.contact-strip .section-kicker{color:var(--gold-light)}
+.contact-action-icon{border-color:rgba(214,177,112,.42);color:var(--gold-light)}
+.contact-action strong{color:#f1e9dc}
+.contact-action small{color:#a69a87}
+.contact-action:hover{border-color:var(--gold-light)}
+
+/* Portfolio controls and gallery */
+.portfolio-all-link,.portfolio-profile-link{
+  border-color:var(--line);
+  color:#e8decd;
+}
+.portfolio-all-link{
+  background:linear-gradient(135deg,#f0d9a9 0%,#c69b58 54%,#9f743a 100%);
+  border-color:#c69b58;color:#100d08;
+}
+.portfolio-all-link:hover{
+  background:linear-gradient(135deg,#fff0cf,#dfbd80);
+  border-color:#dfbd80;color:#100d08;
+}
+.portfolio-profile-link{background:rgba(255,255,255,.015);color:#d4c5a9}
+.portfolio-profile-link:hover{border-color:var(--gold-light);color:var(--gold-light)}
+.portfolio-toolbar{border-top-color:var(--line);border-bottom-color:var(--line)}
+.portfolio-filters{scrollbar-color:#8d7044 transparent}
+.portfolio-filter{color:#b0a58f}
+.portfolio-filter:hover{color:var(--gold-light);border-color:rgba(214,177,112,.42)}
+.portfolio-filter[aria-pressed="true"]{
+  color:#100d08;border-color:#c69b58;
+  background:linear-gradient(135deg,#f0d9a9,#bc8f4d);
+}
+.filter-count{background:rgba(214,177,112,.12);color:#c9b997}
+.portfolio-filter[aria-pressed="true"] .filter-count{background:rgba(16,13,8,.13);color:#100d08}
+.portfolio-search{border-color:var(--line);background:rgba(255,255,255,.015);color:#baa985}
+.portfolio-search:focus-within{border-color:var(--gold)}
+.portfolio-search input{color:var(--ink)}
+.portfolio-search input::placeholder{color:#817865}
+.portfolio-search kbd{border-color:var(--line);color:#ad9d80}
+.portfolio-sort-label,.portfolio-count{color:#a99c85}
+.portfolio-sort{border-color:var(--line);background:#11100c;color:var(--ink)}
+.portfolio-sort option{background:#11100c;color:#f3ede2}
+.portfolio-sort:focus-visible{border-color:var(--gold)}
+.portfolio-view-toggle{border-color:var(--line)}
+.view-toggle{color:#a9997c}
+.view-toggle.is-active{
+  background:linear-gradient(135deg,#f0d9a9,#bc8f4d);
+  color:#100d08;
+}
+.portfolio-reset{color:var(--gold-light)}
+.project-media{background:#15120c}
+.project-open{background:linear-gradient(135deg,#f0d9a9,#bc8f4d);color:#100d08}
+.project-category,.empty-kicker{color:var(--gold-light)}
+.project-title,.portfolio-empty h3,.no-results-copy h3{color:#f1e9dc}
+.project-card-link:hover .project-title{color:var(--gold-light)}
+.project-summary,.portfolio-empty p,.no-results-copy p{color:#aaa08f}
+.project-year{color:#978a74}
+.portfolio-empty,.portfolio-no-results{border-color:var(--line)}
+.empty-art,.no-results-icon{border-color:rgba(214,177,112,.35);color:var(--gold-light)}
+.empty-action,.empty-retry{
+  border-color:#c69b58;
+  background:linear-gradient(135deg,#f0d9a9,#bc8f4d);
+  color:#100d08;
+}
+.empty-retry{background:transparent;color:var(--gold-light)}
+.empty-retry:hover{background:rgba(198,155,88,.12);color:var(--gold-light)}
+.portfolio-no-results .empty-action{background:transparent;color:var(--gold-light)}
+.portfolio-loading{color:#b0a48e}
+.loading-mark{border-color:rgba(214,177,112,.25);border-top-color:var(--gold-light)}
+
+/* Services and process */
+.services-list{border-top-color:var(--line)}
+.service-row{border-bottom-color:var(--line)}
+.service-row:hover{background:rgba(198,155,88,.055)}
+.service-number,.service-title h3{color:var(--gold-light)}
+.service-title p{color:#a89b84}
+.service-description{color:#c0b5a3}
+.service-arrow{color:#a38f6c}
+.service-row:hover .service-arrow{color:var(--gold-light)}
+.approach{
+  background:
+    radial-gradient(ellipse at 90% 15%,rgba(171,125,55,.12),transparent 40%),
+    linear-gradient(135deg,#100e0a,#090908);
+  border:1px solid rgba(214,177,112,.18);
+}
+.approach .section-kicker,.approach-head h2 span,.approach-step>span{color:var(--gold-light)}
+.approach-steps,.approach-step{border-color:var(--line)}
+.approach-step p{color:#b7ad9d}
+.final-cta{border-top-color:var(--line);border-bottom-color:var(--line)}
+.final-cta .section-kicker{color:#c2a878}
+.final-cta h2 span{color:var(--gold-light)}
+.button-light{background:linear-gradient(135deg,#f0d9a9,#bc8f4d);color:#100d08}
+
+/* Footer */
+.site-footer{border-top-color:var(--line);color:#a99d87}
+.footer-brand{color:#f3ede2}
+.footer-brand span{color:#a79678}
+.footer-links a{color:#c1b49e}
+.footer-links a:hover{color:var(--gold-light)}
+
+/* Work archive */
+.work-intro{color:var(--ink)}
+.project-breadcrumbs{color:#9a8e77}
+.project-breadcrumbs a{color:var(--gold-light)}
+.work-intro h1 span{color:var(--gold-light)}
+.archive-contact{border-top-color:var(--line);border-bottom-color:var(--line)}
+.archive-contact h2{color:var(--ink)}
+.archive-contact .section-kicker{color:var(--gold-light)}
+
+/* Project case studies */
+.project-page{background:transparent}
+.project-page .site-header{background:rgba(8,8,7,.9)}
+.project-header h1{color:var(--ink)}
+.project-header>p{color:#b7ad9d}
+.project-facts{border-top-color:var(--line)}
+.project-fact span{color:#a99c85}
+.project-fact strong{color:#f3ede2}
+.project-cover,.related-card img,.project-media-error{background:#14110c}
+.project-content h2{color:#f3ede2}
+.project-content p{color:#b7ad9d}
+.project-content figcaption{color:#9b907e}
+.project-nav-link{border-top-color:var(--line);border-bottom-color:var(--line)}
+.project-nav-link:hover{border-color:var(--gold-light)}
+.project-nav-link small{color:#a99c85}
+.project-nav-link strong{color:#f0e7d8}
+.related-projects{border-top-color:var(--line)}
+.related-projects h2{color:#f3ede2}
+.related-card{color:#f3ede2}
+.project-unavailable{border-top-color:var(--line);border-bottom-color:var(--line)}
+.project-unavailable h1{color:#f3ede2}
+.project-unavailable p{color:#b7ad9d}
+.project-unavailable a,.project-source-link{color:var(--gold-light)}
+
+/* Work page background illumination */
+.work-page:before,.project-page:before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(ellipse at 86% 4%,rgba(174,127,57,.09),transparent 30%),
+    radial-gradient(ellipse at 7% 70%,rgba(137,99,43,.055),transparent 27%);
+}
+.scroll-progress{background:linear-gradient(90deg,#8d6330,#d2ad6d,#f3dfb5)}
