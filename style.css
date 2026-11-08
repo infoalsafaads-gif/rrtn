@@ -688,3 +688,128 @@ body.intro-done .hero-visual{animation:hero-visual-enter .9s .15s var(--ease) bo
 @media(prefers-reduced-motion:reduce){
   .intro-brand,.intro-overline,.intro-content h1,.intro-caption{animation:none!important}
 }
+
+
+/* AL SAFA signature palette — black & brushed gold */
+.home-page .site-header .header-cta{
+  background:linear-gradient(135deg,#f0d9a9 0%,#c69b58 52%,#9f743a 100%);
+  border-color:#c69b58;color:#100d08;
+  box-shadow:0 7px 24px rgba(190,145,72,.16);
+}
+.home-page .site-header .header-cta:hover{
+  background:transparent;border-color:#d7b679;color:#f3dfb9;
+}
+.menu-pill:hover,.menu-pill[aria-expanded="true"]{
+  background:rgba(198,155,88,.12);border-color:rgba(228,197,143,.72);
+}
+.menu-overlay-links a:hover{color:#e4c58f}
+.menu-overlay-top button:hover{color:#e4c58f}
+.home-page .hero-immersive:before{
+  background:
+    radial-gradient(ellipse at 77% 47%,rgba(171,125,55,.25),transparent 32%),
+    radial-gradient(ellipse at 16% 88%,rgba(113,79,35,.13),transparent 36%),
+    linear-gradient(115deg,#050505 0%,#0b0906 54%,#070605 100%);
+}
+.home-page .hero-immersive .eyebrow{color:#c7b99f}
+.home-page .hero-immersive .eyebrow-rule{background:#c69b58}
+.home-page .hero-immersive .eyebrow i{color:#8f8069}
+.home-page .hero-immersive h1 span{
+  color:#e4c58f;
+  background:linear-gradient(100deg,#fff0cf 0%,#e4c58f 44%,#b7833f 100%);
+  -webkit-background-clip:text;background-clip:text;
+}
+.home-page .hero-immersive .button-primary{
+  background:linear-gradient(135deg,#f0d9a9 0%,#c69b58 58%,#a8793e 100%);
+  color:#100d08;border-color:#c69b58;
+  box-shadow:0 12px 32px rgba(176,127,55,.15);
+}
+.home-page .hero-immersive .button-primary:hover{
+  background:linear-gradient(135deg,#fff0cf,#e2bf80);
+  border-color:#e2bf80;color:#100d08;
+}
+.home-page .hero-immersive .text-link span{color:#e4c58f}
+.home-page .hero-visual:hover .hero-visual-frame{border-color:rgba(228,197,143,.65)}
+.hero-object-one{
+  background:radial-gradient(circle at 32% 25%,#e4d0a8 0%,#80633a 11%,#211b12 38%,#080706 69%,#8b6736 100%);
+}
+.hero-object-two{
+  background:radial-gradient(circle at 35% 28%,#f1dfbd 0%,#92754b 12%,#2c2418 42%,#080706 76%,#a47b43 100%);
+}
+.hero-object-three{
+  background:radial-gradient(circle at 30% 28%,#ebd8b2 0%,#80613a 15%,#21190f 46%,#070605 78%,#9a713a 100%);
+}
+.hero-visual-orbit{border-color:rgba(210,169,103,.27)}
+.home-page .hero-visual-note span:first-child{color:#e4c58f}
+.hero-scroll-cue i{background:#c69b58}
+
+/* First impression: quiet gold light, not purple */
+.intro-screen{
+  background:#050505;
+  color:#f7f2e8;
+}
+.intro-screen:before{
+  opacity:.13;
+  background-image:
+    linear-gradient(rgba(221,184,119,.075) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(221,184,119,.075) 1px,transparent 1px);
+  background-size:88px 88px;
+}
+.intro-screen:after{
+  background:
+    radial-gradient(ellipse at 50% 44%,rgba(186,139,68,.19),transparent 44%),
+    radial-gradient(ellipse at 50% 100%,rgba(132,91,37,.10),transparent 47%);
+}
+.intro-sphere{
+  opacity:.76;
+  filter:none;
+  background:
+    radial-gradient(circle at 32% 23%,rgba(255,241,210,.72) 0%,rgba(221,183,117,.44) 4%,rgba(117,82,39,.2) 16%,rgba(24,18,10,.13) 43%,rgba(5,5,5,0) 70%);
+  box-shadow:
+    inset -55px -65px 90px rgba(0,0,0,.74),
+    inset 22px 18px 58px rgba(255,244,220,.1),
+    0 0 110px rgba(187,139,66,.16);
+}
+.intro-sphere:before,.intro-sphere:after{
+  content:"";
+  position:absolute;
+  inset:-8%;
+  border:1px solid rgba(222,187,128,.28);
+  border-radius:50%;
+  pointer-events:none;
+  transform:rotate(-27deg) scaleY(.25);
+}
+.intro-sphere:after{
+  inset:-19%;
+  border-color:rgba(222,187,128,.15);
+  transform:rotate(31deg) scaleY(.22);
+}
+.intro-brand{color:#f1e6d1}
+.intro-brand i{color:#aa987b}
+.intro-symbol{
+  border-color:rgba(228,197,143,.86);
+  color:#fff7e8;
+  box-shadow:0 0 22px rgba(192,145,73,.16),inset 0 0 14px rgba(192,145,73,.08);
+}
+.intro-symbol span{color:#e4c58f}
+.intro-overline{color:#b79a6c}
+.intro-content h1{color:#f7f2e8}
+.intro-content h1 span{
+  color:#e4c58f;
+  background:linear-gradient(100deg,#fff0cf 0%,#e1bd7e 52%,#a9793f 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.intro-progress{background:rgba(228,197,143,.2)}
+.intro-progress span{
+  background:linear-gradient(90deg,#8d6330 0%,#d2ad6d 52%,#f3dfb5 100%);
+  animation-duration:1.9s;
+}
+.intro-caption{color:#8f877a}
+.intro-caption b{color:#d7b575}
+.intro-skip{
+  color:#ded4c2;
+  border-bottom-color:rgba(228,197,143,.45);
+}
+.intro-skip span{color:#e4c58f}
+@media(max-width:540px){
+  .intro-sphere{width:min(82vw,520px)}
+}
