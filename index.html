@@ -173,7 +173,7 @@ body.lock{overflow:hidden}
 .work-view-row .view{box-shadow:0 5px 18px rgba(23,24,21,.045)}
 @media(max-width:760px){.work-view-row{justify-content:flex-start}}
 </style>
-<link rel="stylesheet" href="./motion.css?v=20261110-visual-flow-order-v1">
+<link rel="stylesheet" href="./motion.css?v=20261110-video-autoplay-v1">
 </head>
 <body class="cinematic-home">
 
@@ -263,8 +263,14 @@ body.lock{overflow:hidden}
 <section class="sec wrap sa-video-section" id="videos">
   <div class="sec-head"><h2>إعلانات الفيديو</h2><p>الأعمال المتحركة في مساحة مستقلة عن التصاميم والبوسترات.</p></div>
   <div class="sa-video-grid">
-    <a class="w sa-video-card" href="#hatlo-ad" data-id="hatlo-ad"><span class="fr"><img alt="Hatlo — إعلان فيديو" data-k="video/hatlo-ad.jpg" loading="lazy"><i class="play" aria-hidden="true">▶</i></span><span class="cap"><b>Hatlo — إعلان فيديو</b><small>إعلان سينمائي · فيديو</small></span></a>
-    <a class="w sa-video-card" href="#hatlo-reels" data-id="hatlo-reels"><span class="fr"><img alt="Hatlo — ريلز" data-k="video/hatlo-reels.jpg" loading="lazy"><i class="play" aria-hidden="true">▶</i></span><span class="cap"><b>Hatlo — ريلز</b><small>محتوى عمودي · فيديو</small></span></a>
+    <a class="w sa-video-card" href="#hatlo-ad" data-id="hatlo-ad" aria-label="مشاهدة تفاصيل إعلان Hatlo">
+      <span class="fr"><video class="sa-inline-video" autoplay muted loop playsinline controls preload="metadata" poster="./preview-assets/video-hatlo-ad.jpg" aria-label="Hatlo — إعلان فيديو"><source src="./preview-assets/video-hatlo-ad.mp4" type="video/mp4"></video></span>
+      <span class="cap"><b>Hatlo — إعلان فيديو</b><small>يعمل تلقائياً بصمت · استخدم أدوات الفيديو للصوت والإيقاف</small></span>
+    </a>
+    <a class="w sa-video-card" href="#hatlo-reels" data-id="hatlo-reels" aria-label="مشاهدة تفاصيل ريلز Hatlo">
+      <span class="fr"><video class="sa-inline-video" autoplay muted loop playsinline controls preload="metadata" poster="./preview-assets/video-hatlo-reels.jpg" aria-label="Hatlo — ريلز"><source src="./preview-assets/video-hatlo-reels.mp4" type="video/mp4"></video></span>
+      <span class="cap"><b>Hatlo — ريلز</b><small>يعمل تلقائياً بصمت · استخدم أدوات الفيديو للصوت والإيقاف</small></span>
+    </a>
   </div>
 </section>
 
@@ -298,6 +304,12 @@ body.lock{overflow:hidden}
 var IMG={"video/hatlo-ad.jpg":"./preview-assets/video-hatlo-ad.jpg","video/hatlo-ad.mp4":"./preview-assets/video-hatlo-ad.mp4","video/hatlo-reels.jpg":"./preview-assets/video-hatlo-reels.jpg","video/hatlo-reels.mp4":"./preview-assets/video-hatlo-reels.mp4","work/img01.webp":"./preview-assets/work-img01.webp","work/img02.webp":"./preview-assets/work-img02.webp","work/img03.webp":"./preview-assets/work-img03.webp","work/img04.webp":"./preview-assets/work-img04.webp","work/img05.webp":"./preview-assets/work-img05.webp","work/img06.webp":"./preview-assets/work-img06.webp","work/img07.webp":"./preview-assets/work-img07.webp","work/img08.webp":"./preview-assets/work-img08.webp","work/img09.webp":"./preview-assets/work-img09.webp","work/img10.webp":"./preview-assets/work-img10.webp","work/img11.webp":"./preview-assets/work-img11.webp","work/img12.webp":"./preview-assets/work-img12.webp","work/img13.webp":"./preview-assets/work-img13.webp","work/img14.webp":"./preview-assets/work-img14.webp","work/img15.webp":"./preview-assets/work-img15.webp","work/img16.webp":"./preview-assets/work-img16.webp","work/img17.webp":"./preview-assets/work-img17.webp","work/img18.webp":"./preview-assets/work-img18.webp","work/img19.webp":"./preview-assets/work-img19.webp","work/img20.webp":"./preview-assets/work-img20.webp","work/img21.webp":"./preview-assets/work-img21.webp","work/img22.webp":"./preview-assets/work-img22.webp","work/img23.webp":"./preview-assets/work-img23.webp"};
 var P=[{"id": "brand", "title": "AL SAFA — هوية بصرية", "cat": "هوية بصرية", "type": "images", "desc": "شعار ومطبوعات وبطاقات أعمال لهوية AL SAFA للدعاية والإعلان: قبعة وتيشيرت، بطاقات بتفاصيل التواصل ورمز QR، كوب، لوحة مكتب، ظرف وأوراق مراسلة، وحقيبة.", "cover": "work/img01.webp", "images": ["work/img01.webp", "work/img02.webp", "work/img03.webp", "work/img04.webp", "work/img05.webp", "work/img06.webp", "work/img07.webp", "work/img08.webp", "work/img09.webp", "work/img10.webp"]}, {"id": "fitzone", "title": "FitZone GYM — حملة سوشيال ميديا", "cat": "حملات سوشيال", "type": "images", "desc": "تصاميم منشورات لنادٍ رياضي بعناوين تحفيزية وإضاءة حمراء وتفاصيل الاشتراك في شريط سفلي موحّد.", "cover": "work/img11.webp", "images": ["work/img11.webp", "work/img12.webp", "work/img13.webp", "work/img14.webp", "work/img15.webp"]}, {"id": "hatlo", "title": "Hatlo — حملة بذور عباد الشمس", "cat": "حملات سوشيال", "type": "images", "desc": "سلسلة منشورات لمنتج بذور عباد الشمس تحت شعار «طعم من عالم تاني»، بمشاهد متنوعة: حقل، فضاء، ألعاب، ولمّات أصدقاء.", "cover": "work/img17.webp", "images": ["work/img16.webp", "work/img17.webp", "work/img18.webp", "work/img19.webp", "work/img20.webp", "work/img21.webp", "work/img22.webp", "work/img23.webp"]}, {"id": "hatlo-ad", "title": "Hatlo — إعلان فيديو", "cat": "فيديو", "type": "video", "desc": "إعلان فيديو بصيغة عمودية للمنتج، بنص مرافق ومونتاج.", "cover": "video/hatlo-ad.jpg", "video": "video/hatlo-ad.mp4"}, {"id": "hatlo-reels", "title": "Hatlo — ريلز", "cat": "فيديو", "type": "video", "desc": "فيديو مربّع للسوشيال ميديا يعرض المنتج ويختم ببيانات التواصل.", "cover": "video/hatlo-reels.jpg", "video": "video/hatlo-reels.mp4"}];
 document.querySelectorAll('img[data-k]').forEach(function(i){i.src=IMG[i.dataset.k]});
+document.querySelectorAll('.sa-inline-video').forEach(function(v){
+  v.addEventListener('click',function(e){e.stopPropagation()});
+  v.addEventListener('pointerdown',function(e){e.stopPropagation()});
+  var startMuted=function(){v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});};
+  if(v.readyState>=2)startMuted();else v.addEventListener('loadeddata',startMuted,{once:true});
+});
 var cards=[].slice.call(document.querySelectorAll('#grid .w')),chips=[].slice.call(document.querySelectorAll('.chip')),
 q=document.querySelector('.search'),grid=document.getElementById('grid'),empty=document.getElementById('empty'),f='all';
 function apply(){var t=q.value.trim(),n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.cat===f)&&(!t||c.textContent.indexOf(t)>-1);c.hidden=!ok;if(ok)n++});empty.classList.toggle('show',n===0)}
