@@ -2444,3 +2444,45 @@ body.editorial-project:after{display:none!important;content:none!important}
   .editorial-project *:before,
   .editorial-project *:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
+
+
+/* Alternate list presentation for the archive view switch */
+.editorial-archive .portfolio-grid.is-list-view{
+  grid-template-columns:minmax(0,1fr);
+  gap:22px;
+}
+.editorial-archive .portfolio-grid.is-list-view .project-card,
+.editorial-archive .portfolio-grid.is-list-view .project-card--wide,
+.editorial-archive .portfolio-grid.is-list-view .project-card--narrow{
+  grid-column:1;
+}
+.editorial-archive .portfolio-grid.is-list-view .project-card-link{
+  display:grid;
+  grid-template-columns:minmax(220px,.78fr) minmax(0,1fr);
+  align-items:center;
+  gap:26px;
+  padding-bottom:22px;
+  border-bottom:1px solid #e3e1d9;
+}
+.editorial-archive .portfolio-grid.is-list-view .project-media,
+.editorial-archive .portfolio-grid.is-list-view .project-card:nth-child(4n+2) .project-media{
+  aspect-ratio:1.55;
+}
+.editorial-archive .portfolio-grid.is-list-view .project-meta{
+  align-items:flex-start;
+  padding:0;
+}
+.editorial-archive .portfolio-grid.is-list-view .project-title{
+  font-size:clamp(17px,2vw,24px);
+}
+@media(max-width:700px){
+  .editorial-archive .portfolio-grid.is-list-view .project-card-link{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .editorial-archive .portfolio-grid.is-list-view .project-media,
+  .editorial-archive .portfolio-grid.is-list-view .project-card:nth-child(4n+2) .project-media{
+    aspect-ratio:1.2;
+  }
+  .editorial-archive .portfolio-grid.is-list-view .project-meta{padding-top:0}
+}
