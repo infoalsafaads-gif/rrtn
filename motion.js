@@ -39,7 +39,7 @@
 
   const revealTargets = (root = document) => {
     if (reducedMotion || !("IntersectionObserver" in window)) return;
-    const selector = ".hero h1,.intro,.cta,.sec-head,.w,.svc,.contact h2,.infinite-gallery-head,.ticker-card,.archive-hero-copy,.archive-feature-card,.archive-work-heading,.portfolio-toolbar,.project-card,.project-header,.project-cover,.project-content,.related-card";
+    const selector = ".hero h1,.intro,.cta,.sec-head,.w,.svc,.contact h2,.infinite-gallery-head,.ticker-card,.archive-hero-copy,.archive-feature-card,.archive-work-heading,.portfolio-toolbar,.project-card,.project-header,.project-cover,.project-content,.related-card,.sa-service-wheel-section,.sa-video-card";
     const nodes = root.querySelectorAll ? root.querySelectorAll(selector) : [];
     nodes.forEach((node, index) => {
       if (node.classList.contains("sa-reveal")) return;
