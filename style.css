@@ -2639,3 +2639,66 @@ body.editorial-home{
     color:#171815;
   }
 }
+
+
+/* HARD LIGHT-MODE LOCK — keep the website white even when the visitor uses system dark mode */
+:root,
+html,
+body,
+body.editorial-home,
+body.editorial-archive,
+body.editorial-project{
+  color-scheme:only light !important;
+  background-color:#ffffff !important;
+}
+html{
+  background:#ffffff !important;
+  color-scheme:only light !important;
+}
+body.editorial-home,
+body.editorial-archive,
+body.editorial-project{
+  background:#ffffff !important;
+  background-image:none !important;
+  color:#171815 !important;
+}
+.editorial-home *,
+.editorial-archive *,
+.editorial-project *{
+  color-scheme:only light;
+}
+input,
+textarea,
+select,
+button{
+  color-scheme:only light !important;
+}
+@media (prefers-color-scheme: dark){
+  :root,
+  html,
+  body,
+  body.editorial-home,
+  body.editorial-archive,
+  body.editorial-project{
+    color-scheme:only light !important;
+    background-color:#ffffff !important;
+  }
+  html,
+  body.editorial-home,
+  body.editorial-archive,
+  body.editorial-project{
+    background:#ffffff !important;
+    background-image:none !important;
+  }
+  body.editorial-home,
+  body.editorial-archive,
+  body.editorial-project{
+    color:#171815 !important;
+  }
+  input,
+  textarea,
+  select,
+  button{
+    color-scheme:only light !important;
+  }
+}
