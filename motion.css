@@ -388,3 +388,23 @@ body.cinematic-home .hero h1,body.cinematic-home .sec-head h2,body.cinematic-hom
 .sa-video-card .play{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--sa-gold);color:#080807;box-shadow:0 0 35px rgba(214,173,89,.3)}
 @media(max-width:640px){.sa-service-wheel{width:min(88vw,390px)}.sa-wheel-item{width:31%}.sa-wheel-core{width:35%}.sa-video-grid{grid-template-columns:1fr;max-width:480px}.sa-video-card .fr{aspect-ratio:16/10!important}}
 @media(prefers-reduced-motion:reduce){.sa-wheel-orbit,.sa-wheel-item{animation:none!important}}
+
+
+/* Desktop-only polish: bring the cinematic interactions forward on mouse/trackpad screens. */
+@media (min-width:761px) and (hover:hover) and (pointer:fine){
+  .sa-service-wheel{filter:drop-shadow(0 24px 42px rgba(0,0,0,.28));transition:filter .5s ease,transform .5s ease}
+  .sa-service-wheel:hover{filter:drop-shadow(0 28px 58px rgba(214,173,89,.16));transform:scale(1.025)}
+  .sa-wheel-orbit{animation-duration:18s;box-shadow:0 0 72px rgba(214,173,89,.14),inset 0 0 58px rgba(214,173,89,.06)}
+  .sa-wheel-item{transition:border-color .35s,background .35s,box-shadow .35s;cursor:default}
+  .sa-wheel-item:hover{border-color:#f3d58d;background:linear-gradient(145deg,rgba(64,49,24,.99),rgba(10,9,7,.99));box-shadow:0 16px 48px rgba(0,0,0,.42),0 0 48px rgba(243,213,141,.28);filter:brightness(1.3)}
+  .sa-video-card{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s}
+  .sa-video-card:hover{transform:translateY(-9px);filter:drop-shadow(0 20px 30px rgba(214,173,89,.12))}
+  .sa-video-card .fr{box-shadow:0 0 0 1px rgba(214,173,89,.12);transition:box-shadow .4s ease}
+  .sa-video-card:hover .fr{box-shadow:0 0 0 1px rgba(243,213,141,.65),0 18px 52px rgba(214,173,89,.12)}
+  .sa-video-card .play{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+  .sa-video-card:hover .play{transform:translate(-50%,-50%) scale(1.12);box-shadow:0 0 48px rgba(243,213,141,.55)}
+  .ticker-card,.w,.project-card{will-change:transform}
+}
+@media (min-width:761px) and (prefers-reduced-motion:no-preference){
+  .sa-service-wheel-section.sa-reveal.sa-visible .sa-wheel-orbit{animation-play-state:running}
+}
