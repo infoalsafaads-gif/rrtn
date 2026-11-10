@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "./portfolio-data.json?v=20261108-portfolio";
+  const DATA_URL = "./portfolio-data.json?v=20261110-cinematic-v1";
   const root = document.getElementById("projectDetail");
   if (!root) return;
 
@@ -41,6 +41,14 @@
       figure.append(image);
       if (block.caption) figure.append(make("figcaption", "", block.caption));
       target.append(figure);
+    } else if (block.type === "video" && isSafeAsset(block.src)) {
+      const video = document.createElement("video");
+      video.src = block.src;
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = "metadata";
+      if (isSafeAsset(block.poster)) video.poster = block.poster;
+      target.append(video);
     }
   };
 

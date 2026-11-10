@@ -1,7 +1,258 @@
 {
   "schemaVersion": 1,
-  "source": "Behance public portfolio import",
+  "source": "Verified project assets already included in the AL SAFA repository",
   "profileUrl": "https://www.behance.net/a2b6d985",
-  "lastImported": null,
-  "projects": []
+  "lastImported": "2026-11-10",
+  "projects": [
+    {
+      "slug": "al-safa-identity",
+      "title": "AL SAFA — هوية بصرية",
+      "category": "هوية بصرية",
+      "summary": "شعار وتطبيقات الهوية البصرية على المطبوعات والمنتجات وبطاقة الأعمال.",
+      "description": "شعار ومطبوعات وبطاقات أعمال لهوية AL SAFA للدعاية والإعلان، مع تطبيقات بصرية متناسقة على مجموعة من المواد.",
+      "coverImage": "./preview-assets/work-img01.webp",
+      "coverAlt": "التطبيق البصري لهوية AL SAFA",
+      "year": "2026",
+      "featured": true,
+      "services": [
+        "هوية بصرية",
+        "تطبيقات الهوية"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "مختارات من المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "مجموعة من التطبيقات والتصاميم الأصلية المنفذة لهذا المشروع."
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img01.webp",
+          "alt": "AL SAFA — التصميم 1"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img02.webp",
+          "alt": "AL SAFA — التصميم 2"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img03.webp",
+          "alt": "AL SAFA — التصميم 3"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img04.webp",
+          "alt": "AL SAFA — التصميم 4"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img05.webp",
+          "alt": "AL SAFA — التصميم 5"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img06.webp",
+          "alt": "AL SAFA — التصميم 6"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img07.webp",
+          "alt": "AL SAFA — التصميم 7"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img08.webp",
+          "alt": "AL SAFA — التصميم 8"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img09.webp",
+          "alt": "AL SAFA — التصميم 9"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img10.webp",
+          "alt": "AL SAFA — التصميم 10"
+        }
+      ]
+    },
+    {
+      "slug": "fitzone-social-campaign",
+      "title": "FitZone GYM — حملة سوشيال ميديا",
+      "category": "حملات سوشيال",
+      "summary": "سلسلة منشورات إعلانية لنادٍ رياضي بأسلوب بصري موحّد.",
+      "description": "تصاميم منشورات لنادٍ رياضي بعناوين تحفيزية وإضاءة حمراء وتفاصيل الاشتراك في شريط سفلي موحّد.",
+      "coverImage": "./preview-assets/work-img11.webp",
+      "coverAlt": "تصميم من حملة FitZone GYM",
+      "year": "2026",
+      "featured": true,
+      "services": [
+        "تصميم سوشيال ميديا",
+        "حملات إعلانية"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "مختارات من المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "مجموعة من التطبيقات والتصاميم الأصلية المنفذة لهذا المشروع."
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img11.webp",
+          "alt": "FitZone GYM — التصميم 1"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img12.webp",
+          "alt": "FitZone GYM — التصميم 2"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img13.webp",
+          "alt": "FitZone GYM — التصميم 3"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img14.webp",
+          "alt": "FitZone GYM — التصميم 4"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img15.webp",
+          "alt": "FitZone GYM — التصميم 5"
+        }
+      ]
+    },
+    {
+      "slug": "hatlo-sunflower-campaign",
+      "title": "Hatlo — حملة بذور عباد الشمس",
+      "category": "حملات سوشيال",
+      "summary": "حملة مرئية لمنتج Hatlo بمجموعة من المشاهد والأفكار الإعلانية.",
+      "description": "سلسلة منشورات لمنتج بذور عباد الشمس تحت شعار «طعم من عالم تاني»، بمشاهد متنوعة: حقل، فضاء، ألعاب، ولمّات أصدقاء.",
+      "coverImage": "./preview-assets/work-img17.webp",
+      "coverAlt": "تصميم من حملة Hatlo لبذور عباد الشمس",
+      "year": "2026",
+      "featured": true,
+      "services": [
+        "تصميم إعلاني",
+        "محتوى سوشيال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "مختارات من المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "مجموعة من التطبيقات والتصاميم الأصلية المنفذة لهذا المشروع."
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img16.webp",
+          "alt": "Hatlo — التصميم 1"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img17.webp",
+          "alt": "Hatlo — التصميم 2"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img18.webp",
+          "alt": "Hatlo — التصميم 3"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img19.webp",
+          "alt": "Hatlo — التصميم 4"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img20.webp",
+          "alt": "Hatlo — التصميم 5"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img21.webp",
+          "alt": "Hatlo — التصميم 6"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img22.webp",
+          "alt": "Hatlo — التصميم 7"
+        },
+        {
+          "type": "image",
+          "src": "./preview-assets/work-img23.webp",
+          "alt": "Hatlo — التصميم 8"
+        }
+      ]
+    },
+    {
+      "slug": "hatlo-video-ad",
+      "title": "Hatlo — إعلان فيديو",
+      "category": "فيديو",
+      "summary": "إعلان فيديو عمودي للمنتج بمعالجة بصرية إعلانية.",
+      "description": "إعلان فيديو بصيغة عمودية للمنتج، بنص مرافق ومونتاج.",
+      "coverImage": "./preview-assets/video-hatlo-ad.jpg",
+      "coverAlt": "ملصق إعلان فيديو Hatlo",
+      "year": "2026",
+      "featured": true,
+      "services": [
+        "إنتاج فيديو",
+        "مونتاج"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "إعلان المنتج"
+        },
+        {
+          "type": "paragraph",
+          "text": "مشاهدة الإعلان مباشرة داخل دراسة المشروع."
+        },
+        {
+          "type": "video",
+          "src": "./preview-assets/video-hatlo-ad.mp4",
+          "poster": "./preview-assets/video-hatlo-ad.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "hatlo-social-reel",
+      "title": "Hatlo — ريلز",
+      "category": "فيديو",
+      "summary": "فيديو قصير لوسائل التواصل يعرض المنتج.",
+      "description": "فيديو مربّع للسوشيال ميديا يعرض المنتج ويختم ببيانات التواصل.",
+      "coverImage": "./preview-assets/video-hatlo-reels.jpg",
+      "coverAlt": "ملصق فيديو Hatlo Reels",
+      "year": "2026",
+      "featured": false,
+      "services": [
+        "إنتاج فيديو",
+        "محتوى سوشيال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "فيديو قصير للسوشيال ميديا"
+        },
+        {
+          "type": "paragraph",
+          "text": "شاهد الفيديو بجودة العرض الأصلية."
+        },
+        {
+          "type": "video",
+          "src": "./preview-assets/video-hatlo-reels.mp4",
+          "poster": "./preview-assets/video-hatlo-reels.jpg"
+        }
+      ]
+    }
+  ]
 }
