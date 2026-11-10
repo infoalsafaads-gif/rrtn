@@ -1,17 +1,17 @@
 /* AL SAFA — editorial creative studio, inspired by MetaLab's clarity */
 :root{
   color-scheme:light;
-  --paper:#f5f3ee;
-  --paper-deep:#ebe8e0;
-  --ink:#171816;
-  --ink-soft:#41433f;
-  --muted:#777a73;
-  --line:#d9d7cf;
-  --line-dark:rgba(255,255,255,.18);
-  --gold:#b58b4e;
-  --gold-light:#e4c58f;
-  --violet:#8068a4;
-  --night:#171915;
+  --paper:#f6f4ef;
+  --paper-deep:#e9e4d9;
+  --ink:#191a17;
+  --ink-soft:#343630;
+  --muted:#74766e;
+  --line:#d8d3c8;
+  --line-dark:rgba(255,255,255,.2);
+  --gold:#a9783f;
+  --gold-light:#d9b783;
+  --violet:#947653;
+  --night:#151612;
   --white:#fffefa;
   --page-width:1280px;
   --ease:cubic-bezier(.2,.72,.22,1);
@@ -2052,3 +2052,28 @@ body{background:radial-gradient(ellipse at 50% -15%,rgba(201,161,93,.10),transpa
 @media(prefers-reduced-motion:reduce){
   .editorial-home *,.editorial-home *:before,.editorial-home *:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
+
+/* SITE-WIDE COLOR SYSTEM — high contrast charcoal, warm ivory and bronze */
+:root{
+  --paper:#f6f4ef;
+  --paper-deep:#e9e4d9;
+  --ink:#191a17;
+  --ink-soft:#343630;
+  --muted:#74766e;
+  --line:#d8d3c8;
+  --gold:#a9783f;
+  --gold-light:#d9b783;
+  --violet:#947653;
+  --night:#151612;
+  --white:#fffefa;
+  --accent:#947653;
+}
+html,body{background:var(--paper);color:var(--ink)}
+::selection{background:#c9a77a;color:#151612}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#947653}
+/* Bring shared navigation, controls and interface accents onto one palette */
+.site-header,.main-header,.work-header,.portfolio-header{border-color:var(--line)}
+button,.button,.btn,.cta-button,.primary-button,.filter-button.is-active,.filter-btn.active{--button-accent:#947653}
+button:hover,.button:hover,.btn:hover,.cta-button:hover,.primary-button:hover{border-color:#947653}
+.text-accent,.accent,.eyebrow,.section-kicker,.project-category,.project-number,.nav-link.active{color:#947653}
+.editorial-home{--paper:#f6f4ef;--ink:#191a17;--muted:#74766e;--line:#d8d3c8;--accent:#947653;--violet:#947653}
