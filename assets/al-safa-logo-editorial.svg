@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 199" role="img" aria-labelledby="title desc">
+<title id="title">AL SAFA Advertising &amp; Media</title>
+<desc id="desc">AL SAFA logo in charcoal and muted olive</desc>
+<g fill="#171815">
+<path d="M132 8h39l31 44L70 90z"/>
+<path d="M5 190 45 135 290 61 269 73 114 190z"/>
+<path d="m185 106 42-19 72 103h-53z"/>
+</g>
+<path fill="#858873" d="m281 20 47-11-23 40z"/>
+<g fill="#858873"><path d="M120 157h15v31h-15z"/><path d="M141 145h14v43h-14z"/><path d="M162 132h15v56h-15z"/></g>
+<path fill="#858873" d="M354 52h7v117h-7z"/>
+<text x="392" y="120" fill="#171815" font-family="Manrope,Montserrat,Arial,sans-serif" font-size="76" font-weight="600" letter-spacing="1">AL SAFA</text>
+<text x="401" y="165" fill="#858873" font-family="Manrope,Arial,sans-serif" font-size="29" font-style="italic" font-weight="700">Advertising &amp; Media</text>
+</svg>
