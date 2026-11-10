@@ -1829,7 +1829,7 @@ body{background:radial-gradient(ellipse at 50% -15%,rgba(201,161,93,.10),transpa
    EDITORIAL HOMEPAGE — visual direction inspired by abnegm.com
    Original AL SAFA content, responsive, no fabricated claims.
    ========================================================= */
-.editorial-home{--paper:#f5f3ee;--ink:#171816;--muted:#777970;--line:#d9d7cf;--accent:#8b7655;--violet:#8068a4;background:var(--paper)}
+.editorial-home{--paper:#f6f4ef;--ink:#191a17;--muted:#777970;--line:#dedbd2;--accent:#947653;--violet:#947653;background:var(--paper)}
 .editorial-home .page-shell{width:min(1320px,calc(100% - 88px))}
 .editorial-header{min-height:92px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:25px;border-bottom:1px solid var(--line)}
 .editorial-brand{display:inline-flex;width:150px;align-items:center}
@@ -2001,4 +2001,54 @@ body{background:radial-gradient(ellipse at 50% -15%,rgba(201,161,93,.10),transpa
  .editorial-home .hero-contact-first .hero-call-link{justify-content:center;min-height:43px;border:1px solid var(--line);padding:0 10px}
  .editorial-home .hero-portfolio-link{justify-content:center;min-height:43px;border:1px solid var(--line);padding:0 8px}
  .editorial-home .hero-contact-note{margin-top:12px;font-size:8px}
+}
+
+
+/* ABNEGM-inspired refined neutral palette — AL SAFA identity */
+.editorial-home{
+  --paper:#f6f4ef;
+  --ink:#191a17;
+  --muted:#777970;
+  --line:#dedbd2;
+  --accent:#947653;
+  --violet:#947653;
+  background:var(--paper);
+}
+.editorial-home .editorial-header,
+.editorial-home .editorial-contact,
+.editorial-home .editorial-footer{border-color:var(--line)}
+.editorial-home .editorial-art-frame{background:#e9e5dc}
+.editorial-home .editorial-about{background:#ece9e1}
+.editorial-home .editorial-process{background:#191a17}
+.editorial-home .editorial-primary-link,
+.editorial-home .editorial-header-cta,
+.editorial-home .editorial-mobile-bar a{background:#191a17}
+.editorial-home .editorial-primary-link:hover,
+.editorial-home .editorial-header-cta:hover{background:#947653}
+.editorial-home .editorial-hero h1 em,
+.editorial-home .editorial-about-heading h2 em,
+.editorial-home .editorial-process-intro h2 em,
+.editorial-home .editorial-contact h2 em,
+.editorial-home .editorial-section-heading h2 span,
+.editorial-home .editorial-text-link span,
+.editorial-home .editorial-footer>div a:hover{color:#947653}
+.editorial-home .editorial-eyebrow i,
+.editorial-home .editorial-hero-meta span+span{border-color:#dedbd2}
+.editorial-home .editorial-art-caption span:first-child,
+.editorial-home .editorial-service-row>span{color:#947653}
+.editorial-home .editorial-process-intro .section-kicker,
+.editorial-home .editorial-process-steps article>span{color:#c4a783}
+.editorial-home .editorial-mobile-bar{
+  border-color:rgba(25,26,23,.14);
+  background:rgba(246,244,239,.97);
+}
+.editorial-home .editorial-mobile-bar a+ a{
+  background:transparent;
+  color:#191a17;
+  border-color:#dedbd2;
+}
+.editorial-home a:focus-visible,
+.editorial-home button:focus-visible{outline-color:#947653}
+@media(prefers-reduced-motion:reduce){
+  .editorial-home *,.editorial-home *:before,.editorial-home *:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
