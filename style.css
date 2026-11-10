@@ -2077,3 +2077,53 @@ button,.button,.btn,.cta-button,.primary-button,.filter-button.is-active,.filter
 button:hover,.button:hover,.btn:hover,.cta-button:hover,.primary-button:hover{border-color:#947653}
 .text-accent,.accent,.eyebrow,.section-kicker,.project-category,.project-number,.nav-link.active{color:#947653}
 .editorial-home{--paper:#f6f4ef;--ink:#191a17;--muted:#74766e;--line:#d8d3c8;--accent:#947653;--violet:#947653}
+
+
+/* ABNEGM REFERENCE PALETTE — warm white, ink, restrained stone accent */
+:root{
+  --paper:#f8f7f3;
+  --paper-deep:#eeede7;
+  --ink:#171815;
+  --ink-soft:#343630;
+  --muted:#777970;
+  --line:#e3e1d9;
+  --gold:#8e9079;
+  --gold-light:#c9c8b5;
+  --violet:#8e9079;
+  --night:#171815;
+  --white:#fffefa;
+  --accent:#8e9079;
+}
+html,body{background:#f8f7f3;color:#171815}
+.editorial-home{
+  --paper:#f8f7f3;
+  --ink:#171815;
+  --muted:#777970;
+  --line:#e3e1d9;
+  --accent:#8e9079;
+  --violet:#8e9079;
+  background:#f8f7f3;
+}
+.editorial-home .editorial-about{background:#eeede7}
+.editorial-home .editorial-process{background:#171815}
+.editorial-home .editorial-primary-link,
+.editorial-home .editorial-header-cta,
+.editorial-home .editorial-mobile-bar a{background:#171815}
+.editorial-home .editorial-primary-link:hover,
+.editorial-home .editorial-header-cta:hover{background:#777a68}
+.editorial-home .editorial-hero h1 em,
+.editorial-home .editorial-about-heading h2 em,
+.editorial-home .editorial-process-intro h2 em,
+.editorial-home .editorial-contact h2 em,
+.editorial-home .editorial-section-heading h2 span,
+.editorial-home .editorial-text-link span,
+.editorial-home .editorial-footer>div a:hover{color:#858873}
+.editorial-home .editorial-art-caption span:first-child,
+.editorial-home .editorial-service-row>span{color:#858873}
+.editorial-home .editorial-mobile-bar{
+  border-color:rgba(23,24,21,.14);
+  background:rgba(248,247,243,.97);
+}
+.editorial-home a:focus-visible,
+.editorial-home button:focus-visible{outline-color:#858873}
+::selection{background:#d9d8c9;color:#171815}
