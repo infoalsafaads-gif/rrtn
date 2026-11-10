@@ -172,6 +172,7 @@
       root.append(sourceLink);
     }
 
+    window.AlSafaSite?.observeReveals();
     document.title = project.title + " | AL SAFA";
     const description = project.summary || project.description || "دراسة حالة من أعمال الصفا للدعاية والإعلان.";
     const metaDescription = document.querySelector('meta[name="description"]');
