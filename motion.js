@@ -5,9 +5,7 @@
   const body = document.body;
 
   if (intro) {
-    let alreadySeen = false;
-    try { alreadySeen = sessionStorage.getItem("al-safa-cinematic-intro") === "1"; } catch (_) {}
-    if (reducedMotion || alreadySeen) {
+    if (reducedMotion) {
       intro.remove();
     } else {
       body.classList.add("sa-intro-running");
@@ -17,11 +15,11 @@
         finished = true;
         body.classList.remove("sa-intro-running");
         intro.classList.add("is-leaving");
-        try { sessionStorage.setItem("al-safa-cinematic-intro", "1"); } catch (_) {}
         window.setTimeout(() => intro.remove(), 700);
       };
       intro.querySelector(".cinematic-skip")?.addEventListener("click", finish, { once: true });
-      window.setTimeout(finish, 2150);
+      // Keep the logo intro visible for 3 seconds on every page entry.
+      window.setTimeout(finish, 3000);
     }
   }
 
