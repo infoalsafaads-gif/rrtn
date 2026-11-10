@@ -145,7 +145,7 @@
   };
 
   const setupNavigation = () => {
-    const links = [...document.querySelectorAll('.main-nav a[href^="#"]')];
+    const links = [...document.querySelectorAll('.main-nav a[href^="#"], .editorial-nav a[href^="#"]')];
     if (!links.length || !("IntersectionObserver" in window)) return;
 
     const sections = links
