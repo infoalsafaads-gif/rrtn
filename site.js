@@ -120,7 +120,7 @@
 
   const observeReveals = () => {
     const targets = document.querySelectorAll(
-      ".hero-copy, .hero-visual, .contact-panel, .contact-strip, .portfolio-heading, .portfolio-toolbar, .project-card, .section-heading, .service-card, .service-row, .approach-intro, .approach-step, .final-cta"
+      ".hero-copy, .hero-visual, .contact-panel, .contact-strip, .portfolio-heading, .portfolio-toolbar, .project-card, .section-heading, .service-card, .service-row, .approach-intro, .approach-step, .final-cta, .editorial-hero-copy, .editorial-hero-art, .editorial-section-heading, .editorial-about, .editorial-service-row, .editorial-process, .editorial-contact, .archive-hero-copy, .archive-feature-card, .project-header, .project-cover"
     );
 
     if (reducedMotion || !("IntersectionObserver" in window)) {
