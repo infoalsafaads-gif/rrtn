@@ -1732,3 +1732,94 @@ body{background:radial-gradient(ellipse at 50% -15%,rgba(201,161,93,.10),transpa
   .work-page .work-intro{padding:28px 0 58px}
   .work-page .work-intro h1{font-size:clamp(46px,12vw,68px)}
 }
+
+
+/* THREE-AXIS SERVICE ORBIT — editorial motion feature for the work archive */
+.work-page .service-orbit-section{
+  min-height:490px;margin:0 auto 110px;padding:58px clamp(24px,5vw,72px);
+  display:grid;grid-template-columns:minmax(240px,.8fr) minmax(360px,1.2fr);
+  align-items:center;gap:clamp(28px,7vw,100px);
+  position:relative;overflow:hidden;isolation:isolate;
+  border:1px solid rgba(201,161,93,.2);
+  background:radial-gradient(ellipse at 72% 50%,rgba(201,161,93,.095),transparent 42%),linear-gradient(135deg,#11100d,#090908 68%);
+}
+.work-page .service-orbit-section:before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.32;
+  background-image:linear-gradient(rgba(201,161,93,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(201,161,93,.07) 1px,transparent 1px);
+  background-size:54px 54px;mask-image:radial-gradient(ellipse at 72% 50%,black,transparent 70%);
+}
+.work-page .service-orbit-copy{position:relative;z-index:2}
+.work-page .service-orbit-copy h2{margin:17px 0 14px;color:#f5eedf;font-size:clamp(42px,5.5vw,68px);font-weight:900;line-height:1.2;letter-spacing:-1.5px}
+.work-page .service-orbit-copy h2 span{color:var(--gold-light)}
+.work-page .service-orbit-copy p{max-width:320px;margin:0;color:#b1a58f;font-size:13px;line-height:2}
+.work-page .service-orbit{
+  width:min(100%,510px);aspect-ratio:1;justify-self:center;position:relative;
+  display:grid;place-items:center;perspective:950px;isolation:isolate;
+}
+.work-page .orbit-glow{
+  position:absolute;width:54%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,161,93,.17),rgba(201,161,93,.035) 48%,transparent 72%);
+  filter:blur(13px);animation:orbitPulse 5s ease-in-out infinite alternate;
+}
+.work-page .orbit-ring{
+  position:absolute;inset:10%;border:1px solid rgba(218,184,121,.28);border-radius:50%;
+  box-shadow:inset 0 0 28px rgba(201,161,93,.025),0 0 25px rgba(201,161,93,.035);
+  transform-style:preserve-3d;pointer-events:none;
+}
+.work-page .orbit-ring-one{animation:orbitAxisOne 13s linear infinite}
+.work-page .orbit-ring-two{inset:17%;border-color:rgba(239,212,154,.42);animation:orbitAxisTwo 17s linear infinite}
+.work-page .orbit-ring-three{inset:5% 24%;border-color:rgba(201,161,93,.2);animation:orbitAxisThree 21s linear infinite}
+.work-page .orbit-center{
+  width:34%;aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  border:1px solid rgba(239,212,154,.58);
+  background:radial-gradient(circle at 35% 25%,#292216,#0c0b08 72%);
+  box-shadow:0 0 0 9px rgba(201,161,93,.035),0 0 48px rgba(201,161,93,.13),inset 0 0 28px rgba(201,161,93,.08);
+  z-index:3;transform:translateZ(28px)
+}
+.work-page .orbit-center-mark{color:var(--gold-light);font:900 clamp(24px,3vw,37px)/1 Arial,sans-serif;letter-spacing:-4px}
+.work-page .orbit-center strong{color:#f5eedf;font:900 10px/1 Arial,sans-serif;letter-spacing:2px}
+.work-page .orbit-center small{color:#a99673;font:700 6px/1.4 "Manrope",Arial,sans-serif;letter-spacing:1.5px}
+.work-page .orbit-node{
+  width:104px;min-height:106px;position:absolute;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+  border:1px solid rgba(201,161,93,.48);border-radius:50%;
+  background:linear-gradient(145deg,rgba(34,29,19,.97),rgba(10,10,8,.97));
+  box-shadow:0 12px 38px rgba(0,0,0,.42),inset 0 0 22px rgba(201,161,93,.06);
+  color:#f5eedf;text-align:center;backdrop-filter:blur(8px);
+  animation:orbitNodeFloat 4.5s ease-in-out infinite;
+}
+.work-page .orbit-node:after{content:"";position:absolute;inset:-6px;border:1px solid rgba(201,161,93,.12);border-radius:50%}
+.work-page .orbit-node-icon{color:var(--gold-light);font:400 22px/1 Arial,sans-serif}
+.work-page .orbit-node strong{font-size:13px;font-weight:900}
+.work-page .orbit-node small{color:#aa9876;font:700 7px/1.4 "Manrope",Arial,sans-serif;letter-spacing:1.3px}
+.work-page .orbit-node-design{top:5%;right:17%;animation-delay:-1.2s}
+.work-page .orbit-node-print{bottom:10%;right:8%;animation-delay:-2.6s}
+.work-page .orbit-node-delivery{bottom:10%;left:8%;animation-delay:-.5s}
+.work-page .orbit-caption{
+  position:absolute;bottom:1%;left:50%;transform:translateX(-50%);
+  color:#8f7b57;font:700 7px/1.4 "Manrope",Arial,sans-serif;letter-spacing:2px;white-space:nowrap;
+}
+@keyframes orbitAxisOne{from{transform:rotateX(68deg) rotateZ(0deg)}to{transform:rotateX(68deg) rotateZ(360deg)}}
+@keyframes orbitAxisTwo{from{transform:rotateY(64deg) rotateZ(0deg)}to{transform:rotateY(64deg) rotateZ(-360deg)}}
+@keyframes orbitAxisThree{from{transform:rotateX(74deg) rotateY(55deg) rotateZ(0deg)}to{transform:rotateX(74deg) rotateY(55deg) rotateZ(360deg)}}
+@keyframes orbitNodeFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@keyframes orbitPulse{from{opacity:.55;scale:.9}to{opacity:1;scale:1.08}}
+@media(max-width:760px){
+  .work-page .service-orbit-section{
+    min-height:0;margin:0 auto 75px;padding:36px 17px 24px;
+    grid-template-columns:1fr;gap:15px;text-align:center;
+  }
+  .work-page .service-orbit-copy h2{font-size:clamp(37px,10vw,49px);margin:10px 0 7px}
+  .work-page .service-orbit-copy p{max-width:100%;font-size:11px}
+  .work-page .service-orbit{width:min(100%,390px)}
+  .work-page .orbit-node{width:83px;min-height:85px}
+  .work-page .orbit-node strong{font-size:11px}
+  .work-page .orbit-node-icon{font-size:19px}
+  .work-page .orbit-node-design{top:5%;right:14%}
+  .work-page .orbit-node-print{bottom:11%;right:4%}
+  .work-page .orbit-node-delivery{bottom:11%;left:4%}
+  .work-page .orbit-center{width:36%}
+  .work-page .orbit-caption{font-size:6px;letter-spacing:1.3px}
+}
+@media(prefers-reduced-motion:reduce){
+  .work-page .orbit-ring,.work-page .orbit-glow,.work-page .orbit-node{animation:none!important}
+}
