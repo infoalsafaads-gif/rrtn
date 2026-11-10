@@ -1546,3 +1546,189 @@ body{background:radial-gradient(ellipse at 50% -15%,rgba(201,161,93,.10),transpa
   .contact-first-logo{width:min(100%,320px)}
   .contact-first-logo img{max-height:82px}
 }
+
+
+/* AL SAFA — dark editorial archive, original layout and real content only */
+.work-page{
+  color-scheme:dark;
+  --paper:#080807;
+  --paper-deep:#11100d;
+  --ink:#f5eedf;
+  --ink-soft:#d7cbb4;
+  --muted:#a49a88;
+  --line:rgba(201,161,93,.22);
+  --gold:#c9a15d;
+  --gold-light:#efd49a;
+  --violet:#d6b879;
+  --white:#f7f3eb;
+  background:#080807;
+  color:#f5eedf;
+}
+.work-page .ambient{display:none}
+.work-page .site-header{
+  background:rgba(8,8,7,.94);
+  border-bottom:1px solid rgba(201,161,93,.22);
+}
+.work-page .brand-mark{color:#f5eedf;border-color:var(--gold)}
+.work-page .brand-mark span{color:var(--gold-light)}
+.work-page .brand-copy strong{color:#f5eedf}
+.work-page .brand-copy small{color:#9e927c}
+.work-page .nav-link{color:#b9ad99}
+.work-page .nav-link:hover,.work-page .nav-link.active{color:#fff}
+.work-page .nav-link:after{background:var(--gold-light)}
+.work-page .header-cta{
+  color:#090806;background:linear-gradient(110deg,#efd49a,#bd914f);
+  border-color:#c9a15d;
+}
+.work-page .header-cta:hover{color:#efd49a;background:transparent;border-color:#c9a15d}
+.work-page .contact-first-screen{
+  min-height:min(780px,calc(100svh - 88px));
+  padding:clamp(50px,8vh,100px) 22px 78px;
+  background:
+    radial-gradient(ellipse at 72% 42%,rgba(201,161,93,.09),transparent 38%),
+    #080807;
+}
+.work-page .contact-first-screen:before{
+  background:
+    linear-gradient(90deg,transparent 49.9%,rgba(201,161,93,.055) 50%,transparent 50.1%),
+    linear-gradient(rgba(201,161,93,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,161,93,.025) 1px,transparent 1px);
+  background-size:auto,72px 72px,72px 72px;
+  mask-image:linear-gradient(to bottom,black,transparent 92%);
+}
+.work-page .contact-first-inner{
+  width:min(100%,1080px);
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(340px,.82fr);
+  grid-template-rows:auto auto auto;
+  align-items:center;
+  column-gap:clamp(45px,8vw,120px);
+  row-gap:18px;
+  text-align:right;
+}
+.work-page .contact-first-logo{
+  grid-column:1;grid-row:1;
+  width:min(100%,480px);margin:0 0 12px;
+  justify-self:start;
+}
+.work-page .contact-first-logo img{max-height:125px;object-position:right center}
+.work-page .contact-first-copy{
+  grid-column:1;grid-row:2;
+  margin:0;max-width:550px;text-align:right;
+}
+.work-page .contact-first-kicker{font-size:9px;color:#d8bd88}
+.work-page .contact-first-copy h1{
+  margin:17px 0 12px;
+  font-size:clamp(38px,5.3vw,68px);
+  line-height:1.22;letter-spacing:-1.2px;
+}
+.work-page .contact-first-copy p{font-size:14px;color:#b4a78f}
+.work-page .contact-first-actions{
+  grid-column:2;grid-row:1/3;
+  width:100%;max-width:470px;gap:12px;
+}
+.work-page .contact-first-action{
+  min-height:82px;
+  grid-template-columns:48px minmax(0,1fr) 24px;
+  gap:16px;padding:13px 17px;
+  border-color:rgba(201,161,93,.32);
+  background:linear-gradient(110deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+}
+.work-page .contact-first-action.is-primary{
+  background:linear-gradient(110deg,#efd49a,#bd914f);
+  border-color:#c9a15d;
+}
+.work-page .contact-first-action-icon{width:44px;height:44px}
+.work-page .contact-first-action strong{font-size:14px}
+.work-page .contact-first-action small{font-size:11px}
+.work-page .contact-first-footer{
+  grid-column:1/-1;grid-row:3;
+  width:100%;max-width:none;margin:32px 0 0;padding-top:19px;
+  border-color:rgba(201,161,93,.25);
+}
+.work-page .contact-first-footer>span{font-size:11px}
+.work-page .contact-first-footer a{font-size:11px}
+.work-page .contact-first-index{max-width:1280px;margin:auto;padding:0 22px;color:#a68a5d}
+.work-page .work-intro{padding:42px 0 86px;border-top:1px solid rgba(201,161,93,.15)}
+.work-page .project-breadcrumbs{color:#938975}
+.work-page .project-breadcrumbs a{color:var(--gold-light)}
+.work-page .work-intro h1{color:#f5eedf}
+.work-page .work-intro h1 span{color:var(--gold-light)}
+.work-page .work-intro>p{color:#b1a58f}
+.work-page .section-kicker{color:#c7aa76}
+.work-page .portfolio-heading h2,
+.work-page .archive-portfolio .portfolio-heading h2{color:#f5eedf}
+.work-page .portfolio-heading p,
+.work-page .section-heading-side p{color:#b1a58f}
+.work-page .portfolio-heading h2 span{color:var(--gold-light)}
+.work-page .portfolio-profile-link{
+  color:#efd49a;border-color:rgba(201,161,93,.42);
+}
+.work-page .portfolio-profile-link:hover{color:#fff;border-color:var(--gold-light)}
+.work-page .portfolio-toolbar{border-color:rgba(201,161,93,.23)}
+.work-page .portfolio-filter{color:#b9ad99}
+.work-page .portfolio-filter:hover{color:#fff;border-color:rgba(201,161,93,.45)}
+.work-page .portfolio-filter[aria-pressed="true"]{
+  color:#080807;background:#d2b174;border-color:#d2b174;
+}
+.work-page .portfolio-search{border-color:rgba(201,161,93,.28);color:#c5b99f}
+.work-page .portfolio-search input{color:#f5eedf}
+.work-page .portfolio-search input::placeholder{color:#918675}
+.work-page .portfolio-search kbd,
+.work-page .portfolio-sort,
+.work-page .portfolio-view-toggle{border-color:rgba(201,161,93,.28);color:#d6c7ab}
+.work-page .portfolio-sort{background:#11100d}
+.work-page .portfolio-sort option{background:#11100d;color:#f5eedf}
+.work-page .view-toggle{color:#b5a78d}
+.work-page .view-toggle.is-active{background:#c9a15d;color:#080807}
+.work-page .portfolio-count{color:#a99c84}
+.work-page .portfolio-reset{color:#efd49a}
+.work-page .project-media{background:#17140f;border:1px solid rgba(201,161,93,.16)}
+.work-page .project-category{color:#d6b879}
+.work-page .project-title{color:#f5eedf}
+.work-page .project-summary,.work-page .project-year{color:#b1a58f}
+.work-page .portfolio-empty,
+.work-page .portfolio-no-results{
+  color:#f5eedf;background:linear-gradient(145deg,#14120e,#0b0b09);
+  border:1px solid rgba(201,161,93,.25);
+}
+.work-page .portfolio-empty h3,
+.work-page .portfolio-no-results h3{color:#f5eedf}
+.work-page .portfolio-empty p,
+.work-page .portfolio-no-results p{color:#b1a58f}
+.work-page .empty-kicker{color:#d6b879}
+.work-page .empty-action,
+.work-page .empty-retry{color:#080807;background:#d2b174;border-color:#d2b174}
+.work-page .archive-contact{border-color:rgba(201,161,93,.24)}
+.work-page .archive-contact h2{color:#f5eedf}
+.work-page .archive-contact .button-primary{
+  color:#080807;background:linear-gradient(110deg,#efd49a,#bd914f);border-color:#c9a15d;
+}
+.work-page .site-footer{border-color:rgba(201,161,93,.23);color:#a99c84}
+.work-page .footer-brand{color:#f5eedf}
+.work-page .footer-brand span,
+.work-page .site-footer p{color:#a99c84}
+.work-page .footer-top{color:#efd49a}
+.work-page .mobile-contact-dock{background:rgba(8,8,7,.97);border-color:rgba(201,161,93,.42)}
+@media(max-width:760px){
+  .work-page .contact-first-screen{min-height:auto;padding:45px 12px 75px}
+  .work-page .contact-first-inner{
+    width:min(100%,460px);display:flex;flex-direction:column;
+    align-items:stretch;gap:0;text-align:center;
+  }
+  .work-page .contact-first-logo{width:min(100%,360px);margin:0 auto 24px}
+  .work-page .contact-first-logo img{max-height:95px;object-position:center}
+  .work-page .contact-first-copy{margin:0 auto 22px;text-align:center}
+  .work-page .contact-first-copy h1{font-size:clamp(30px,8vw,43px);margin:11px 0 8px}
+  .work-page .contact-first-copy p{font-size:12px}
+  .work-page .contact-first-actions{width:100%;max-width:460px;gap:9px}
+  .work-page .contact-first-action{min-height:65px;padding:8px 11px;grid-template-columns:39px minmax(0,1fr) 18px}
+  .work-page .contact-first-action-icon{width:37px;height:37px}
+  .work-page .contact-first-action strong{font-size:12px}
+  .work-page .contact-first-action small{font-size:9px}
+  .work-page .contact-first-footer{margin-top:19px;padding-top:13px;gap:10px}
+  .work-page .contact-first-footer>span,.work-page .contact-first-footer a{font-size:9px}
+  .work-page .contact-first-index{bottom:12px;padding-inline:12px;font-size:7px}
+  .work-page .work-intro{padding:28px 0 58px}
+  .work-page .work-intro h1{font-size:clamp(46px,12vw,68px)}
+}
