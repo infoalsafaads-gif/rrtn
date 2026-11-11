@@ -178,7 +178,7 @@ body.lock{overflow:hidden}
 .sa-video-card .sa-inline-video{display:block;width:100%;height:100%;object-fit:contain;background:#080807}
 .sa-video-card .sa-inline-video::-webkit-media-controls-panel{background:linear-gradient(transparent,rgba(0,0,0,.72))}
 </style>
-<link rel="stylesheet" href="./motion.css?v=20261110-video-autoplay-v1">
+<link rel="stylesheet" href="./motion.css?v=20261111-service-orbit-v2">
 </head>
 <body class="cinematic-home">
 
@@ -255,13 +255,35 @@ body.lock{overflow:hidden}
 </section>
 
 <section class="sa-service-wheel-section wrap" aria-label="خدمات AL SAFA">
-  <div class="sec-head"><h2>من الفكرة إلى الانتشار</h2><p>ثلاث خدمات مترابطة، تدور حول علامتك التجارية.</p></div>
-  <div class="sa-service-wheel" aria-label="تصميم، طباعة، توزيع">
-    <div class="sa-wheel-orbit" aria-hidden="true"></div>
-    <div class="sa-wheel-core"><span>AL</span><b>SAFA</b><small>CREATIVE SERVICES</small></div>
-    <div class="sa-wheel-item sa-wheel-design"><span class="sa-wheel-icon">✳</span><b>تصميم</b><small>DESIGN</small></div>
-    <div class="sa-wheel-item sa-wheel-print"><span class="sa-wheel-icon">▤</span><b>طباعة</b><small>PRINT</small></div>
-    <div class="sa-wheel-item sa-wheel-distribute"><span class="sa-wheel-icon">↗</span><b>توزيع</b><small>DISTRIBUTION</small></div>
+  <div class="sa-wheel-panel">
+    <div class="sa-wheel-heading">
+      <span class="sa-wheel-kicker">THE AL SAFA SERVICE CIRCLE</span>
+      <h2>من الفكرة إلى الانتشار<span>.</span></h2>
+      <p>منظومة متكاملة تحوّل فكرتك إلى حضور ملموس.</p>
+    </div>
+    <div class="sa-service-wheel" aria-label="اختر إحدى خدماتنا">
+      <div class="sa-wheel-track" aria-hidden="true"><span class="sa-wheel-track-light"></span></div>
+      <div class="sa-wheel-ticks" aria-hidden="true"></div>
+      <div class="sa-wheel-spoke sa-spoke-one" aria-hidden="true"></div>
+      <div class="sa-wheel-spoke sa-spoke-two" aria-hidden="true"></div>
+      <div class="sa-wheel-spoke sa-spoke-three" aria-hidden="true"></div>
+      <div class="sa-wheel-core"><span class="sa-core-monogram">AS</span><b>AL SAFA</b><small>IDEA INTO IMPACT</small></div>
+      <button class="sa-wheel-item sa-wheel-design is-active" type="button" data-service="design" aria-pressed="true">
+        <span class="sa-wheel-index">01</span><span class="sa-wheel-icon" aria-hidden="true">✳</span><b>تصميم</b><small>DESIGN</small>
+      </button>
+      <button class="sa-wheel-item sa-wheel-print" type="button" data-service="print" aria-pressed="false">
+        <span class="sa-wheel-index">02</span><span class="sa-wheel-icon" aria-hidden="true">▤</span><b>طباعة</b><small>PRINT</small>
+      </button>
+      <button class="sa-wheel-item sa-wheel-distribute" type="button" data-service="distribution" aria-pressed="false">
+        <span class="sa-wheel-index">03</span><span class="sa-wheel-icon" aria-hidden="true">↗</span><b>توزيع</b><small>DISTRIBUTION</small>
+      </button>
+    </div>
+    <div class="sa-wheel-detail" aria-live="polite">
+      <span class="sa-detail-index">01 / SERVICE</span>
+      <div><h3>تصميم يصنع الانطباع</h3><p>هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.</p></div>
+      <span class="sa-detail-current">DESIGN STUDIO</span>
+    </div>
+    <div class="sa-wheel-foot"><span>اختَر الخدمة لاستكشافها</span><span class="sa-wheel-foot-line"></span><span>01 — 03</span></div>
   </div>
 </section>
 
@@ -338,6 +360,32 @@ document.getElementById('ovx').addEventListener('click',function(){history.pushS
 ob.addEventListener('click',function(e){if(e.target.tagName==='IMG'){lb.querySelector('img').src=e.target.src;lb.classList.add('open')}});
 lb.addEventListener('click',function(){lb.classList.remove('open')});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(lb.classList.contains('open'))lb.classList.remove('open');else if(ov.classList.contains('open'))document.getElementById('ovx').click()}});
+
+var serviceCopy={
+ design:{number:'01',title:'تصميم يصنع الانطباع',body:'هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.',tag:'DESIGN STUDIO'},
+ print:{number:'02',title:'طباعة تحوّل الفكرة إلى واقع',body:'نحوّل التصاميم إلى مطبوعات ومواد دعائية بجودة تشبه علامتك وتعكس تفاصيلها.',tag:'PRINT PRODUCTION'},
+ distribution:{number:'03',title:'توزيع يوصل رسالتك',body:'نساعد علامتك على الوصول والانتشار عبر حلول توزيع مدروسة تخدم هدفك.',tag:'BRAND REACH'}
+};
+var wheel=document.querySelector('.sa-service-wheel');
+if(wheel){
+ var detail=wheel.parentElement.querySelector('.sa-wheel-detail');
+ wheel.querySelectorAll('[data-service]').forEach(function(btn){
+  btn.addEventListener('click',function(){
+   var data=serviceCopy[btn.dataset.service];if(!data)return;
+   wheel.querySelectorAll('[data-service]').forEach(function(item){
+    var active=item===btn;item.classList.toggle('is-active',active);item.setAttribute('aria-pressed',active?'true':'false');
+   });
+   detail.classList.add('is-changing');
+   window.setTimeout(function(){
+    detail.querySelector('.sa-detail-index').textContent=data.number+' / SERVICE';
+    detail.querySelector('h3').textContent=data.title;
+    detail.querySelector('p').textContent=data.body;
+    detail.querySelector('.sa-detail-current').textContent=data.tag;
+    detail.classList.remove('is-changing');
+   },160);
+  });
+ });
+}
 })();</script>
 <script src="./motion.js?v=20261110-desktop-v1" defer></script>
 </body>
