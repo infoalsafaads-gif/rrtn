@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "./portfolio-data.json?v=20261110-cinematic-v1";
+  const DATA_URL = "./portfolio-data.json?v=20261112-curated";
   const root = document.getElementById("projectDetail");
   if (!root) return;
 
@@ -97,7 +97,7 @@
       fact.append(make("span", "", label), make("strong", "", value));
       facts.append(fact);
     };
-    addFact("العميل", project.client);
+    addFact("العميل / العلامة", project.client);
     addFact("السنة", project.year);
     addFact("الخدمات", Array.isArray(project.services) ? project.services.join(" · ") : project.services);
     if (facts.childElementCount) header.append(facts);
@@ -150,12 +150,12 @@
     root.append(navigation);
 
     const related = projects
-      .filter((item, itemIndex) => itemIndex !== index && item.category === project.category)
+      .filter((item, itemIndex) => itemIndex !== index && ((project.collection && item.collection === project.collection) || item.category === project.category))
       .slice(0, 3);
 
     if (related.length) {
       const section = make("section", "related-projects");
-      section.append(make("h2", "", "مشاريع ذات صلة"));
+      section.append(make("h2", "", project.collection ? "المزيد من أعمال " + project.collection : "مشاريع ذات صلة"));
       const list = make("div", "related-grid");
       related.forEach((item) => {
         const link = make("a", "related-card");
