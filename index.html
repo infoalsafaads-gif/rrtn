@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="only light">
-<meta name="theme-color" content="#060706">
+<meta name="theme-color" content="#080e20">
 <title>AL SAFA — صفا | تصميم · فيديو · إعلانات بالذكاء الاصطناعي</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -182,20 +182,17 @@ body.lock{overflow:hidden}
   <link rel="stylesheet" href="./portfolio-enhancements.css?v=20261112">
 <link rel="stylesheet" href="./ux-polish.css?v=20261112-services-2">
 <link rel="stylesheet" href="./responsive.css?v=20261112-mobile-1">
-<link rel="stylesheet" href="./bold-theme.css?v=20261112-strong-1">
+<link rel="stylesheet" href="./bold-theme.css?v=20261112-cobalt-2">
 </head>
 <body class="cinematic-home">
 <a class="skip-link" href="#top">تخطّ إلى المحتوى</a>
 
-<div class="cinematic-intro" id="cinematicIntro" role="status" aria-label="AL SAFA — Advertising &amp; Media">
-  <div class="cinematic-intro-orbit" aria-hidden="true"></div>
-  <span class="cinematic-intro-line" aria-hidden="true"></span>
-  <div class="cinematic-intro-logo">
-    <img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA — Advertising &amp; Media" width="800" height="199">
-  </div>
-  <span class="cinematic-intro-name">AL SAFA</span>
-  <span class="cinematic-intro-caption">ADVERTISING &amp; MEDIA</span>
-  <button class="cinematic-skip" type="button">تخطّي المقدمة <span aria-hidden="true">↗</span></button>
+<div class="welcome-intro" id="welcomeIntro" role="dialog" aria-modal="true" aria-label="فيديو التعريف بخدمات الصفا" tabindex="-1" hidden>
+  <button class="welcome-skip" type="button">تخطّي المقدمة ✕</button>
+  <video id="welcomeVideo" muted playsinline controls preload="none" poster="./assets/al-safa-welcome-poster.webp" aria-label="الصفا: اللوغو ثم خدمات التصميم والطباعة والتوزيع">
+    <source src="./assets/al-safa-welcome.mp4" type="video/mp4">
+    <track kind="captions" src="./assets/al-safa-welcome.vtt" srclang="ar" label="العربية" default>
+  </video>
 </div>
 <div class="sa-atmosphere" aria-hidden="true"></div>
 <div class="sa-particles" aria-hidden="true"></div>
@@ -213,6 +210,7 @@ body.lock{overflow:hidden}
   <h1><span>أفكار تتحوّل</span><span class="l2">إلى أثر بصري.</span></h1>
   <p class="intro" id="about">أنا صفا. أصمّم هويات وإعلانات، وأصنع فيديوهات ومشاهد إعلانية بالذكاء الاصطناعي، لعلامات تريد أن يُرى حضورها بوضوح.</p>
   <div class="cta">
+    <button class="welcome-replay" type="button">شاهد التعريف بخدماتي ▷</button>
     <a class="btn solid" href="#work">شاهد الأعمال</a>
     <a class="btn ghost" href="https://wa.me/972594753699" rel="noopener">راسلني على واتساب</a>
   </div>
@@ -254,8 +252,7 @@ body.lock{overflow:hidden}
   </div>
 
   <p class="results-status" id="resultsStatus" role="status" aria-live="polite" aria-atomic="true"></p>
-  <div class="grid" id="grid"><a class="w c1" data-cat="هوية بصرية" href="#brand" data-id="brand"><span class="fr" style="aspect-ratio:4/3"><img alt="AL SAFA — هوية بصرية" data-k="work/img01.webp" loading="lazy"></span><span class="cap"><b>AL SAFA — هوية بصرية</b><small>هوية بصرية · 10 تصاميم</small></span></a><a class="w c2" data-cat="حملات سوشيال" href="#fitzone" data-id="fitzone"><span class="fr" style="aspect-ratio:4/5"><img alt="FitZone GYM — حملة سوشيال ميديا" data-k="work/img11.webp" loading="lazy"></span><span class="cap"><b>FitZone GYM — حملة سوشيال ميديا</b><small>حملات سوشيال · 5 تصاميم</small></span></a><a class="w c3" data-cat="حملات سوشيال" href="#hatlo" data-id="hatlo"><span class="fr" style="aspect-ratio:1/1"><img alt="Hatlo — حملة بذور عباد الشمس" data-k="work/img17.webp" loading="lazy"></span><span class="cap"><b>Hatlo — حملة بذور عباد الشمس</b><small>حملات سوشيال · 8 تصاميم</small></span></a>
-  </div>
+  <div class="grid" id="grid"><a class="w c1" data-cat="حملات سوشيال" href="./project.html?slug=rami-market"><span class="fr" style="aspect-ratio:4/3"><img src="./assets/portfolio/design-26.webp" alt="Rami Market — حملة افتتاح الفرع الثاني" loading="lazy" decoding="async"></span><span class="cap"><b>Rami Market — حملة افتتاح الفرع الثاني</b><small>حملات سوشيال · 22 أعمال</small></span></a><a class="w c2" data-cat="حملات سوشيال" href="./project.html?slug=hatlo-consumer"><span class="fr" style="aspect-ratio:4/3"><img src="./assets/portfolio/design-23.webp" alt="Hatlo — حملات المنتج والمستهلك" loading="lazy" decoding="async"></span><span class="cap"><b>Hatlo — حملات المنتج والمستهلك</b><small>حملات سوشيال · 15 أعمال</small></span></a><a class="w c3" data-cat="هوية بصرية" href="./project.html?slug=al-safa-identity"><span class="fr" style="aspect-ratio:4/3"><img src="./assets/portfolio/design-46.webp" alt="AL SAFA — هوية بصرية" loading="lazy" decoding="async"></span><span class="cap"><b>AL SAFA — هوية بصرية</b><small>هوية بصرية · 10 أعمال</small></span></a><a class="w c4" data-cat="حملات سوشيال" href="./project.html?slug=dalma-water"><span class="fr" style="aspect-ratio:4/3"><img src="./assets/portfolio/design-63.webp" alt="DALMA — حملة المياه" loading="lazy" decoding="async"></span><span class="cap"><b>DALMA — حملة المياه</b><small>حملات سوشيال · 5 أعمال</small></span></a><a class="w c5" data-cat="هوية بصرية" href="./project.html?slug=jamal-ghanem"><span class="fr" style="aspect-ratio:4/3"><img src="./assets/portfolio/design-39.webp" alt="Jamal Ghanem &amp; Partners — بطاقات الأعمال" loading="lazy" decoding="async"></span><span class="cap"><b>Jamal Ghanem &amp; Partners — بطاقات الأعمال</b><small>هوية بصرية · 4 أعمال</small></span></a><a class="w c1" data-cat="هوية بصرية" href="./project.html?slug=al-safa-color"><span class="fr" style="aspect-ratio:4/3"><img src="./assets/portfolio/design-57.webp" alt="الصفا — هوية بصرية ملونة" loading="lazy" decoding="async"></span><span class="cap"><b>الصفا — هوية بصرية ملونة</b><small>هوية بصرية · 5 أعمال</small></span></a></div>
   <div class="empty" id="empty"><p>لا توجد نتائج. جرّب كلمة أخرى أو اعرض كل الأعمال.</p><button class="btn ghost" type="button" id="resetSearch">عرض كل الأعمال</button></div>
   <p style="margin-top:36px"><a class="btn ghost" href="./work.html">استكشف معرض الأعمال الكامل ↗</a></p>
 </section>
@@ -375,5 +372,6 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(lb.class
 })();</script>
 <script src="./motion.js?v=20261112-ux" defer></script>
 <script src="./ux-polish.js?v=20261112-1" defer></script>
+<script src="./welcome-intro.js?v=20261112-1" defer></script>
 </body>
 </html>
