@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "source": "Verified uploaded artwork; removed the blue AL SAFA color-identity collection at the user request.",
+  "source": "Verified uploaded artwork; removed the blue AL SAFA collection and Jamal Ghanem business-card collection at the user request.",
   "profileUrl": "https://www.behance.net/a2b6d985",
   "lastImported": "2026-11-12",
   "projects": [
@@ -578,53 +578,6 @@
           "type": "image",
           "src": "./assets/portfolio/design-70.webp",
           "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 70"
-        }
-      ]
-    },
-    {
-      "slug": "jamal-ghanem",
-      "title": "Jamal Ghanem & Partners — بطاقات الأعمال",
-      "category": "الهوية البصرية والمطبوعات",
-      "client": "Jamal Ghanem & Partners",
-      "collection": "Jamal Ghanem & Partners",
-      "summary": "نماذج بطاقات أعمال بالعربية والإنجليزية.",
-      "description": "نماذج بطاقات أعمال بالعربية والإنجليزية.",
-      "coverImage": "./assets/portfolio/design-39.webp",
-      "coverAlt": "Jamal Ghanem & Partners — بطاقات الأعمال",
-      "year": "2026",
-      "featured": true,
-      "services": [
-        "تصميم الهوية",
-        "المطبوعات"
-      ],
-      "sections": [
-        {
-          "type": "heading",
-          "text": "التصاميم ضمن المشروع"
-        },
-        {
-          "type": "paragraph",
-          "text": "نماذج بطاقات أعمال بالعربية والإنجليزية."
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-37.webp",
-          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 37"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-38.webp",
-          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 38"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-39.webp",
-          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 39"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-40.webp",
-          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 40"
         }
       ]
     },
