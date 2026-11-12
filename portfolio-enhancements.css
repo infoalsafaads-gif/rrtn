@@ -1,0 +1,15 @@
+/* AL SAFA — carefully scoped portfolio enhancements; existing motion/identity unchanged. */
+.project-card--video .project-media { position: relative; }
+.project-video-indicator {
+  position: absolute; inset-inline-start: 1.1rem; bottom: 1.1rem; z-index: 2;
+  display: inline-flex; align-items: center; gap: .45rem;
+  padding: .44rem .85rem; border-radius: 999px;
+  background: rgba(12,12,12,.80); color: #fff;
+  border: 1px solid rgba(255,255,255,.25);
+  font: 700 .78rem/1.5 Cairo, sans-serif; backdrop-filter: blur(12px);
+  pointer-events: none;
+}
+.project-card--video .project-media img { object-fit: cover; }
+@media (prefers-reduced-motion: reduce) {
+  .project-video-indicator { backdrop-filter: none; }
+}
