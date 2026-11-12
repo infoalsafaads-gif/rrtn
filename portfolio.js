@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "./portfolio-data.json?v=20261108-smart";
+  const DATA_URL = "./portfolio-data.json?v=20261112-curated";
   const PROFILE_URL = "https://www.behance.net/a2b6d985";
   const filtersRoot = document.getElementById("portfolioFilters");
   const gridRoot = document.getElementById("portfolioGrid");
@@ -139,6 +139,7 @@
 
   const createCard = (project, index) => {
     const article = make("article", "project-card");
+    if (project.category === "الفيديوهات الإعلانية") article.classList.add("project-card--video");
     if (index % 4 === 0) article.classList.add("project-card--wide");
     if (index % 4 === 1) article.classList.add("project-card--narrow");
 
@@ -162,6 +163,11 @@
     const open = make("span", "project-open", "↗");
     open.setAttribute("aria-hidden", "true");
     media.append(image, open);
+    if (project.category === "الفيديوهات الإعلانية") {
+      const play = make("span", "project-video-indicator", "▶ فيديو");
+      play.setAttribute("aria-hidden", "true");
+      media.append(play);
+    }
 
     const meta = make("div", "project-meta");
     const copy = make("div", "project-meta-copy");
@@ -184,6 +190,7 @@
     project.summary,
     project.description,
     project.client,
+    project.collection,
     ...(Array.isArray(project.services) ? project.services : [project.services || ""]),
     ...(Array.isArray(project.tags) ? project.tags : [])
   ].filter(Boolean).join(" ").toLocaleLowerCase("ar");
@@ -211,7 +218,11 @@
     const projects = state.displayedProjects;
     filtersRoot.append(createFilter("كل الأعمال", "all", projects.length));
 
-    const categories = [...new Set(projects.map((p) => p.category.trim()))].sort((a, b) => a.localeCompare(b, "ar"));
+    const priority = ["الحملات الإعلانية", "تصميم السوشال ميديا", "الهوية البصرية والمطبوعات", "الفيديوهات الإعلانية"];
+    const categories = [...new Set(projects.map((p) => p.category.trim()))].sort((a, b) => {
+      const ai = priority.indexOf(a), bi = priority.indexOf(b);
+      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b, "ar");
+    });
     categories.forEach((category) => {
       const count = projects.filter((p) => p.category.trim() === category).length;
       filtersRoot.append(createFilter(category, category, count));
