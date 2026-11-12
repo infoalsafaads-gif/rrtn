@@ -184,6 +184,8 @@
     return article;
   };
 
+  const normalizeSearch = (text) => text.normalize("NFKD").replace(/[\u064B-\u065F\u0670\u0640]/g, "").replace(/[أإآٱ]/g, "ا").replace(/ى/g, "ي").toLocaleLowerCase("ar");
+
   const searchableText = (project) => [
     project.title,
     project.category,
@@ -230,10 +232,10 @@
   };
 
   const draw = () => {
-    const query = state.query.trim().toLocaleLowerCase("ar");
+    const query = normalizeSearch(state.query.trim());
     const filtered = state.displayedProjects.filter((project) => {
       const matchesCategory = state.filter === "all" || project.category.trim() === state.filter;
-      const matchesQuery = !query || searchableText(project).includes(query);
+      const matchesQuery = !query || normalizeSearch(searchableText(project)).includes(query);
       return matchesCategory && matchesQuery;
     });
     const visible = sortedProjects(filtered);
