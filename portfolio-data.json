@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "source": "Verified uploaded artwork from Portfolio-Full PDF and original repository assets; duplicate identity collection merged.",
+  "source": "Verified uploaded artwork; removed the blue AL SAFA color-identity collection at the user request.",
   "profileUrl": "https://www.behance.net/a2b6d985",
   "lastImported": "2026-11-12",
   "projects": [
@@ -578,58 +578,6 @@
           "type": "image",
           "src": "./assets/portfolio/design-70.webp",
           "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 70"
-        }
-      ]
-    },
-    {
-      "slug": "al-safa-color",
-      "title": "الصفا — هوية بصرية ملونة",
-      "category": "الهوية البصرية والمطبوعات",
-      "client": "AL SAFA",
-      "collection": "AL SAFA",
-      "summary": "مقترح هوية مرئية ملونة مع بطاقات الأعمال والقرطاسية.",
-      "description": "مقترح هوية مرئية ملونة مع بطاقات الأعمال والقرطاسية.",
-      "coverImage": "./assets/portfolio/design-57.webp",
-      "coverAlt": "الصفا — هوية بصرية ملونة",
-      "year": "2026",
-      "featured": true,
-      "services": [
-        "تصميم الهوية",
-        "المطبوعات"
-      ],
-      "sections": [
-        {
-          "type": "heading",
-          "text": "التصاميم ضمن المشروع"
-        },
-        {
-          "type": "paragraph",
-          "text": "مقترح هوية مرئية ملونة مع بطاقات الأعمال والقرطاسية."
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-56.webp",
-          "alt": "الصفا — هوية بصرية ملونة — العمل 56"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-57.webp",
-          "alt": "الصفا — هوية بصرية ملونة — العمل 57"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-58.webp",
-          "alt": "الصفا — هوية بصرية ملونة — العمل 58"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-59.webp",
-          "alt": "الصفا — هوية بصرية ملونة — العمل 59"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-60.webp",
-          "alt": "الصفا — هوية بصرية ملونة — العمل 60"
         }
       ]
     },
