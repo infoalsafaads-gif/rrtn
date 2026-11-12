@@ -181,6 +181,7 @@ body.lock{overflow:hidden}
 <link rel="stylesheet" href="./motion.css?v=20261111-service-orbit-v2">
   <link rel="stylesheet" href="./portfolio-enhancements.css?v=20261112">
 <link rel="stylesheet" href="./ux-polish.css?v=20261112-services-2">
+<link rel="stylesheet" href="./responsive.css?v=20261112-mobile-1">
 </head>
 <body class="cinematic-home">
 <a class="skip-link" href="#top">تخطّ إلى المحتوى</a>
@@ -296,12 +297,12 @@ body.lock{overflow:hidden}
   <div class="sec-head"><h2>إعلانات الفيديو</h2><p>الأعمال المتحركة في مساحة مستقلة عن التصاميم والبوسترات.</p></div>
   <div class="sa-video-grid">
     <a class="w sa-video-card" href="#hatlo-ad" data-id="hatlo-ad" aria-label="مشاهدة تفاصيل إعلان Hatlo">
-      <span class="fr"><video class="sa-inline-video" autoplay muted loop playsinline controls preload="metadata" poster="./preview-assets/video-hatlo-ad.jpg" aria-label="Hatlo — إعلان فيديو"><source src="./preview-assets/video-hatlo-ad.mp4" type="video/mp4"></video></span>
-      <span class="cap"><b>Hatlo — إعلان فيديو</b><small>يعمل تلقائياً بصمت · استخدم أدوات الفيديو للصوت والإيقاف</small></span>
+      <span class="fr"><video class="sa-inline-video" muted loop playsinline controls preload="none" poster="./preview-assets/video-hatlo-ad.jpg" aria-label="Hatlo — إعلان فيديو"><source src="./preview-assets/video-hatlo-ad.mp4" type="video/mp4"></video></span>
+      <span class="cap"><b>Hatlo — إعلان فيديو</b><small>اضغط للتشغيل · يمكنك التحكم بالصوت والإيقاف</small></span>
     </a>
     <a class="w sa-video-card" href="#hatlo-reels" data-id="hatlo-reels" aria-label="مشاهدة تفاصيل ريلز Hatlo">
-      <span class="fr"><video class="sa-inline-video" autoplay muted loop playsinline controls preload="metadata" poster="./preview-assets/video-hatlo-reels.jpg" aria-label="Hatlo — ريلز"><source src="./preview-assets/video-hatlo-reels.mp4" type="video/mp4"></video></span>
-      <span class="cap"><b>Hatlo — ريلز</b><small>يعمل تلقائياً بصمت · استخدم أدوات الفيديو للصوت والإيقاف</small></span>
+      <span class="fr"><video class="sa-inline-video" muted loop playsinline controls preload="none" poster="./preview-assets/video-hatlo-reels.jpg" aria-label="Hatlo — ريلز"><source src="./preview-assets/video-hatlo-reels.mp4" type="video/mp4"></video></span>
+      <span class="cap"><b>Hatlo — ريلز</b><small>اضغط للتشغيل · يمكنك التحكم بالصوت والإيقاف</small></span>
     </a>
   </div>
 </section>
@@ -339,6 +340,8 @@ document.querySelectorAll('img[data-k]').forEach(function(i){i.src=IMG[i.dataset
 document.querySelectorAll('.sa-inline-video').forEach(function(v){
   v.addEventListener('click',function(e){e.stopPropagation()});
   v.addEventListener('pointerdown',function(e){e.stopPropagation()});
+  if(window.matchMedia('(max-width: 760px), (prefers-reduced-motion: reduce)').matches || navigator.connection?.saveData){v.autoplay=false;v.preload='none';return;}
+  v.autoplay=true;v.preload='metadata';
   var startMuted=function(){v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});};
   if(v.readyState>=2)startMuted();else v.addEventListener('loadeddata',startMuted,{once:true});
 });
