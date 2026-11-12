@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "./portfolio-data.json?v=20261112-curated";
+  const DATA_URL = "./portfolio-data.json?v=20261112-pdf-ready";
   const PROFILE_URL = "https://www.behance.net/a2b6d985";
   const filtersRoot = document.getElementById("portfolioFilters");
   const gridRoot = document.getElementById("portfolioGrid");
@@ -321,8 +321,17 @@
         if (!response.ok) throw new Error("Portfolio data request failed: " + response.status);
         return response.json();
       })
-      .then((data) => {
-        const projects = Array.isArray(data.projects) ? data.projects.filter(validProject) : [];
+      .then(async (data) => {
+        const candidates = Array.isArray(data.projects) ? data.projects.filter(validProject) : [];
+        // Keep the live gallery intact until the actual PDF artwork is uploaded.
+        const available = await Promise.all(candidates.map(async (project) => {
+          if (!project.pdfAssetPending) return true;
+          try {
+            const response = await fetch(project.coverImage, { method: "HEAD", cache: "no-store" });
+            return response.ok && (response.headers.get("content-type") || "").startsWith("image/");
+          } catch (_) { return false; }
+        }));
+        const projects = candidates.filter((_, index) => available[index]);
         state.projects = projects;
         const featured = projects.filter((project) => project.featured === true);
         state.displayedProjects = isFullPage
