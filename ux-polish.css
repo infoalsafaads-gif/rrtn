@@ -69,3 +69,47 @@ body.editorial-archive, body.editorial-project { color-scheme: dark; }
   body *, body *::before, body *::after { animation: none !important; transition: none !important; }
   .motion-toggle { display: none; }
 }
+
+/* Services are visible together, with a direct request for each offering. */
+.service-offer { padding-block: clamp(56px,8vw,112px); scroll-margin-top: 24px; }
+.service-offer-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:32px; }
+.service-eyebrow { display:block; color:var(--sa-gold); font:600 11px/1.6 Arial,sans-serif; letter-spacing:.16em; direction:ltr; text-align:start; margin-bottom:16px; }
+.service-offer-heading h2 { margin:0; font-size:clamp(32px,4.8vw,68px); line-height:1.3; font-weight:600; letter-spacing:-.025em; }
+.service-offer-heading h2 span { color:var(--sa-gold); }
+.service-offer-heading > p { margin:0; color:var(--sa-muted); max-width:29em; font-size:16px; line-height:1.9; }
+.service-offer-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.service-offer-card { display:flex; flex-direction:column; padding:clamp(22px,2.8vw,40px); border:1px solid var(--sa-border); border-radius:18px; background:linear-gradient(145deg,rgba(216,182,117,.055),transparent 60%),var(--sa-night-2); transition:border-color .2s,background .2s; }
+.service-offer-card:focus-within, .service-offer-card:hover { border-color:var(--sa-gold-dim); }
+.service-card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:30px; }
+.service-icon { display:grid; place-items:center; width:56px; height:56px; color:var(--sa-gold-bright); background:rgba(216,182,117,.07); border:1px solid var(--sa-border); border-radius:14px; }
+.service-icon svg { width:30px; height:30px; }
+.service-number { color:var(--sa-muted); font:400 14px/1.4 Georgia,serif; }
+.service-card-name { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.service-card-name h3 { margin:0; color:var(--sa-ivory); font-size:clamp(30px,3vw,44px); line-height:1.3; font-weight:600; }
+.service-card-name > span { font:500 10px/1.4 Arial,sans-serif; color:var(--sa-gold); letter-spacing:.12em; }
+.service-promise { margin:18px 0 10px; font-size:18px; font-weight:500; color:var(--sa-ivory); }
+.service-description { margin:0 0 24px; font-size:15px; line-height:1.95; color:var(--sa-muted); }
+.service-deliverables { list-style:none; padding:0; margin:0 0 30px; display:flex; flex-wrap:wrap; gap:8px; }
+.service-deliverables li { padding:5px 10px; border:1px solid var(--sa-border); border-radius:6px; color:var(--sa-muted); font-size:12px; line-height:1.6; }
+body.cinematic-home .service-request { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:auto; padding:16px 0 0; min-height:52px; border-top:1px solid var(--sa-border); color:var(--sa-gold-bright); font-size:16px; font-weight:500; }
+.service-request > span:last-child { display:grid; place-items:center; width:32px; height:32px; background:var(--sa-gold); color:var(--sa-night); border-radius:50%; }
+.service-request:hover > span:first-child { text-decoration:underline; text-underline-offset:6px; }
+.service-offer-note { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 4px 0; }
+.service-offer-note p { margin:0; color:var(--sa-muted); font-size:14px; }
+.service-offer-note strong { color:var(--sa-ivory); font-weight:400; }
+.service-offer-note a { color:var(--sa-gold-bright); font-size:14px; min-height:44px; display:inline-flex; align-items:center; gap:14px; }
+@media(max-width:980px) {
+  .service-offer-heading { flex-direction:column; align-items:flex-start; }
+  .service-offer-grid { gap:12px; }
+  .service-offer-card { padding:22px; }
+  .service-card-name { align-items:flex-start; flex-direction:column; gap:8px; }
+}
+@media(max-width:760px) {
+  .service-offer-grid { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .service-offer-heading h2 { font-size:clamp(28px,7.5vw,48px); }
+  .service-card-name { flex-direction:row; align-items:center; }
+  .service-card-top { margin-bottom:20px; }
+  .service-offer-card { padding:26px; }
+  .service-offer-note { align-items:flex-start; flex-direction:column; gap:8px; }
+  .service-offer-note strong { display:block; margin-top:4px; }
+}
