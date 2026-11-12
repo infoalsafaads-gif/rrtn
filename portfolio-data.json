@@ -1,22 +1,23 @@
 {
-  "schemaVersion": 1,
-  "source": "Verified project assets already included in the AL SAFA repository",
+  "schemaVersion": 2,
+  "source": "Existing repository media; organization cross-checked against the 70-design Portfolio - Full PDF (2026-11-12). PDF-only artwork is not published until its image files are available.",
   "profileUrl": "https://www.behance.net/a2b6d985",
-  "lastImported": "2026-11-10",
+  "lastImported": "2026-11-12",
   "projects": [
     {
       "slug": "al-safa-identity",
       "title": "AL SAFA — هوية بصرية",
-      "category": "هوية بصرية",
-      "summary": "شعار وتطبيقات الهوية البصرية على المطبوعات والمنتجات وبطاقة الأعمال.",
-      "description": "شعار ومطبوعات وبطاقات أعمال لهوية AL SAFA للدعاية والإعلان، مع تطبيقات بصرية متناسقة على مجموعة من المواد.",
+      "category": "الهوية البصرية والمطبوعات",
+      "summary": "هوية AL SAFA: الشعار والبطاقات والمطبوعات وتطبيقات العلامة في عرض واحد.",
+      "description": "دراسة بصرية لهوية AL SAFA تعرض التطبيقات والبطاقات والمواد المرتبطة بالعلامة، بدلاً من توزيعها على مشاريع متكررة.",
       "coverImage": "./preview-assets/work-img01.webp",
       "coverAlt": "التطبيق البصري لهوية AL SAFA",
       "year": "2026",
       "featured": true,
       "services": [
-        "هوية بصرية",
-        "تطبيقات الهوية"
+        "تصميم الهوية",
+        "بطاقات الأعمال",
+        "تصاميم المطبوعات"
       ],
       "sections": [
         {
@@ -77,13 +78,20 @@
           "src": "./preview-assets/work-img10.webp",
           "alt": "AL SAFA — التصميم 10"
         }
+      ],
+      "client": "AL SAFA",
+      "collection": "AL SAFA",
+      "tags": [
+        "Brand Identity",
+        "Print",
+        "Business Cards"
       ]
     },
     {
       "slug": "fitzone-social-campaign",
       "title": "FitZone GYM — حملة سوشيال ميديا",
-      "category": "حملات سوشيال",
-      "summary": "سلسلة منشورات إعلانية لنادٍ رياضي بأسلوب بصري موحّد.",
+      "category": "تصميم السوشال ميديا",
+      "summary": "سلسلة منشورات رياضية موحدة بصرياً ضمن مشروع واحد.",
       "description": "تصاميم منشورات لنادٍ رياضي بعناوين تحفيزية وإضاءة حمراء وتفاصيل الاشتراك في شريط سفلي موحّد.",
       "coverImage": "./preview-assets/work-img11.webp",
       "coverAlt": "تصميم من حملة FitZone GYM",
@@ -127,21 +135,28 @@
           "src": "./preview-assets/work-img15.webp",
           "alt": "FitZone GYM — التصميم 5"
         }
+      ],
+      "client": "FitZone GYM",
+      "collection": "FitZone",
+      "tags": [
+        "Fitness",
+        "Social Media"
       ]
     },
     {
       "slug": "hatlo-sunflower-campaign",
       "title": "Hatlo — حملة بذور عباد الشمس",
-      "category": "حملات سوشيال",
-      "summary": "حملة مرئية لمنتج Hatlo بمجموعة من المشاهد والأفكار الإعلانية.",
-      "description": "سلسلة منشورات لمنتج بذور عباد الشمس تحت شعار «طعم من عالم تاني»، بمشاهد متنوعة: حقل، فضاء، ألعاب، ولمّات أصدقاء.",
+      "category": "الحملات الإعلانية",
+      "summary": "حملة منتجات غذائية تجمع المشاهد الإعلانية الخاصة بهاتلو ضمن قصة مرئية واحدة.",
+      "description": "مجموعة إعلانات لمنتج بذور دوار الشمس هاتلو، تعالج لحظات الاستخدام والمنتج في مشاهد متعددة. تتوفر أعمال فيديو مستقلة ضمن قسم الفيديوهات.",
       "coverImage": "./preview-assets/work-img17.webp",
       "coverAlt": "تصميم من حملة Hatlo لبذور عباد الشمس",
       "year": "2026",
       "featured": true,
       "services": [
-        "تصميم إعلاني",
-        "محتوى سوشيال ميديا"
+        "تصميم الحملات الإعلانية",
+        "تصميم المنتجات",
+        "تصميم سوشال ميديا"
       ],
       "sections": [
         {
@@ -192,12 +207,19 @@
           "src": "./preview-assets/work-img23.webp",
           "alt": "Hatlo — التصميم 8"
         }
+      ],
+      "client": "Hatlo",
+      "collection": "Hatlo",
+      "tags": [
+        "بذور دوار الشمس",
+        "منتجات غذائية",
+        "إعلانات المنتجات"
       ]
     },
     {
       "slug": "hatlo-video-ad",
       "title": "Hatlo — إعلان فيديو",
-      "category": "فيديو",
+      "category": "الفيديوهات الإعلانية",
       "summary": "إعلان فيديو عمودي للمنتج بمعالجة بصرية إعلانية.",
       "description": "إعلان فيديو بصيغة عمودية للمنتج، بنص مرافق ومونتاج.",
       "coverImage": "./preview-assets/video-hatlo-ad.jpg",
@@ -205,7 +227,7 @@
       "year": "2026",
       "featured": true,
       "services": [
-        "إنتاج فيديو",
+        "فيديو إعلاني",
         "مونتاج"
       ],
       "sections": [
@@ -222,12 +244,19 @@
           "src": "./preview-assets/video-hatlo-ad.mp4",
           "poster": "./preview-assets/video-hatlo-ad.jpg"
         }
+      ],
+      "client": "Hatlo",
+      "collection": "Hatlo",
+      "tags": [
+        "Video",
+        "Motion",
+        "Hatlo"
       ]
     },
     {
       "slug": "hatlo-social-reel",
       "title": "Hatlo — ريلز",
-      "category": "فيديو",
+      "category": "الفيديوهات الإعلانية",
       "summary": "فيديو قصير لوسائل التواصل يعرض المنتج.",
       "description": "فيديو مربّع للسوشيال ميديا يعرض المنتج ويختم ببيانات التواصل.",
       "coverImage": "./preview-assets/video-hatlo-reels.jpg",
@@ -235,8 +264,8 @@
       "year": "2026",
       "featured": false,
       "services": [
-        "إنتاج فيديو",
-        "محتوى سوشيال ميديا"
+        "فيديو إعلاني",
+        "مونتاج"
       ],
       "sections": [
         {
@@ -252,6 +281,13 @@
           "src": "./preview-assets/video-hatlo-reels.mp4",
           "poster": "./preview-assets/video-hatlo-reels.jpg"
         }
+      ],
+      "client": "Hatlo",
+      "collection": "Hatlo",
+      "tags": [
+        "Video",
+        "Motion",
+        "Hatlo"
       ]
     }
   ]
