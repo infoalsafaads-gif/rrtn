@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "source": "Existing repository media; organization cross-checked against the 70-design Portfolio - Full PDF (2026-11-12). PDF-only artwork is not published until its image files are available.",
+  "source": "Existing repository originals plus curated PDF manifest; PDF covers are hidden until their image assets are uploaded to GitHub.",
   "profileUrl": "https://www.behance.net/a2b6d985",
   "lastImported": "2026-11-12",
   "projects": [
@@ -288,6 +288,570 @@
         "Video",
         "Motion",
         "Hatlo"
+      ]
+    },
+    {
+      "slug": "hatlo-consumer",
+      "title": "Hatlo — حملات المنتج والمستهلك",
+      "category": "الحملات الإعلانية",
+      "client": "Hatlo",
+      "collection": "Hatlo",
+      "summary": "حملات المنتج واللحظات اليومية، ومنها «معك بكل مكان».",
+      "description": "حملات المنتج واللحظات اليومية، ومنها «معك بكل مكان».",
+      "coverImage": "./assets/portfolio/design-23.webp",
+      "coverAlt": "Hatlo — حملات المنتج والمستهلك",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم إعلاني",
+        "سوشال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "حملات المنتج واللحظات اليومية، ومنها «معك بكل مكان»."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-01.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 1"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-02.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 2"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-03.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 3"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-05.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 5"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-06.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 6"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-16.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 16"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-20.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 20"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-22.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 22"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-23.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 23"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-29.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 29"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-51.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 51"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-52.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 52"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-53.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 53"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-54.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 54"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-55.webp",
+          "alt": "Hatlo — حملات المنتج والمستهلك — العمل 55"
+        }
+      ]
+    },
+    {
+      "slug": "hatlo-trade",
+      "title": "Hatlo — إعلانات التجار والتوزيع",
+      "category": "الحملات الإعلانية",
+      "client": "Hatlo",
+      "collection": "Hatlo",
+      "summary": "إعلانات موجهة للتجار ونقاط البيع ومحتوى عن التوزيع.",
+      "description": "إعلانات موجهة للتجار ونقاط البيع ومحتوى عن التوزيع.",
+      "coverImage": "./assets/portfolio/design-18.webp",
+      "coverAlt": "Hatlo — إعلانات التجار والتوزيع",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم إعلاني",
+        "سوشال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "إعلانات موجهة للتجار ونقاط البيع ومحتوى عن التوزيع."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-14.webp",
+          "alt": "Hatlo — إعلانات التجار والتوزيع — العمل 14"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-15.webp",
+          "alt": "Hatlo — إعلانات التجار والتوزيع — العمل 15"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-17.webp",
+          "alt": "Hatlo — إعلانات التجار والتوزيع — العمل 17"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-18.webp",
+          "alt": "Hatlo — إعلانات التجار والتوزيع — العمل 18"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-19.webp",
+          "alt": "Hatlo — إعلانات التجار والتوزيع — العمل 19"
+        }
+      ]
+    },
+    {
+      "slug": "rami-market",
+      "title": "Rami Market — حملة افتتاح الفرع الثاني",
+      "category": "الحملات الإعلانية",
+      "client": "Rami Market",
+      "collection": "Rami Market",
+      "summary": "سلسلة التشويق والمسابقات والترحيب والعروض والافتتاح.",
+      "description": "سلسلة التشويق والمسابقات والترحيب والعروض والافتتاح.",
+      "coverImage": "./assets/portfolio/design-26.webp",
+      "coverAlt": "Rami Market — حملة افتتاح الفرع الثاني",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم إعلاني",
+        "سوشال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "سلسلة التشويق والمسابقات والترحيب والعروض والافتتاح."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-07.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 7"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-08.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 8"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-09.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 9"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-10.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 10"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-11.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 11"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-12.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 12"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-13.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 13"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-21.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 21"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-24.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 24"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-25.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 25"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-26.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 26"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-27.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 27"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-28.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 28"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-30.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 30"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-33.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 33"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-34.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 34"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-36.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 36"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-61.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 61"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-67.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 67"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-68.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 68"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-69.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 69"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-70.webp",
+          "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 70"
+        }
+      ]
+    },
+    {
+      "slug": "al-safa-print",
+      "title": "AL SAFA — الهوية والمطبوعات",
+      "category": "الهوية البصرية والمطبوعات",
+      "client": "AL SAFA",
+      "collection": "AL SAFA",
+      "summary": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات.",
+      "description": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات.",
+      "coverImage": "./assets/portfolio/design-46.webp",
+      "coverAlt": "AL SAFA — الهوية والمطبوعات",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم الهوية",
+        "المطبوعات"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-31.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 31"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-41.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 41"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-42.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 42"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-43.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 43"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-44.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 44"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-45.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 45"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-46.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 46"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-47.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 47"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-48.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 48"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-49.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 49"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-50.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 50"
+        }
+      ]
+    },
+    {
+      "slug": "al-safa-color",
+      "title": "الصفا — هوية بصرية ملونة",
+      "category": "الهوية البصرية والمطبوعات",
+      "client": "AL SAFA",
+      "collection": "AL SAFA",
+      "summary": "مقترح هوية مرئية ملونة مع بطاقات الأعمال والقرطاسية.",
+      "description": "مقترح هوية مرئية ملونة مع بطاقات الأعمال والقرطاسية.",
+      "coverImage": "./assets/portfolio/design-57.webp",
+      "coverAlt": "الصفا — هوية بصرية ملونة",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم الهوية",
+        "المطبوعات"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "مقترح هوية مرئية ملونة مع بطاقات الأعمال والقرطاسية."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-56.webp",
+          "alt": "الصفا — هوية بصرية ملونة — العمل 56"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-57.webp",
+          "alt": "الصفا — هوية بصرية ملونة — العمل 57"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-58.webp",
+          "alt": "الصفا — هوية بصرية ملونة — العمل 58"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-59.webp",
+          "alt": "الصفا — هوية بصرية ملونة — العمل 59"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-60.webp",
+          "alt": "الصفا — هوية بصرية ملونة — العمل 60"
+        }
+      ]
+    },
+    {
+      "slug": "jamal-ghanem",
+      "title": "Jamal Ghanem & Partners — بطاقات الأعمال",
+      "category": "الهوية البصرية والمطبوعات",
+      "client": "Jamal Ghanem & Partners",
+      "collection": "Jamal Ghanem & Partners",
+      "summary": "نماذج بطاقات أعمال بالعربية والإنجليزية.",
+      "description": "نماذج بطاقات أعمال بالعربية والإنجليزية.",
+      "coverImage": "./assets/portfolio/design-39.webp",
+      "coverAlt": "Jamal Ghanem & Partners — بطاقات الأعمال",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم الهوية",
+        "المطبوعات"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "نماذج بطاقات أعمال بالعربية والإنجليزية."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-37.webp",
+          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 37"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-38.webp",
+          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 38"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-39.webp",
+          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 39"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-40.webp",
+          "alt": "Jamal Ghanem & Partners — بطاقات الأعمال — العمل 40"
+        }
+      ]
+    },
+    {
+      "slug": "nova-tech",
+      "title": "NOVA TECH — إعلان تقني",
+      "category": "تصميم السوشال ميديا",
+      "client": "NOVA TECH",
+      "collection": "NOVA TECH",
+      "summary": "تصميم ترويجي لمنتجات التقنية.",
+      "description": "تصميم ترويجي لمنتجات التقنية.",
+      "coverImage": "./assets/portfolio/design-32.webp",
+      "coverAlt": "NOVA TECH — إعلان تقني",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم إعلاني",
+        "سوشال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "تصميم ترويجي لمنتجات التقنية."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-32.webp",
+          "alt": "NOVA TECH — إعلان تقني — العمل 32"
+        }
+      ]
+    },
+    {
+      "slug": "dalma-water",
+      "title": "DALMA — حملة المياه",
+      "category": "الحملات الإعلانية",
+      "client": "DALMA",
+      "collection": "DALMA",
+      "summary": "إعلانات لمنتج المياه بأساليب مختلفة ضمن حملة واحدة.",
+      "description": "إعلانات لمنتج المياه بأساليب مختلفة ضمن حملة واحدة.",
+      "coverImage": "./assets/portfolio/design-63.webp",
+      "coverAlt": "DALMA — حملة المياه",
+      "year": "2026",
+      "featured": true,
+      "pdfAssetPending": true,
+      "services": [
+        "تصميم إعلاني",
+        "سوشال ميديا"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التصاميم ضمن المشروع"
+        },
+        {
+          "type": "paragraph",
+          "text": "إعلانات لمنتج المياه بأساليب مختلفة ضمن حملة واحدة."
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-62.webp",
+          "alt": "DALMA — حملة المياه — العمل 62"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-63.webp",
+          "alt": "DALMA — حملة المياه — العمل 63"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-64.webp",
+          "alt": "DALMA — حملة المياه — العمل 64"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-65.webp",
+          "alt": "DALMA — حملة المياه — العمل 65"
+        },
+        {
+          "type": "image",
+          "src": "./assets/portfolio/design-66.webp",
+          "alt": "DALMA — حملة المياه — العمل 66"
+        }
       ]
     }
   ]
