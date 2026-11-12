@@ -323,15 +323,7 @@
       })
       .then(async (data) => {
         const candidates = Array.isArray(data.projects) ? data.projects.filter(validProject) : [];
-        // Keep the live gallery intact until the actual PDF artwork is uploaded.
-        const available = await Promise.all(candidates.map(async (project) => {
-          if (!project.pdfAssetPending) return true;
-          try {
-            const response = await fetch(project.coverImage, { method: "HEAD", cache: "no-store" });
-            return response.ok && (response.headers.get("content-type") || "").startsWith("image/");
-          } catch (_) { return false; }
-        }));
-        const projects = candidates.filter((_, index) => available[index]);
+        const projects = candidates;
         state.projects = projects;
         const featured = projects.filter((project) => project.featured === true);
         state.displayedProjects = isFullPage

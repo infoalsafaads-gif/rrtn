@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "source": "Existing repository originals plus curated PDF manifest; PDF covers are hidden until their image assets are uploaded to GitHub.",
+  "source": "Verified uploaded artwork from Portfolio-Full PDF and original repository assets; duplicate identity collection merged.",
   "profileUrl": "https://www.behance.net/a2b6d985",
   "lastImported": "2026-11-12",
   "projects": [
@@ -8,9 +8,9 @@
       "slug": "al-safa-identity",
       "title": "AL SAFA — هوية بصرية",
       "category": "الهوية البصرية والمطبوعات",
-      "summary": "هوية AL SAFA: الشعار والبطاقات والمطبوعات وتطبيقات العلامة في عرض واحد.",
+      "summary": "هوية AL SAFA وتطبيقاتها على البطاقات والمطبوعات والمنتجات، في مشروع واحد بدون تكرار.",
       "description": "دراسة بصرية لهوية AL SAFA تعرض التطبيقات والبطاقات والمواد المرتبطة بالعلامة، بدلاً من توزيعها على مشاريع متكررة.",
-      "coverImage": "./preview-assets/work-img01.webp",
+      "coverImage": "./assets/portfolio/design-46.webp",
       "coverAlt": "التطبيق البصري لهوية AL SAFA",
       "year": "2026",
       "featured": true,
@@ -22,61 +22,61 @@
       "sections": [
         {
           "type": "heading",
-          "text": "مختارات من المشروع"
+          "text": "التصاميم ضمن المشروع"
         },
         {
           "type": "paragraph",
-          "text": "مجموعة من التطبيقات والتصاميم الأصلية المنفذة لهذا المشروع."
+          "text": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات."
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img01.webp",
-          "alt": "AL SAFA — التصميم 1"
+          "src": "./assets/portfolio/design-31.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 31"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img02.webp",
-          "alt": "AL SAFA — التصميم 2"
+          "src": "./assets/portfolio/design-41.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 41"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img03.webp",
-          "alt": "AL SAFA — التصميم 3"
+          "src": "./assets/portfolio/design-42.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 42"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img04.webp",
-          "alt": "AL SAFA — التصميم 4"
+          "src": "./assets/portfolio/design-43.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 43"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img05.webp",
-          "alt": "AL SAFA — التصميم 5"
+          "src": "./assets/portfolio/design-44.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 44"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img06.webp",
-          "alt": "AL SAFA — التصميم 6"
+          "src": "./assets/portfolio/design-46.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 46"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img07.webp",
-          "alt": "AL SAFA — التصميم 7"
+          "src": "./assets/portfolio/design-47.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 47"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img08.webp",
-          "alt": "AL SAFA — التصميم 8"
+          "src": "./assets/portfolio/design-48.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 48"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img09.webp",
-          "alt": "AL SAFA — التصميم 9"
+          "src": "./assets/portfolio/design-49.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 49"
         },
         {
           "type": "image",
-          "src": "./preview-assets/work-img10.webp",
-          "alt": "AL SAFA — التصميم 10"
+          "src": "./assets/portfolio/design-50.webp",
+          "alt": "AL SAFA — الهوية والمطبوعات — العمل 50"
         }
       ],
       "client": "AL SAFA",
@@ -302,7 +302,6 @@
       "coverAlt": "Hatlo — حملات المنتج والمستهلك",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم إعلاني",
         "سوشال ميديا"
@@ -405,7 +404,6 @@
       "coverAlt": "Hatlo — إعلانات التجار والتوزيع",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم إعلاني",
         "سوشال ميديا"
@@ -458,7 +456,6 @@
       "coverAlt": "Rami Market — حملة افتتاح الفرع الثاني",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم إعلاني",
         "سوشال ميديا"
@@ -581,89 +578,11 @@
           "type": "image",
           "src": "./assets/portfolio/design-70.webp",
           "alt": "Rami Market — حملة افتتاح الفرع الثاني — العمل 70"
-        }
-      ]
-    },
-    {
-      "slug": "al-safa-print",
-      "title": "AL SAFA — الهوية والمطبوعات",
-      "category": "الهوية البصرية والمطبوعات",
-      "client": "AL SAFA",
-      "collection": "AL SAFA",
-      "summary": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات.",
-      "description": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات.",
-      "coverImage": "./assets/portfolio/design-46.webp",
-      "coverAlt": "AL SAFA — الهوية والمطبوعات",
-      "year": "2026",
-      "featured": true,
-      "pdfAssetPending": true,
-      "services": [
-        "تصميم الهوية",
-        "المطبوعات"
-      ],
-      "sections": [
-        {
-          "type": "heading",
-          "text": "التصاميم ضمن المشروع"
-        },
-        {
-          "type": "paragraph",
-          "text": "تطبيقات الهوية على البطاقات والمطبوعات والمنتجات."
         },
         {
           "type": "image",
-          "src": "./assets/portfolio/design-31.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 31"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-41.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 41"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-42.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 42"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-43.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 43"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-44.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 44"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-45.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 45"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-46.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 46"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-47.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 47"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-48.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 48"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-49.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 49"
-        },
-        {
-          "type": "image",
-          "src": "./assets/portfolio/design-50.webp",
-          "alt": "AL SAFA — الهوية والمطبوعات — العمل 50"
+          "src": "./assets/portfolio/design-35.webp",
+          "alt": "Rami Market — تصميم الحملة الأفقي"
         }
       ]
     },
@@ -679,7 +598,6 @@
       "coverAlt": "الصفا — هوية بصرية ملونة",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم الهوية",
         "المطبوعات"
@@ -732,7 +650,6 @@
       "coverAlt": "Jamal Ghanem & Partners — بطاقات الأعمال",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم الهوية",
         "المطبوعات"
@@ -780,7 +697,6 @@
       "coverAlt": "NOVA TECH — إعلان تقني",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم إعلاني",
         "سوشال ميديا"
@@ -813,7 +729,6 @@
       "coverAlt": "DALMA — حملة المياه",
       "year": "2026",
       "featured": true,
-      "pdfAssetPending": true,
       "services": [
         "تصميم إعلاني",
         "سوشال ميديا"
@@ -854,5 +769,8 @@
         }
       ]
     }
-  ]
+  ],
+  "aliases": {
+    "al-safa-print": "al-safa-identity"
+  }
 }

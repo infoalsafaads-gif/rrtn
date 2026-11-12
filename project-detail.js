@@ -66,7 +66,8 @@
   };
 
   const render = (projects) => {
-    const slug = new URLSearchParams(window.location.search).get("slug");
+    const requestedSlug = new URLSearchParams(window.location.search).get("slug");
+    const slug = requestedSlug === "al-safa-print" ? "al-safa-identity" : requestedSlug;
     const index = projects.findIndex((project) => project.slug === slug);
     if (!slug || index < 0) {
       unavailable("ارجع إلى معرض الأعمال لاستكشاف المشاريع المتاحة.");
