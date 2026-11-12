@@ -42,13 +42,16 @@
       if (block.caption) figure.append(make("figcaption", "", block.caption));
       target.append(figure);
     } else if (block.type === "video" && isSafeAsset(block.src)) {
+      const figure = make("figure", "case-study-figure case-study-video");
       const video = document.createElement("video");
       video.src = block.src;
       video.controls = true;
       video.playsInline = true;
       video.preload = "metadata";
       if (isSafeAsset(block.poster)) video.poster = block.poster;
-      target.append(video);
+      figure.append(video);
+      if (block.caption) figure.append(make("figcaption", "", block.caption));
+      target.append(figure);
     }
   };
 
@@ -103,6 +106,7 @@
     if (facts.childElementCount) header.append(facts);
 
     const cover = make("div", "project-cover");
+    if (project.slug === "dalma-water") cover.classList.add("project-cover--uncropped");
     const coverImage = document.createElement("img");
     coverImage.src = project.coverImage;
     coverImage.alt = project.coverAlt || project.title;

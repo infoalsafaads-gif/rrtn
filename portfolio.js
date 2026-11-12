@@ -140,6 +140,7 @@
   const createCard = (project, index) => {
     const article = make("article", "project-card");
     if (project.category === "الفيديوهات الإعلانية") article.classList.add("project-card--video");
+    if (project.slug === "dalma-water") article.classList.add("project-card--uncropped");
     if (index % 4 === 0) article.classList.add("project-card--wide");
     if (index % 4 === 1) article.classList.add("project-card--narrow");
 

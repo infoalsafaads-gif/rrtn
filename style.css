@@ -2897,3 +2897,11 @@ button{
   .editorial-home .editorial-art-frame img,
   .editorial-archive .related-card img{transition:none}
 }
+
+/* Show complete campaign artwork and keep the service wheel logo legible. */
+.project-card--uncropped .project-media{background:#082b57!important}
+.project-card--uncropped .project-media img{object-fit:contain!important;transform:none!important}
+.editorial-project .project-cover--uncropped{background:#082b57}
+.editorial-project .project-cover--uncropped img{height:auto;max-height:none;object-fit:contain}
+.project-content video{display:block;width:100%;height:auto;max-height:82vh;margin:30px auto;background:#090909;border-radius:12px}
+.sa-wheel-core .sa-wheel-logo{display:block;width:82%;height:auto;max-height:42%;object-fit:contain;filter:drop-shadow(0 0 12px rgba(245,185,0,.12))}

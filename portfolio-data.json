@@ -289,6 +289,118 @@
         "Motion",
         "Hatlo"
       ]
+    },
+    {
+      "slug": "dalma-water",
+      "title": "DALMA — مياه دلما",
+      "category": "تصميم سوشيال ميديا",
+      "summary": "مجموعة إعلانات بصرية لمياه دلما، تعرض الحملة كاملة بصورها ونصوصها من دون قص.",
+      "description": "حملة DALMA للمياه المعدنية الفلسطينية: تصاميم سوشيال ميديا تجمع النقاء والانتعاش والمصدر الفلسطيني. تُعرض كل لوحة بأبعادها الأصلية لتبقى التفاصيل والكتابة واضحة.",
+      "coverImage": "./assets/dalma/design-63.webp",
+      "coverAlt": "إعلان DALMA للمياه المعدنية الفلسطينية أمام الجبال",
+      "year": "2026",
+      "featured": false,
+      "client": "DALMA",
+      "collection": "DALMA",
+      "services": [
+        "تصميم سوشيال ميديا",
+        "تصميم إعلانات"
+      ],
+      "tags": [
+        "DALMA",
+        "Social Media",
+        "Campaign"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "حملة مياه دلما"
+        },
+        {
+          "type": "paragraph",
+          "text": "مجموعة متكاملة من التصاميم الإعلانية. تُعرض الأعمال هنا كاملة دون اقتطاع، ويمكن فتح كل صورة لرؤية تفاصيلها."
+        },
+        {
+          "type": "image",
+          "src": "./assets/dalma/design-62.webp",
+          "alt": "تصميم غطاء عبوة مياه دلما"
+        },
+        {
+          "type": "image",
+          "src": "./assets/dalma/design-63.webp",
+          "alt": "حملة مياه دلما من ينابيع فلسطين"
+        },
+        {
+          "type": "image",
+          "src": "./assets/dalma/design-64.webp",
+          "alt": "تصميم مياه دلما مع قطرات الماء"
+        },
+        {
+          "type": "image",
+          "src": "./assets/dalma/design-65.webp",
+          "alt": "إعلان مياه دلما لصحة أفضل"
+        },
+        {
+          "type": "image",
+          "src": "./assets/dalma/design-66.webp",
+          "alt": "حملة DALMA للسوشيال ميديا"
+        }
+      ]
+    },
+    {
+      "slug": "video-reels-collection",
+      "title": "إعلانات فيديو وريلز",
+      "category": "الفيديوهات الإعلانية",
+      "summary": "مجموعة من الفيديوهات والريلز المرفوعة للمحفظة.",
+      "description": "نماذج فيديو إعلاني وريلز. اختر التشغيل لمشاهدة كل فيديو بالصوت والصورة.",
+      "coverImage": "./assets/video-posters/kling-water-closeup.jpg",
+      "coverAlt": "معاينة فيديو إعلاني",
+      "year": "2026",
+      "featured": false,
+      "services": [
+        "إنتاج فيديو",
+        "ريلز",
+        "إعلانات مرئية"
+      ],
+      "tags": [
+        "Video",
+        "Reels",
+        "Advertising"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "مشاهدة الفيديوهات"
+        },
+        {
+          "type": "paragraph",
+          "text": "اضغط تشغيل لمشاهدة كل فيديو. أزلنا الملفات المتطابقة حتى لا تتكرر الأعمال."
+        },
+        {
+          "type": "video",
+          "src": "./assets/videos/kling-water-closeup.mp4",
+          "poster": "./assets/video-posters/kling-water-closeup.jpg",
+          "caption": "فيديو DALMA — لقطة قريبة"
+        },
+        {
+          "type": "video",
+          "src": "./assets/videos/kling-image-campaign.mp4",
+          "poster": "./assets/video-posters/kling-image-campaign.jpg",
+          "caption": "فيديو حملة مرئي"
+        },
+        {
+          "type": "video",
+          "src": "./assets/videos/hatlo-whatsapp.mp4",
+          "poster": "./assets/video-posters/hatlo-whatsapp.jpg",
+          "caption": "فيديو واتساب"
+        },
+        {
+          "type": "video",
+          "src": "./assets/videos/all-reels.mp4",
+          "poster": "./assets/video-posters/all-reels.jpg",
+          "caption": "مشروع جميع الريلزات"
+        }
+      ]
     }
   ]
 }
