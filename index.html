@@ -1,404 +1,56 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="dark">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="#141414">
-<title>AL SAFA — صفا | تصميم · فيديو · إعلانات بالذكاء الاصطناعي</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141414"><meta name="description" content="AL SAFA — تصميم جرافيك، هويات بصرية، إعلانات وفيديوهات إبداعية.">
+<title>AL SAFA — صفا | تصميم · إعلانات · هوية بصرية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  color-scheme: only light;
-  --white:#FFFFFF; --ink:#171815; --olive:#858873; --olive-ink:#575a47;
-  --paper:#F8F8F6; --line:#E8E8E2;
-  --pad:clamp(20px,5vw,72px);
-  --ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
-  --la:"Instrument Serif",Georgia,"Times New Roman",serif;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){:root{color-scheme:only light;--white:#FFFFFF;--ink:#171815;--paper:#F8F8F6;--line:#E8E8E2}}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:84px;background:#fff}
-body{margin:0;background:var(--white);color:var(--ink);font-family:var(--ar);font-size:17px;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-.wrap{padding-inline:var(--pad);max-width:1480px;margin-inline:auto}
-.la{font-family:var(--la);font-weight:400;letter-spacing:-.01em}
-
-/* nav */
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.logo{font-family:var(--la);font-size:28px;line-height:1;display:flex;align-items:baseline;gap:10px}
-.logo small{font-family:var(--ar);font-size:12px;color:var(--olive-ink);letter-spacing:.04em}
-nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:15px}
-nav a{padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s}
-nav a:hover{border-color:var(--ink)}
-.pill{border:1px solid var(--ink);padding:8px 20px;border-radius:99px;font-size:15px;transition:background .2s,color .2s}
-.pill:hover{background:var(--ink);color:#fff}
-@media(max-width:760px){nav ul{display:none}}
-
-/* hero */
-.hero{padding-block:clamp(48px,9vw,120px) clamp(40px,6vw,80px);display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end}
-.hero h1{grid-column:1/-1;margin:0;font-weight:600;font-size:clamp(46px,10.5vw,168px);line-height:1.02;letter-spacing:-.02em}
-.hero h1 span{display:block}
-.hero h1 .l2{color:var(--olive);padding-inline-start:clamp(0px,14vw,240px)}
-.intro{grid-column:1/8;margin-top:clamp(28px,4vw,56px);font-size:clamp(18px,1.7vw,23px);line-height:1.9;max-width:34em}
-.cta{grid-column:8/-1;margin-top:clamp(28px,4vw,56px);display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;align-self:end}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:99px;border:1px solid var(--ink);font-weight:500;transition:transform .2s,background .2s,color .2s}
-.btn.solid{background:var(--ink);color:#fff}
-.btn:hover{transform:translateY(-2px)}
-.btn.ghost:hover{background:var(--ink);color:#fff}
-@media(max-width:760px){.intro,.cta{grid-column:1/-1}.cta{justify-content:flex-start}}
-
-/* band */
-.band{border-block:1px solid var(--line);background:var(--paper);overflow:hidden}
-.band p{margin:0;padding:16px 0;white-space:nowrap;font-family:var(--la);font-size:clamp(20px,2.6vw,34px);color:var(--olive-ink);animation:slide 38s linear infinite}
-@keyframes slide{to{transform:translateX(50%)}}
-
-/* gallery */
-.sec{padding-block:clamp(64px,9vw,128px)}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
-.sec-head h2{margin:0;font-weight:600;font-size:clamp(34px,6vw,84px);line-height:1.1;letter-spacing:-.015em}
-.sec-head p{margin:0;max-width:26em;color:var(--olive-ink)}
-.notice{border:1px dashed var(--olive);background:var(--paper);padding:14px 18px;border-radius:14px;font-size:15px;margin-bottom:28px}
-.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-block:14px;border-block:1px solid var(--line);margin-bottom:32px}
-.chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{font:inherit;font-size:15px;background:none;border:1px solid var(--line);padding:6px 16px;border-radius:99px;cursor:pointer;color:var(--ink);transition:all .2s}
-.chip:hover{border-color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-.right{display:flex;gap:10px;align-items:center}
-.search{font:inherit;font-size:15px;border:1px solid var(--line);border-radius:99px;padding:7px 16px;width:170px;background:#fff;color:var(--ink)}
-.search::placeholder{color:var(--olive-ink)}
-.view{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
-.view button{font:inherit;font-size:14px;background:none;border:0;padding:7px 14px;cursor:pointer;color:var(--ink)}
-.view button[aria-pressed="true"]{background:var(--ink);color:#fff}
-
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.8vw,28px)}
-.card{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:20px;min-height:220px;background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:background .35s,border-color .35s}
-.card::before{content:"";position:absolute;inset:14px;border:1px dashed var(--olive);opacity:.55;border-radius:3px;transition:inset .35s,opacity .35s}
-.card:hover{background:#fff;border-color:var(--ink)}
-.card:hover::before{inset:8px;opacity:1}
-.card .tag{position:relative;font-size:14px;color:var(--olive-ink)}
-.card .name{position:relative;font-size:clamp(20px,2vw,28px);font-weight:500;line-height:1.35}
-.card .name small{display:block;font-size:14px;font-weight:400;color:var(--olive-ink);margin-top:4px}
-.c1{grid-column:span 7;aspect-ratio:16/11}
-.c2{grid-column:span 5;aspect-ratio:4/5;align-self:end}
-.c3{grid-column:span 4;aspect-ratio:1/1}
-.c4{grid-column:span 4;aspect-ratio:3/4;margin-top:clamp(0px,5vw,72px)}
-.c5{grid-column:span 4;aspect-ratio:1/1}
-.c6{grid-column:span 5;aspect-ratio:5/4}
-.c7{grid-column:span 7;aspect-ratio:16/10}
-.card[hidden]{display:none}
-.grid.list{display:block}
-.grid.list .card{aspect-ratio:auto;min-height:0;margin:0;flex-direction:row;align-items:center;gap:24px;padding:20px 8px;background:#fff;border:0;border-bottom:1px solid var(--line);border-radius:0}
-.grid.list .card::before{display:none}
-.empty{display:none;padding:48px 0;text-align:center;color:var(--olive-ink)}
-.empty.show{display:block}
-@media(max-width:760px){
-  .c1,.c2,.c3,.c4,.c5,.c6,.c7{grid-column:1/-1;margin-top:0;align-self:auto}
-  .c1,.c7{aspect-ratio:4/3}.c2,.c4{aspect-ratio:1/1}
-  .search{width:100%}.right{width:100%}
-}
-
-/* services */
-.services{border-top:1px solid var(--line)}
-.svc{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;padding-block:32px;border-bottom:1px solid var(--line)}
-.svc h3{margin:0;font-size:clamp(24px,3vw,40px);font-weight:600;line-height:1.3}
-.svc p{margin:0;color:var(--olive-ink);max-width:36em}
-.svc b{display:block;color:var(--ink);font-weight:500;margin-bottom:6px}
-@media(max-width:760px){.svc{grid-template-columns:1fr;gap:8px}}
-
-/* contact */
-.contact{background:var(--ink);color:#fff}
-.contact h2{margin:0 0 32px;font-weight:600;font-size:clamp(34px,7vw,104px);line-height:1.08;letter-spacing:-.02em}
-.contact .btn{border-color:#fff;color:#fff}
-.contact .btn.solid{background:#fff;color:var(--ink)}
-.contact .btn.ghost:hover{background:#fff;color:var(--ink)}
-.meta{margin-top:40px;display:flex;gap:24px 40px;flex-wrap:wrap;color:#E8E8E2;font-size:15px}
-footer{padding-block:28px;font-size:14px;color:var(--olive-ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-
-/* mobile bar */
-.mbar{display:none}
-@media(max-width:760px){
-  .mbar{display:flex;position:fixed;inset-inline:0;bottom:0;z-index:30;gap:8px;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--line)}
-  .mbar a{flex:1;text-align:center;padding:12px;border-radius:99px;border:1px solid var(--ink);font-weight:500;font-size:15px}
-  .mbar a:first-child{background:var(--ink);color:#fff}
-  footer{padding-bottom:88px}
-}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
-
-.w{display:block;position:relative}
-.w .fr{display:block;position:relative;overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:4px}
-.w .fr img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.w:hover .fr img{transform:scale(1.04)}
-.w .cap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:12px}
-.w .cap b{font-weight:500;font-size:clamp(17px,1.5vw,21px)}
-.w .cap small{color:var(--olive-ink);font-size:14px;white-space:nowrap}
-.w .play{position:absolute;inset-inline-end:14px;bottom:14px;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;font-style:normal;font-size:14px;padding-inline-start:2px}
-.w[hidden]{display:none}
-.c4,.c5,.c1,.c2,.c3{margin-top:0;aspect-ratio:auto;align-self:start}
-.c1{grid-column:span 7}.c2{grid-column:span 5;margin-top:clamp(0px,8vw,120px)}.c3{grid-column:span 4}.c4{grid-column:span 4;margin-top:clamp(0px,6vw,90px)}.c5{grid-column:span 4}
-.grid.list .w{display:flex;align-items:center;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);margin:0}
-.grid.list .w .fr{width:96px;aspect-ratio:1/1!important;flex:none}
-.grid.list .w .cap{flex:1;padding:0}
-@media(max-width:760px){.c1,.c2,.c3,.c4,.c5{grid-column:1/-1;margin-top:0}}
-/* project overlay */
-.ov{position:fixed;inset:0;z-index:50;background:#fff;overflow-y:auto;overscroll-behavior:contain;display:none;padding-top:env(safe-area-inset-top,0px)}
-.ov.open{display:block}
-.ov-bar{position:sticky;top:0;z-index:2;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px var(--pad)}
-.ov-bar button,.ov-bar a{font:inherit;font-size:15px;background:none;border:1px solid var(--ink);border-radius:99px;padding:7px 18px;cursor:pointer;color:var(--ink)}
-.ov-bar button:hover{background:var(--ink);color:#fff}
-.ov-head{padding:clamp(36px,6vw,88px) var(--pad) 32px;max-width:1480px;margin:auto}
-.ov-head small{color:var(--olive-ink);font-size:15px}
-.ov-head h1{margin:6px 0 16px;font-weight:600;font-size:clamp(32px,6vw,84px);line-height:1.1;letter-spacing:-.015em}
-.ov-head p{margin:0;max-width:36em;color:var(--olive-ink);font-size:18px}
-.ov-body{padding:0 var(--pad) 40px;max-width:1100px;margin:auto;display:grid;gap:clamp(12px,2vw,28px)}
-.ov-body img,.ov-body video{width:100%;height:auto;display:block;border-radius:4px;background:var(--paper);cursor:zoom-in}
-.ov-body video{cursor:auto;max-height:86vh;object-fit:contain;background:#000}
-.ov-nav{display:flex;justify-content:space-between;gap:16px;padding:32px var(--pad) 90px;max-width:1480px;margin:auto;border-top:1px solid var(--line)}
-.ov-nav a{font-size:clamp(18px,2.4vw,30px);font-weight:500;border-bottom:1px solid transparent}
-.ov-nav a:hover{border-color:var(--ink)}
-.ov-nav span{display:block;font-size:13px;color:var(--olive-ink);font-weight:400}
-.lb{position:fixed;inset:0;z-index:60;background:#fff;display:none;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
-.lb.open{display:flex}.lb img{max-width:100%;max-height:100%;object-fit:contain}
-body.lock{overflow:hidden}
-
-/* Work gallery view controls: placed directly below Visual Flow */
-.work-view-row{display:flex;justify-content:flex-end;margin:0 0 22px}
-.work-view-row .view{box-shadow:0 5px 18px rgba(23,24,21,.045)}
-@media(max-width:760px){.work-view-row{justify-content:flex-start}}
-
-/* Inline portfolio videos: muted autoplay with native pause and volume controls */
-.sa-video-card .fr{background:#080807}
-.sa-video-card .sa-inline-video{display:block;width:100%;height:100%;object-fit:contain;background:#080807}
-.sa-video-card .sa-inline-video::-webkit-media-controls-panel{background:linear-gradient(transparent,rgba(0,0,0,.72))}
-</style>
-<link rel="stylesheet" href="./motion.css?v=20261111-service-orbit-v2">
-  <link rel="stylesheet" href="./portfolio-enhancements.css?v=20261112">
-  <link rel="stylesheet" href="./mobile-portfolio.css?v=20261114">
-  <link rel="stylesheet" href="./reference-light-palette.css?v=20261114-bright-yellow">
-<link rel="stylesheet" href="./theme-toggle.css?v=20261114-contrast-v2">
-<link rel="stylesheet" href="./vivid-contrast.css?v=20261114-v1">
-<link rel="stylesheet" href="./al-safa-reference-20261114.css?v=2">
-<link rel="stylesheet" href="./claude-preview-match.css?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap">\n<link rel="stylesheet" href="./claude-stable-20261114.css?v=1">\n<link rel="stylesheet" href="./production-polish-20261114.css?v=1">
-</head>
-<body class="cinematic-home">
-
-<div class="cinematic-intro" id="cinematicIntro" role="status" aria-label="AL SAFA — Advertising &amp; Media">
-  <div class="cinematic-intro-orbit" aria-hidden="true"></div>
-  <span class="cinematic-intro-line" aria-hidden="true"></span>
-  <div class="cinematic-intro-logo">
-    <img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA — Advertising &amp; Media" width="800" height="199">
-  </div>
-  <span class="cinematic-intro-name">AL SAFA</span>
-  <span class="cinematic-intro-caption">ADVERTISING &amp; MEDIA</span>
-  <button class="cinematic-skip" type="button">تخطّي المقدمة <span aria-hidden="true">↗</span></button>
-</div>
-<div class="sa-atmosphere" aria-hidden="true"></div>
-<div class="sa-particles" aria-hidden="true"></div>
-
-<header><div class="wrap nav">
-  <a class="logo" href="#top" aria-label="AL SAFA — الرئيسية"><img class="site-logo" src="./assets/al-safa-logo-clean.svg" alt="AL SAFA — Advertising &amp; Media" width="800" height="199"></a>
-  <nav aria-label="القائمة الرئيسية"><ul>
-    <li><a href="#work">التصاميم</a></li><li><a href="#videos">الفيديو</a></li><li><a href="#services">الخدمات</a></li><li><a href="#contact">تواصل</a></li>
-  </ul></nav>
-  <div class="theme-actions"><button id="theme-switch" class="theme-switch" type="button" aria-pressed="false" aria-label="تفعيل الوضع الليلي الأسود"><svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"/></svg><span id="theme-label">ليلي</span></button><a class="pill" href="https://wa.me/972594753699" rel="noopener">لنتحدث</a></div>
-</div></header>
-
-<main id="top">
-<section class="wrap hero">
-  <h1><span>أفكار تتحوّل إلى أثر</span><span class="l2">بصري.</span></h1>
-  <p class="intro">أنا صفا. أصمّم هويات وإعلانات وحملات سوشيال ميديا، لعلامات تريد أن يُرى حضورها بوضوح.</p>
-  <div class="cta">
-    <a class="btn solid" href="#work">شاهد الأعمال</a>
-    <a class="btn ghost" href="https://wa.me/972594753699" rel="noopener">راسلني على واتساب</a>
-  </div>
-</section>
-
-<div class="band" aria-hidden="true"><p class="la">GRAPHIC DESIGN &nbsp;·&nbsp; BRAND VISUALS &nbsp;·&nbsp; SOCIAL CAMPAIGNS &nbsp;·&nbsp; PRINT &nbsp;·&nbsp; Graphic Design &nbsp;·&nbsp; Video Ads &nbsp;·&nbsp; AI Production &nbsp;·&nbsp; Brand Visuals &nbsp;·&nbsp; Graphic Design &nbsp;·&nbsp; Video Ads &nbsp;·&nbsp; AI Production</p></div>
-
-<section class="sec wrap" id="work">
-  <div class="sec-head">
-    <h2>تفاصيل تستحق أن تُرى.</h2>
-    <p>تتحرّك بين نماذج من الهوية البصرية والحملات والتصاميم. اضغط على أي مشروع لمشاهدة كل تصاميمه بحجم كبير.</p>
-  </div>
-  <section class="infinite-gallery wrap" aria-label="استعراض بصري متحرك للأعمال">
-  <div class="infinite-gallery-head">
-    <div><small>VISUAL FLOW / AL SAFA</small><h2>تفاصيل تستحق أن تُرى.</h2></div>
-    <p>تحرّك بين نماذج من الهوية البصرية والحملات والتصاميم.</p>
-  </div>
-  <div class="ticker-row"><div class="ticker-track"><div class="ticker-set"><a class="ticker-card" href="#brand"><span class="ticker-media"><img src="./preview-assets/work-img01.webp" alt="AL SAFA — هوية بصرية" loading="lazy" decoding="async"></span><span class="ticker-label"><span>AL SAFA — هوية بصرية</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#fitzone"><span class="ticker-media"><img src="./preview-assets/work-img11.webp" alt="FitZone GYM" loading="lazy" decoding="async"></span><span class="ticker-label"><span>FitZone GYM</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo"><span class="ticker-media"><img src="./preview-assets/work-img17.webp" alt="Hatlo — حملة سوشيال" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — حملة سوشيال</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo-ad"><span class="ticker-media"><img src="./preview-assets/video-hatlo-ad.jpg" alt="Hatlo — إعلان فيديو" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — إعلان فيديو</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo"><span class="ticker-media"><img src="./preview-assets/work-img20.webp" alt="Hatlo — تصاميم الحملة" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — تصاميم الحملة</span><small>VIEW ↗</small></span></a></div><div class="ticker-set" aria-hidden="true"><a class="ticker-card" href="#brand" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img01.webp" alt="AL SAFA — هوية بصرية" loading="lazy" decoding="async"></span><span class="ticker-label"><span>AL SAFA — هوية بصرية</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#fitzone" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img11.webp" alt="FitZone GYM" loading="lazy" decoding="async"></span><span class="ticker-label"><span>FitZone GYM</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img17.webp" alt="Hatlo — حملة سوشيال" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — حملة سوشيال</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo-ad" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/video-hatlo-ad.jpg" alt="Hatlo — إعلان فيديو" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — إعلان فيديو</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img20.webp" alt="Hatlo — تصاميم الحملة" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — تصاميم الحملة</span><small>VIEW ↗</small></span></a></div></div></div>
-  <div class="ticker-row ticker-row--reverse"><div class="ticker-track"><div class="ticker-set"><a class="ticker-card" href="#brand"><span class="ticker-media"><img src="./preview-assets/work-img03.webp" alt="AL SAFA — تطبيقات الهوية" loading="lazy" decoding="async"></span><span class="ticker-label"><span>AL SAFA — تطبيقات الهوية</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#fitzone"><span class="ticker-media"><img src="./preview-assets/work-img13.webp" alt="FitZone GYM — منشورات" loading="lazy" decoding="async"></span><span class="ticker-label"><span>FitZone GYM — منشورات</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo"><span class="ticker-media"><img src="./preview-assets/work-img19.webp" alt="Hatlo — حملة المنتج" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — حملة المنتج</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo-reels"><span class="ticker-media"><img src="./preview-assets/video-hatlo-reels.jpg" alt="Hatlo — ريلز" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — ريلز</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo"><span class="ticker-media"><img src="./preview-assets/work-img23.webp" alt="Hatlo — تصاميم الحملة" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — تصاميم الحملة</span><small>VIEW ↗</small></span></a></div><div class="ticker-set" aria-hidden="true"><a class="ticker-card" href="#brand" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img03.webp" alt="AL SAFA — تطبيقات الهوية" loading="lazy" decoding="async"></span><span class="ticker-label"><span>AL SAFA — تطبيقات الهوية</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#fitzone" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img13.webp" alt="FitZone GYM — منشورات" loading="lazy" decoding="async"></span><span class="ticker-label"><span>FitZone GYM — منشورات</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img19.webp" alt="Hatlo — حملة المنتج" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — حملة المنتج</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo-reels" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/video-hatlo-reels.jpg" alt="Hatlo — ريلز" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — ريلز</span><small>VIEW ↗</small></span></a><a class="ticker-card" href="#hatlo" tabindex="-1"><span class="ticker-media"><img src="./preview-assets/work-img23.webp" alt="Hatlo — تصاميم الحملة" loading="lazy" decoding="async"></span><span class="ticker-label"><span>Hatlo — تصاميم الحملة</span><small>VIEW ↗</small></span></a></div></div></div>
-</section>
-
-  
-  <div class="work-view-row">
-    <div class="view" role="group" aria-label="طريقة العرض">
-        <button data-v="grid" aria-pressed="true">شبكة</button><button data-v="list" aria-pressed="false">قائمة</button>
-      </div>
-  </div>
-  <div class="tools">
-    <div class="chips" role="group" aria-label="التصنيفات">
-      <button class="chip" data-f="all" aria-pressed="true">الكل</button>
-      <button class="chip" data-f="هوية بصرية" aria-pressed="false">هوية بصرية</button>
-      <button class="chip" data-f="حملات سوشيال" aria-pressed="false">حملات سوشيال</button>
-      
-    </div>
-    <div class="right">
-      <input class="search" type="search" placeholder="ابحث عن مشروع" aria-label="ابحث عن مشروع">
-      
-    </div>
-  </div>
-
-  <div class="grid" id="grid"><a class="w c1" data-cat="هوية بصرية" href="#brand" data-id="brand"><span class="fr" style="aspect-ratio:4/3"><img src="./preview-assets/work-img01.webp" alt="AL SAFA — هوية بصرية" loading="lazy" decoding="async"></span><span class="cap"><b>AL SAFA — هوية بصرية</b><small>هوية بصرية · 10 تصاميم</small></span></a><a class="w c2" data-cat="حملات سوشيال" href="#fitzone" data-id="fitzone"><span class="fr" style="aspect-ratio:5/4"><img src="./preview-assets/work-img11.webp" alt="FitZone GYM — تصاميم سوشيال" loading="lazy" decoding="async"></span><span class="cap"><b>FitZone GYM — تصاميم سوشيال</b><small>حملات سوشيال · 5 تصاميم</small></span></a><a class="w c3" data-cat="حملات سوشيال" href="#hatlo" data-id="hatlo"><span class="fr" style="aspect-ratio:5/4"><img src="./preview-assets/work-img17.webp" alt="Hatlo — حملة بذور عباد الشمس" loading="lazy" decoding="async"></span><span class="cap"><b>Hatlo — حملة بذور عباد الشمس</b><small>حملات سوشيال · 8 تصاميم</small></span></a><a class="w c4" data-cat="حملات سوشيال" href="#dalma" data-id="dalma"><span class="fr" style="aspect-ratio:5/4"><img src="./assets/dalma/design-63.webp" alt="DALMA — حملة المياه المعدنية" loading="lazy" decoding="async"></span><span class="cap"><b>DALMA — حملة المياه المعدنية</b><small>حملات سوشيال · 5 تصاميم</small></span></a></div>
-  <p class="empty" id="empty">لا توجد نتائج. جرّب تصنيفاً آخر أو امسح كلمة البحث.</p>
-  <p style="margin-top:36px"><a class="btn ghost" href="https://www.behance.net/a2b6d985" rel="noopener">المزيد على Behance</a></p>
-</section>
-
-<section class="sa-service-wheel-section wrap" aria-label="خدمات AL SAFA">
-  <div class="sa-wheel-panel">
-    <div class="sa-wheel-heading">
-      <span class="sa-wheel-kicker">THE AL SAFA SERVICE CIRCLE</span>
-      <h2>من الفكرة إلى الانتشار<span>.</span></h2>
-      <p>منظومة متكاملة تحوّل فكرتك إلى حضور ملموس.</p>
-    </div>
-    <div class="sa-service-wheel" aria-label="اختر إحدى خدماتنا">
-      <div class="sa-wheel-track" aria-hidden="true"><span class="sa-wheel-track-light"></span></div>
-      <div class="sa-wheel-ticks" aria-hidden="true"></div>
-      <div class="sa-wheel-spoke sa-spoke-one" aria-hidden="true"></div>
-      <div class="sa-wheel-spoke sa-spoke-two" aria-hidden="true"></div>
-      <div class="sa-wheel-spoke sa-spoke-three" aria-hidden="true"></div>
-      <div class="sa-wheel-core"><img class="sa-wheel-logo" src="./assets/al-safa-logo-clean.svg" alt="AL SAFA Advertising &amp; Media"></div>
-      <button class="sa-wheel-item sa-wheel-design is-active" type="button" data-service="design" aria-pressed="true">
-        <span class="sa-wheel-index">01</span><span class="sa-wheel-icon" aria-hidden="true">✳</span><b>تصميم</b><small>DESIGN</small>
-      </button>
-      <button class="sa-wheel-item sa-wheel-print" type="button" data-service="print" aria-pressed="false">
-        <span class="sa-wheel-index">02</span><span class="sa-wheel-icon" aria-hidden="true">▤</span><b>طباعة</b><small>PRINT</small>
-      </button>
-      <button class="sa-wheel-item sa-wheel-distribute" type="button" data-service="distribution" aria-pressed="false">
-        <span class="sa-wheel-index">03</span><span class="sa-wheel-icon" aria-hidden="true">↗</span><b>توزيع</b><small>DISTRIBUTION</small>
-      </button>
-    </div>
-    <div class="sa-wheel-detail" aria-live="polite">
-      <span class="sa-detail-index">01 / SERVICE</span>
-      <div><h3>تصميم يصنع الانطباع</h3><p>هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.</p></div>
-      <span class="sa-detail-current">DESIGN STUDIO</span>
-    </div>
-    <div class="sa-wheel-foot"><span>اختَر الخدمة لاستكشافها</span><span class="sa-wheel-foot-line"></span><span>01 — 03</span></div>
-  </div>
-</section>
-
-<section class="sec wrap sa-video-section" id="videos">
-  <div class="sec-head"><h2>إعلانات الفيديو</h2><p>الأعمال المتحركة في مساحة مستقلة عن التصاميم والبوسترات.</p></div>
-  <div class="sa-video-grid">
-    <a class="w sa-video-card" href="#hatlo-ad" data-id="hatlo-ad" aria-label="مشاهدة تفاصيل إعلان Hatlo">
-      <span class="fr"><video class="sa-inline-video" muted loop playsinline controls preload="none" poster="./preview-assets/video-hatlo-ad.jpg" aria-label="Hatlo — إعلان فيديو"><source src="./preview-assets/video-hatlo-ad.mp4" type="video/mp4"></video></span>
-      <span class="cap"><b>Hatlo — إعلان فيديو</b><small>يعمل تلقائياً بصمت · استخدم أدوات الفيديو للصوت والإيقاف</small></span>
-    </a>
-    <a class="w sa-video-card" href="#hatlo-reels" data-id="hatlo-reels" aria-label="مشاهدة تفاصيل ريلز Hatlo">
-      <span class="fr"><video class="sa-inline-video" muted loop playsinline controls preload="none" poster="./preview-assets/video-hatlo-reels.jpg" aria-label="Hatlo — ريلز"><source src="./preview-assets/video-hatlo-reels.mp4" type="video/mp4"></video></span>
-      <span class="cap"><b>Hatlo — ريلز</b><small>يعمل تلقائياً بصمت · استخدم أدوات الفيديو للصوت والإيقاف</small></span>
-    </a>
-  </div>
-</section>
-
-
-
-<section class="sec wrap services" id="services">
-  <div class="sec-head"><h2>ما أقدّمه</h2></div>
-  <div class="sa-offers-grid"><div class="svc"><h3>تصميم جرافيك</h3><p><b>هوية بصرية وتصاميم إعلانية</b>لغة بصرية واضحة تمنح علامتك حضوراً يمكن تمييزه.</p></div>
-  <div class="svc"><h3>إنتاج فيديو</h3><p><b>إعلانات منتجات ومونتاج وموشن</b>رسالتك في مشهد بإيقاع بصري وصوتي مدروس.</p></div>
-  <div class="svc"><h3>إعلانات بالذكاء الاصطناعي</h3><p><b>مشاهد سينمائية وتحويل الصورة إلى فيديو</b>أفكار إعلانية جديدة بأدوات الذكاء الاصطناعي.</p></div>
-  <div class="svc"><h3>محتوى العلامات التجارية</h3><p><b>منشورات وحملات للسوشيال ميديا</b>محتوى منتظم ومتناسق يخاطب جمهورك.</p></div>
-  </div>
-</section>
-
-<section class="sec contact" id="contact"><div class="wrap">
-  <h2>عندك فكرة؟<br>خلّينا نبدأ.</h2>
-  <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <a class="btn solid" href="https://wa.me/972594753699" rel="noopener">واتساب</a>
-    <a class="btn ghost" href="tel:+972594753699">اتصال مباشر</a>
-    <a class="btn ghost" href="mailto:info.alsafa.ads@gmail.com">البريد الإلكتروني</a>
-  </div>
-  <div class="meta"><span dir="ltr">0594753699</span><span dir="ltr">info.alsafa.ads@gmail.com</span><a href="https://www.behance.net/a2b6d985" rel="noopener" style="border-bottom:1px solid #fff">Behance</a></div>
-</div></section>
-</main>
-
-<div class="ov" id="ov" role="dialog" aria-modal="true" aria-label="تفاصيل المشروع"><div class="ov-bar"><button id="ovx">إغلاق ✕</button><a href="https://www.behance.net/a2b6d985" rel="noopener">Behance</a></div><div class="ov-head"><small id="ovc"></small><h1 id="ovt"></h1><p id="ovd"></p></div><div class="ov-body" id="ovb"></div><div class="ov-nav" id="ovn"></div></div>
-<div class="lb" id="lb"><img alt=""></div>
-<footer class="wrap"><span>© AL SAFA</span><a href="#top">العودة للأعلى</a></footer>
-<div class="mbar"><a href="https://wa.me/972594753699" rel="noopener">واتساب</a><a href="tel:+972594753699">اتصال</a></div>
-
-<script>(function(){
-var IMG={"dalma/design-62.webp":"./assets/dalma/design-62.webp","dalma/design-63.webp":"./assets/dalma/design-63.webp","dalma/design-64.webp":"./assets/dalma/design-64.webp","dalma/design-65.webp":"./assets/dalma/design-65.webp","dalma/design-66.webp":"./assets/dalma/design-66.webp","video/hatlo-ad.jpg":"./preview-assets/video-hatlo-ad.jpg","video/hatlo-ad.mp4":"./preview-assets/video-hatlo-ad.mp4","video/hatlo-reels.jpg":"./preview-assets/video-hatlo-reels.jpg","video/hatlo-reels.mp4":"./preview-assets/video-hatlo-reels.mp4","work/img01.webp":"./preview-assets/work-img01.webp","work/img02.webp":"./preview-assets/work-img02.webp","work/img03.webp":"./preview-assets/work-img03.webp","work/img04.webp":"./preview-assets/work-img04.webp","work/img05.webp":"./preview-assets/work-img05.webp","work/img06.webp":"./preview-assets/work-img06.webp","work/img07.webp":"./preview-assets/work-img07.webp","work/img08.webp":"./preview-assets/work-img08.webp","work/img09.webp":"./preview-assets/work-img09.webp","work/img10.webp":"./preview-assets/work-img10.webp","work/img11.webp":"./preview-assets/work-img11.webp","work/img12.webp":"./preview-assets/work-img12.webp","work/img13.webp":"./preview-assets/work-img13.webp","work/img14.webp":"./preview-assets/work-img14.webp","work/img15.webp":"./preview-assets/work-img15.webp","work/img16.webp":"./preview-assets/work-img16.webp","work/img17.webp":"./preview-assets/work-img17.webp","work/img18.webp":"./preview-assets/work-img18.webp","work/img19.webp":"./preview-assets/work-img19.webp","work/img20.webp":"./preview-assets/work-img20.webp","work/img21.webp":"./preview-assets/work-img21.webp","work/img22.webp":"./preview-assets/work-img22.webp","work/img23.webp":"./preview-assets/work-img23.webp"};
-var P=[{"id":"brand","title":"AL SAFA — هوية بصرية","cat":"هوية بصرية","type":"images","desc":"تطبيقات الهوية البصرية للصفا للدعاية والإعلان: شعارات، بطاقات ومطبوعات ونماذج العلامة.","cover":"work/img01.webp","images":["work/img01.webp","work/img02.webp","work/img03.webp","work/img04.webp","work/img05.webp","work/img06.webp","work/img07.webp","work/img08.webp","work/img09.webp","work/img10.webp"]},{"id":"fitzone","title":"FitZone GYM — تصاميم سوشيال","cat":"حملات سوشيال","type":"images","desc":"منشورات وإعلانات مصممة لنادٍ رياضي.","cover":"work/img11.webp","images":["work/img11.webp","work/img12.webp","work/img13.webp","work/img14.webp","work/img15.webp"]},{"id":"hatlo","title":"Hatlo — حملة بذور عباد الشمس","cat":"حملات سوشيال","type":"images","desc":"منشورات بصرية لمنتج هاتلو بذور دوار الشمس.","cover":"work/img17.webp","images":["work/img16.webp","work/img17.webp","work/img18.webp","work/img19.webp","work/img20.webp","work/img21.webp","work/img22.webp","work/img23.webp"]},{"id":"dalma","title":"DALMA — حملة المياه المعدنية","cat":"حملات سوشيال","type":"images","desc":"تصاميم إعلانية لمياه دلما باستخدام صور المنتجات والخلفيات المائية.","cover":"dalma/design-63.webp","images":["dalma/design-62.webp","dalma/design-63.webp","dalma/design-64.webp","dalma/design-65.webp","dalma/design-66.webp"]},{"id":"hatlo-ad","title":"Hatlo — إعلان فيديو","cat":"فيديو","type":"video","desc":"إعلان فيديو لمنتج هاتلو.","cover":"video/hatlo-ad.jpg","video":"video/hatlo-ad.mp4"},{"id":"hatlo-reels","title":"Hatlo — ريلز","cat":"فيديو","type":"video","desc":"ريلز قصير لمنتج هاتلو.","cover":"video/hatlo-reels.jpg","video":"video/hatlo-reels.mp4"}];
-document.querySelectorAll('img[data-k]').forEach(function(i){i.src=IMG[i.dataset.k]});
-document.querySelectorAll('.sa-inline-video').forEach(function(v){
-  v.addEventListener('click',function(e){e.stopPropagation()});
-  v.addEventListener('pointerdown',function(e){e.stopPropagation()});
-  var startMuted=function(){v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});};
-  if(v.readyState>=2)startMuted();else v.addEventListener('loadeddata',startMuted,{once:true});
-});
-var cards=[].slice.call(document.querySelectorAll('#grid .w')),chips=[].slice.call(document.querySelectorAll('.chip')),
-q=document.querySelector('.search'),grid=document.getElementById('grid'),empty=document.getElementById('empty'),f='all';
-function apply(){var t=q.value.trim(),n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.cat===f)&&(!t||c.textContent.indexOf(t)>-1);c.hidden=!ok;if(ok)n++});empty.classList.toggle('show',n===0)}
-chips.forEach(function(b){b.addEventListener('click',function(){f=b.dataset.f;chips.forEach(function(x){x.setAttribute('aria-pressed',x===b)});apply()})});
-q.addEventListener('input',apply);
-[].forEach.call(document.querySelectorAll('.view button'),function(b){b.addEventListener('click',function(){grid.classList.toggle('list',b.dataset.v==='list');[].forEach.call(document.querySelectorAll('.view button'),function(x){x.setAttribute('aria-pressed',x===b)})})});
-var ov=document.getElementById('ov'),ob=document.getElementById('ovb'),lb=document.getElementById('lb');
-function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function open(id){
-  var i=P.findIndex(function(p){return p.id===id});if(i<0){close();return}
-  var p=P[i],n=P[(i+1)%P.length],pr=P[(i+P.length-1)%P.length];
-  document.getElementById('ovc').textContent=p.cat;document.getElementById('ovt').textContent=p.title;document.getElementById('ovd').textContent=p.desc;
-  ob.innerHTML=p.type==='video'?'<video controls playsinline preload="metadata" poster="'+IMG[p.cover]+'" src="'+IMG[p.video]+'"></video>':p.images.map(function(k){return'<img loading="lazy" alt="'+esc(p.title)+'" src="'+IMG[k]+'">'}).join('');
-  document.getElementById('ovn').innerHTML='<a href="#'+pr.id+'"><span>السابق</span>'+esc(pr.title)+'</a><a href="#'+n.id+'" style="text-align:left"><span>التالي</span>'+esc(n.title)+'</a>';
-  ov.classList.add('open');document.body.classList.add('lock');ov.scrollTop=0;document.title=p.title+' — صفا';
-}
-function close(){ov.classList.remove('open');document.body.classList.remove('lock');var v=ob.querySelector('video');if(v)v.pause();ob.innerHTML='';document.title='AL SAFA — صفا | تصميم · فيديو · إعلانات بالذكاء الاصطناعي'}
-function route(){var id=location.hash.slice(1);if(P.some(function(p){return p.id===id}))open(id);else close()}
-window.addEventListener('hashchange',route);window.addEventListener('popstate',route);route();
-document.getElementById('ovx').addEventListener('click',function(){history.pushState('',document.title,location.pathname+location.search);close();document.getElementById('work').scrollIntoView()});
-ob.addEventListener('click',function(e){if(e.target.tagName==='IMG'){lb.querySelector('img').src=e.target.src;lb.classList.add('open')}});
-lb.addEventListener('click',function(){lb.classList.remove('open')});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(lb.classList.contains('open'))lb.classList.remove('open');else if(ov.classList.contains('open'))document.getElementById('ovx').click()}});
-
-var serviceCopy={
- design:{number:'01',title:'تصميم يصنع الانطباع',body:'هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.',tag:'DESIGN STUDIO'},
- print:{number:'02',title:'طباعة تحوّل الفكرة إلى واقع',body:'نحوّل التصاميم إلى مطبوعات ومواد دعائية بجودة تشبه علامتك وتعكس تفاصيلها.',tag:'PRINT PRODUCTION'},
- distribution:{number:'03',title:'توزيع يوصل رسالتك',body:'نساعد علامتك على الوصول والانتشار عبر حلول توزيع مدروسة تخدم هدفك.',tag:'BRAND REACH'}
-};
-var wheel=document.querySelector('.sa-service-wheel');
-if(wheel){
- var detail=wheel.parentElement.querySelector('.sa-wheel-detail');
- wheel.querySelectorAll('[data-service]').forEach(function(btn){
-  btn.addEventListener('click',function(){
-   var data=serviceCopy[btn.dataset.service];if(!data)return;
-   wheel.querySelectorAll('[data-service]').forEach(function(item){
-    var active=item===btn;item.classList.toggle('is-active',active);item.setAttribute('aria-pressed',active?'true':'false');
-   });
-   detail.classList.add('is-changing');
-   window.setTimeout(function(){
-    detail.querySelector('.sa-detail-index').textContent=data.number+' / SERVICE';
-    detail.querySelector('h3').textContent=data.title;
-    detail.querySelector('p').textContent=data.body;
-    detail.querySelector('.sa-detail-current').textContent=data.tag;
-    detail.classList.remove('is-changing');
-   },160);
-  });
- });
-}
-})();</script>
-<script src="./stable-video-20261114.js" defer></script>
-<script src="./mobile-portfolio.js?v=20261114" defer></script>
-<script src="./theme-toggle.js?v=20261114-reference" defer></script>
-<script src="./motion.js?v=20261110-desktop-v1" defer></script>
-<script src="./site-health-20261114.js?v=1" defer></script>
-</body>
-</html>
+:root{--bg:#141414;--ink:#fff;--mute:#aaa;--card:#1a1a1a;--line:#303030;--y:#ffc107;--yink:#171717;color-scheme:dark}
+:root[data-theme=light]{--bg:#f4f4f4;--ink:#141414;--mute:#595959;--card:#fff;--line:#d1d1d1;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Readex Pro",Tahoma,sans-serif;line-height:1.75;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+.wrap{width:min(1280px,100%);margin:auto;padding-inline:24px}header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}.bar{max-width:1280px;padding:12px 24px;margin:auto;display:flex;gap:20px;align-items:center}.logo img{width:142px;max-height:42px;object-fit:contain}nav{display:flex;gap:25px;margin-inline-start:auto;color:var(--mute);font-size:14px}nav a:hover{color:var(--y)}
+.btn{display:inline-block;border:0;border-radius:100px;padding:11px 24px;background:var(--y);color:var(--yink);font-weight:600;text-align:center}.btn:hover{filter:brightness(1.08)}.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}.ghost:hover{border-color:var(--y)}.theme{background:transparent;border:1px solid var(--line);padding:8px 15px;border-radius:100px;white-space:nowrap}
+.hero{padding-top:96px;padding-bottom:74px}.hero h1{font-size:clamp(44px,8vw,112px);line-height:1.12;margin:0 0 24px;max-width:10em}.hero p{color:var(--mute);font-size:20px;max-width:620px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.tick{overflow:hidden;border-block:1px solid var(--line);padding:15px 0;color:var(--mute);white-space:nowrap;direction:ltr;letter-spacing:.16em}.tick span{display:inline-block;animation:marquee 36s linear infinite}@keyframes marquee{to{transform:translateX(-50%)}}section{padding:90px 0}h2{font-size:clamp(30px,4.4vw,56px);line-height:1.25;margin:0 0 10px}.lead{max-width:660px;color:var(--mute);margin:0 0 32px}
+.flow{display:grid;gap:14px;overflow:hidden;direction:ltr;margin:38px 0}.flowrow{display:flex;gap:14px;width:max-content;animation:marquee 62s linear infinite}.flowrow:nth-child(2){animation-direction:reverse;animation-duration:77s}.flowrow:nth-child(3){animation-duration:88s}.flow:hover .flowrow{animation-play-state:paused}
+.flowitem{border:0;padding:0;width:clamp(230px,30vw,360px);height:clamp(200px,24vw,290px);flex:none;position:relative;border-radius:14px;overflow:hidden;background:var(--card)}.flowitem img{width:100%;height:100%;object-fit:contain}.flowitem span{position:absolute;bottom:0;inset-inline:0;text-align:right;padding:28px 14px 10px;background:linear-gradient(transparent,#000b);color:white}
+.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:26px 0}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip,.view{background:transparent;border:1px solid var(--line);border-radius:100px;padding:8px 17px;font-size:14px}.chip[aria-pressed=true],.view[aria-pressed=true]{background:var(--y);color:var(--yink);border-color:var(--y)}.views{margin-inline-start:auto;display:flex;gap:8px}
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}.projects.list{grid-template-columns:1fr}.project{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;padding:0;text-align:right}.project:hover{border-color:var(--y)}.project .picture{aspect-ratio:4/3;background:var(--line)}.project img{width:100%;height:100%;object-fit:contain}.project .details{padding:18px}.project strong{display:block;font-size:19px}.project small{color:var(--mute)}.projects.list .project{display:grid;grid-template-columns:170px 1fr}.projects.list .picture{aspect-ratio:auto;height:125px}.projects.list .details{align-self:center}
+.circle{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:center}.nodes{display:grid;gap:14px}.node{background:transparent;border:1px solid var(--line);border-radius:18px;padding:18px 22px;text-align:right;display:flex;align-items:center;gap:18px}.node b{color:var(--y)}.node[aria-pressed=true]{border-color:var(--y);background:var(--card)}.panel{background:var(--card);border-radius:20px;padding:34px;min-height:230px}.panel small{color:var(--y)}.panel h3{font-size:30px;margin:6px 0}.panel p{color:var(--mute)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--y);margin-top:34px}.svc>div{padding:22px;border-inline-start:1px solid var(--line)}.svc h3{margin:0}.svc p{color:var(--mute);font-size:14px}
+.contact{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;background:var(--y);color:var(--yink);padding:48px;border-radius:25px}.contact h2{margin:0}.contact .btn{background:var(--yink);color:var(--y)}.contact .ghost{background:transparent;color:var(--yink);border-color:var(--yink)}footer{padding:34px 0 100px;color:var(--mute);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:14px}
+.float{display:none}dialog{border:0;padding:0;background:var(--bg);color:var(--ink);width:min(980px,100vw);max-width:100vw;height:100vh;max-height:100vh}.dialoghead{position:sticky;top:0;background:var(--bg);display:flex;align-items:center;padding:15px 24px;border-bottom:1px solid var(--line);z-index:2}.dialoghead button{margin-inline-start:auto;border:0;background:var(--card);border-radius:50%;width:42px;height:42px}.gallery{padding:24px;display:grid;gap:20px}.gallery img{width:100%;height:auto;border-radius:12px}.gallery video{width:100%;max-height:85vh;background:black}
+#intro{position:fixed;inset:0;background:var(--bg);z-index:100;display:grid;place-items:center;transition:opacity .6s,visibility .6s}#intro.off{opacity:0;visibility:hidden;pointer-events:none}#intro img{width:min(350px,75vw);animation:reveal 2s ease both}#skip{position:absolute;top:24px;left:24px;background:none;border:1px solid var(--line);border-radius:100px;padding:8px 17px}@keyframes reveal{from{opacity:0;transform:translateY(22px) scale(.9)}to{opacity:1;transform:none}}
+@media(max-width:820px){nav{display:none}.bar{gap:12px}.bar .btn{padding:9px 14px}.theme{margin-inline-start:auto}.hero{padding-top:54px}.circle{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}.contact{padding:30px}.float{position:fixed;display:flex;inset-inline:12px;bottom:12px;gap:10px;z-index:25}.float a{flex:1;background:var(--y);color:var(--yink);border-radius:100px;padding:11px;text-align:center;font-weight:600}.float a+a{background:var(--card);color:var(--ink);border:1px solid var(--line)}}@media(max-width:480px){.bar{padding-inline:12px}.logo img{width:105px}.projects{grid-template-columns:1fr}.svc{grid-template-columns:1fr}.views{margin-inline-start:0}.contact .cta{width:100%}.contact .btn{flex:1}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#intro img,.flowrow,.tick span{animation:none}}
+</style></head><body>
+<div id="intro"><button id="skip" type="button">تخطّي المقدمة</button><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></div>
+<header><div class="bar"><a class="logo" href="#top"><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></a><nav><a href="#work">الأعمال</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a></nav><button type="button" id="th" class="theme">☀ صباحي</button><a class="btn" href="https://wa.me/972594753699">لنتحدث</a></div></header>
+<main id="top"><div class="wrap hero"><h1>أفكار تتحوّل إلى أثر بصري.</h1><p>أنا صفا. أصمّم هويات وإعلانات وحملات سوشيال ميديا، لعلامات تريد أن يُرى حضورها بوضوح.</p><div class="cta"><a class="btn" href="#work">شاهد الأعمال</a><a class="btn ghost" href="https://wa.me/972594753699">راسلني على واتساب</a></div></div>
+<div class="tick" aria-hidden="true"><span id="ticker"></span></div>
+<section id="work"><div class="wrap"><h2>تفاصيل تستحق أن تُرى.</h2><p class="lead">تحرّك بين نماذج من الهوية البصرية والحملات والتصاميم. اضغط على أي مشروع لمشاهدة كل تصاميمه بحجم كبير.</p></div><div class="flow" id="flow"></div><div class="wrap"><div class="tools"><div class="chips" id="chips"></div><div class="views"><button class="view" data-view="grid" aria-pressed="true">شبكة</button><button class="view" data-view="list" aria-pressed="false">قائمة</button></div></div><div class="projects" id="projects"></div><p style="margin-top:28px"><a class="btn ghost" href="https://www.behance.net/a2b6d985" target="_blank" rel="noopener">المزيد على Behance</a></p></div></section>
+<section id="circle" style="padding-top:0"><div class="wrap"><h2>من الفكرة إلى الانتشار.</h2><p class="lead">منظومة متكاملة تحوّل فكرتك إلى حضور ملموس. اختر الخدمة لاستكشافها.</p><div class="circle"><div class="nodes" id="nodes"></div><div class="panel" aria-live="polite"><small id="panelnum"></small><h3 id="paneltitle"></h3><p id="paneldesc"></p></div></div></div></section>
+<section id="services" style="padding-top:0"><div class="wrap"><h2>ما أقدّمه</h2><div class="svc"><div><h3>تصميم جرافيك</h3><p>هوية بصرية وتصاميم إعلانية تمنح علامتك حضوراً مميزاً.</p></div><div><h3>إنتاج فيديو</h3><p>إعلانات منتجات ومونتاج وموشن بجودة احترافية.</p></div><div><h3>إعلانات بالذكاء الاصطناعي</h3><p>مشاهد سينمائية وتحويل الصور إلى فيديوهات إعلانية.</p></div><div><h3>محتوى العلامات التجارية</h3><p>منشورات وحملات متناسقة للسوشيال ميديا.</p></div></div></div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact"><div><h2>عندك فكرة؟ خلّينا نبدأ.</h2><p>0594753699 · info.alsafa.ads@gmail.com</p></div><div class="cta"><a class="btn" href="https://wa.me/972594753699">واتساب</a><a class="btn ghost" href="tel:+972594753699">اتصال مباشر</a><a class="btn ghost" href="mailto:info.alsafa.ads@gmail.com">البريد الإلكتروني</a><a class="btn ghost" href="https://www.facebook.com/profile.php?id=61596477453982">فيسبوك</a></div></div></div></section></main>
+<div class="wrap"><footer><span>© AL SAFA Advertising & Media</span><span><a href="https://www.facebook.com/profile.php?id=61596477453982">فيسبوك</a> · <a href="#top">العودة للأعلى</a></span></footer></div>
+<div class="float"><a href="https://wa.me/972594753699">واتساب</a><a href="tel:+972594753699">اتصال</a></div>
+<dialog id="dialog"><div class="dialoghead"><h3 id="dialogtitle"></h3><button id="close" aria-label="إغلاق">✕</button></div><div class="gallery" id="gallery"></div></dialog>
+<script>
+const $=s=>document.querySelector(s);const projects=$('#projects');let all=[],filter='all';
+const categories=[['all','الكل'],['brand','هوية بصرية'],['social','حملات سوشيال'],['video','فيديوهات']];
+const category=p=>p.category.includes('فيديو')?'video':p.category.includes('هوية')||p.category.includes('مطبوع')?'brand':'social';
+function openProject(p){$('#dialogtitle').textContent=p.title;const g=$('#gallery');g.replaceChildren();for(const item of p.sections||[]){if(item.type==='image'&&item.src){let im=document.createElement('img');im.src=item.src;im.alt=item.alt||p.title;im.loading='lazy';g.append(im)}else if(item.type==='video'&&item.src){let v=document.createElement('video');v.src=item.src;v.poster=item.poster||p.coverImage;v.controls=true;v.preload='none';g.append(v)}}$('#dialog').showModal();$('#dialog').scrollTop=0}
+function render(){projects.replaceChildren();const selected=all.filter(p=>filter==='all'||category(p)===filter);for(const p of selected){const b=document.createElement('button');b.className='project';b.type='button';const picture=document.createElement('div');picture.className='picture';const im=document.createElement('img');im.src=p.coverImage;im.loading='lazy';im.alt=p.coverAlt||p.title;picture.append(im);const d=document.createElement('div');d.className='details';const t=document.createElement('strong');t.textContent=p.title;const sm=document.createElement('small');sm.textContent=p.category;d.append(t,sm);b.append(picture,d);b.onclick=()=>openProject(p);projects.append(b)}}
+for(const [key,name] of categories){let b=document.createElement('button');b.className='chip';b.textContent=name;b.setAttribute('aria-pressed',key==='all');b.onclick=()=>{filter=key;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render()};$('#chips').append(b)}
+document.querySelectorAll('.view').forEach(b=>b.onclick=()=>{document.querySelectorAll('.view').forEach(x=>x.setAttribute('aria-pressed',x===b));projects.classList.toggle('list',b.dataset.view==='list')});
+fetch('./portfolio-data.json').then(r=>{if(!r.ok)throw Error('Portfolio data');return r.json()}).then(data=>{all=data.projects||[];render();for(let i=0;i<3;i++){let row=document.createElement('div');row.className='flowrow';const picks=all.filter(p=>p.coverImage).filter((_,j)=>j%3===i);for(let repeat=0;repeat<4;repeat++){for(const p of picks){const b=document.createElement('button');b.className='flowitem';b.type='button';let img=document.createElement('img');img.src=p.coverImage;img.alt='';img.loading='lazy';let title=document.createElement('span');title.textContent=p.title;b.append(img,title);b.onclick=()=>openProject(p);row.append(b)}}$('#flow').append(row)}}).catch(e=>{projects.textContent='تعذر تحميل المشاريع. يرجى تحديث الصفحة.';console.error(e)});
+$('#close').onclick=()=>$('#dialog').close();$('#dialog').addEventListener('click',e=>{if(e.target===$('#dialog'))$('#dialog').close()});
+const services=[['01','تصميم','DESIGN','تصميم يصنع الانطباع','هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.'],['02','طباعة','PRINT','مطبوعات جاهزة للاستخدام','بطاقات أعمال وقرطاسية ولافتات وتصاميم بملفات جاهزة للطباعة.'],['03','توزيع','DISTRIBUTION','انتشار يصل لجمهورك','تجهيز المحتوى بمقاسات المنصات المختلفة وجدولة النشر.']];
+function choose(i){document.querySelectorAll('.node').forEach((x,j)=>x.setAttribute('aria-pressed',i===j));$('#panelnum').textContent=services[i][0]+' / '+services[i][2];$('#paneltitle').textContent=services[i][3];$('#paneldesc').textContent=services[i][4]}
+services.forEach((s,i)=>{let b=document.createElement('button');b.className='node';b.innerHTML='<b>'+s[0]+'</b><strong>'+s[1]+'</strong>';b.onclick=()=>choose(i);$('#nodes').append(b)});choose(0);
+$('#ticker').textContent=('GRAPHIC DESIGN  ·  BRAND VISUALS  ·  SOCIAL CAMPAIGNS  ·  PRINT  ·  ').repeat(10);
+function theme(){const l=document.documentElement.dataset.theme==='light';$('#th').textContent=l?'☾ ليلي':'☀ صباحي';document.querySelector('meta[name=theme-color]').content=l?'#f4f4f4':'#141414'}
+try{const v=localStorage.getItem('al-safa-theme');if(v==='light'||v==='dark')document.documentElement.dataset.theme=v}catch(e){}theme();
+$('#th').onclick=()=>{const v=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=v;try{localStorage.setItem('al-safa-theme',v)}catch(e){}theme()};
+const hide=()=>$('#intro').classList.add('off');$('#skip').onclick=hide;setTimeout(hide,matchMedia('(prefers-reduced-motion:reduce)').matches?0:3000);
+</script></body></html>
