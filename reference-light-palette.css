@@ -8,8 +8,8 @@
  --olive-ink:#5b5953;
  --paper:#faf9f6;
  --line:#e7e4dc;
- --sa-gold:#c49b32;
- --sa-gold-soft:#e9cf81;
+ --sa-gold:#FFD000;
+ --sa-gold-soft:#FFE76B;
 }
 html,body.cinematic-home{background:#fff;color:var(--ink)}
 body.cinematic-home header{background:rgba(255,255,255,.95);border-bottom-color:#e7e4dc}
@@ -25,7 +25,7 @@ body.cinematic-home .svc{border-color:#e7e4dc}
 body.cinematic-home .w:hover .fr{border-color:var(--sa-gold)}
 body.cinematic-home .pill:hover,
 body.cinematic-home .btn.solid{background:#191919;color:#fff}
-body.cinematic-home .btn.ghost:hover{border-color:var(--sa-gold);background:#faf6e9;color:#191919}
+body.cinematic-home .btn.ghost:hover{border-color:var(--sa-gold);background:#FFF8D5;color:#191919}
 body.cinematic-home .ov,body.cinematic-home .lb{background:#fff;color:#191919}
 body.cinematic-home .ov-bar{background:rgba(255,255,255,.96)}
 body.cinematic-home .contact{background:#191919;color:#fff}
@@ -33,8 +33,20 @@ body.cinematic-home .contact .btn.solid{background:#fff;color:#191919}
 body.cinematic-home .contact .btn.ghost{color:#fff}
 body.cinematic-home .mbar{background:#fff;border-top-color:#e7e4dc}
 body.cinematic-home .mbar a:first-child{background:#191919;color:#fff}
-body.cinematic-home .sa-wheel-panel{--sa-gold:#c49b32}
+body.cinematic-home .sa-wheel-panel{--sa-gold:#FFD000}
 @media(prefers-color-scheme:dark){
  :root{color-scheme:only light;--white:#fff;--ink:#191919;--paper:#faf9f6;--line:#e7e4dc}
  html,body.cinematic-home{background:#fff;color:#191919}
 }
+
+/* Brighter signature yellow: vivid accents, clean white layout retained. */
+body.cinematic-home{--sa-gold:#FFD000;--sa-gold-soft:#FFE76B;--accent:#FFD000;--gold:#FFD000}
+body.cinematic-home .hero h1 .l2{color:#858585}
+body.cinematic-home .chip[aria-pressed=true],
+body.cinematic-home .view button[aria-pressed=true]{background:#FFD000;color:#161616;border-color:#FFD000;box-shadow:none}
+body.cinematic-home .chip:hover,body.cinematic-home .view button:hover{border-color:#FFD000}
+body.cinematic-home .btn.ghost:hover{background:#FFF8D5;border-color:#FFD000}
+body.cinematic-home .sa-wheel-panel{--sa-gold:#FFD000;--sa-gold-soft:#FFE76B}
+body.cinematic-home .sa-service-wheel .sa-wheel-item.is-active{border-color:#FFD000}
+body.cinematic-home .w:hover .fr{border-color:#FFD000}
+body.cinematic-home :focus-visible{outline-color:#D6A900}
