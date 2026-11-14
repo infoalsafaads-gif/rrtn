@@ -1,0 +1,59 @@
+/* AL SAFA — mobile-only improvements, additive to the existing cinematic design. */
+@media (max-width:760px){
+  body.cinematic-home header nav,body.cinematic-home .nav nav{display:none!important}
+  body.cinematic-home .nav{height:64px;gap:10px}
+  body.cinematic-home .nav .site-logo{max-width:min(45vw,165px);height:auto}
+  body.cinematic-home .nav .pill{white-space:nowrap;padding:8px 15px;font-size:13px}
+  body.cinematic-home .hero{padding-block:clamp(42px,9vw,78px) 40px}
+  body.cinematic-home .hero h1{font-size:clamp(36px,9.5vw,68px);line-height:1.16;overflow-wrap:anywhere}
+  body.cinematic-home .hero h1 .l2{padding-inline-start:0}
+  body.cinematic-home .hero .intro{font-size:clamp(15px,4vw,18px);line-height:1.9}
+  body.cinematic-home .hero .cta{gap:9px}
+  body.cinematic-home .hero .cta .btn{padding:11px 16px;font-size:13px}
+  body.cinematic-home .ticker-card{width:180px!important}
+  body.cinematic-home .ticker-track{gap:10px}
+  body.cinematic-home .ticker-set{gap:10px}
+  body.cinematic-home #grid:not(.list){grid-template-columns:minmax(0,1fr)}
+  body.cinematic-home #grid:not(.list) .w{grid-column:1/-1!important;max-width:100%;margin:0!important}
+  body.cinematic-home #grid .w .fr img{min-height:0}
+  body.cinematic-home #grid.list .w{display:flex!important;flex-direction:row;align-items:center;gap:12px}
+  body.cinematic-home #grid.list .w .fr{width:86px!important;min-width:86px;aspect-ratio:1/1!important}
+  body.cinematic-home #grid.list .w .cap{min-width:0;display:block}
+  body.cinematic-home #grid.list .w .cap b{font-size:16px;line-height:1.5;display:block}
+  body.cinematic-home #grid.list .w .cap small{font-size:12px;white-space:normal}
+  body.cinematic-home .ov{height:100dvh;overflow-y:auto;padding-top:0}
+  body.cinematic-home .ov-bar{position:sticky;top:0;z-index:5;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+  body.cinematic-home .ov-head{padding-top:26px}
+  body.cinematic-home .ov-head h1{font-size:clamp(28px,8vw,42px)}
+  body.cinematic-home .ov-body{display:flex;flex-direction:column;gap:12px}
+  body.cinematic-home .ov-body img{width:100%;height:auto;object-fit:contain}
+  body.cinematic-home .sa-wheel-panel{display:flex;flex-direction:column;align-items:stretch;gap:18px}
+  body.cinematic-home .sa-wheel-heading{order:0}
+  body.cinematic-home .sa-service-wheel{order:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:100%;aspect-ratio:auto;min-height:0;place-items:stretch;padding:10px 0}
+  body.cinematic-home .sa-service-wheel .sa-wheel-track,
+  body.cinematic-home .sa-service-wheel .sa-wheel-ticks,
+  body.cinematic-home .sa-service-wheel .sa-wheel-spoke,
+  body.cinematic-home .sa-service-wheel .sa-wheel-core{display:none}
+  body.cinematic-home .sa-service-wheel .sa-wheel-item,
+  body.cinematic-home .sa-service-wheel .sa-wheel-design,
+  body.cinematic-home .sa-service-wheel .sa-wheel-print,
+  body.cinematic-home .sa-service-wheel .sa-wheel-distribute{position:relative;inset:auto;left:auto;right:auto;top:auto;bottom:auto;width:100%;height:auto;min-height:96px;aspect-ratio:auto;border-radius:16px;transform:none!important;animation:none!important;padding:16px 4px}
+  body.cinematic-home .sa-service-wheel .sa-wheel-index{position:static;display:block}
+  body.cinematic-home .sa-service-wheel .sa-wheel-item b{font-size:14px}
+  body.cinematic-home .sa-wheel-detail{order:2;width:100%;max-width:none;grid-column:auto;grid-row:auto}
+  body.cinematic-home .sa-wheel-foot{order:3}
+  body.cinematic-home .sa-offers-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  body.cinematic-home .sa-offers-grid .svc{min-width:0;display:block;padding:18px 10px;border:1px solid var(--sa-border,rgba(214,173,89,.25));border-radius:14px}
+  body.cinematic-home .sa-offers-grid .svc h3{font-size:clamp(16px,4.5vw,22px)}
+  body.cinematic-home .sa-offers-grid .svc p{font-size:12px;line-height:1.75}
+  body.cinematic-home .mbar{z-index:35}
+  body.cinematic-home footer{padding-bottom:calc(112px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:360px){
+ body.cinematic-home .sa-service-wheel .sa-wheel-item{min-height:83px}
+ body.cinematic-home .sa-offers-grid{gap:8px}
+ body.cinematic-home .sa-offers-grid .svc{padding:12px 8px}
+}
+@media (prefers-reduced-motion:reduce){
+ body.cinematic-home .sa-service-wheel .sa-wheel-item{animation:none!important}
+}
