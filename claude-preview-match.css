@@ -64,3 +64,46 @@ html[data-theme="light"] body.cinematic-home .mbar a:first-child{background:#FFC
  html[data-theme="light"] body.cinematic-home .chip,html[data-theme="light"] body.cinematic-home .view button{padding:7px 12px}
  html[data-theme="light"] body.cinematic-home #grid .w .cap b{font-size:20px}
 }
+
+/* Contrast correction — retain Claude layout, improve legibility in both modes. */
+html[data-theme="light"] body.cinematic-home{
+ --ink:#17191c;--olive:#44474d;--olive-ink:#3c4147;--sa-secondary:#41464d;
+}
+html[data-theme="light"] body.cinematic-home .hero h1,
+html[data-theme="light"] body.cinematic-home .hero h1 .l2{color:#41454b!important}
+html[data-theme="light"] body.cinematic-home #work>.sec-head h2,
+html[data-theme="light"] body.cinematic-home .sa-wheel-heading h2,
+html[data-theme="light"] body.cinematic-home .services h2{color:#363a40!important}
+html[data-theme="light"] body.cinematic-home #grid .w .cap b,
+html[data-theme="light"] body.cinematic-home .sa-wheel-detail h3{color:#292d32!important}
+html[data-theme="light"] body.cinematic-home .ticker-card .ticker-label,
+html[data-theme="light"] body.cinematic-home .ticker-card .ticker-label span{color:#34383e!important}
+html[data-theme="light"] body.cinematic-home .chip,
+html[data-theme="light"] body.cinematic-home .view button{color:#34383e!important;border-color:#777d85!important}
+html[data-theme="light"] body.cinematic-home .theme-switch{color:#34383e!important}
+html[data-theme="light"] body.cinematic-home .hero .btn.ghost{color:#30343a!important;border-color:#555b63!important}
+html[data-theme="light"] body.cinematic-home .sa-wheel-item{color:#363a40!important;border-color:#72777f!important}
+html[data-theme="light"] body.cinematic-home .sa-wheel-item small,
+html[data-theme="light"] body.cinematic-home .sa-wheel-item b{color:#363a40!important}
+html[data-theme="light"] body.cinematic-home .sa-wheel-kicker,
+html[data-theme="light"] body.cinematic-home .sa-detail-index,
+html[data-theme="light"] body.cinematic-home .sa-detail-current{color:#755600!important}
+html[data-theme="light"] body.cinematic-home .sa-wheel-heading h2 span{color:#755600!important}
+html[data-theme="light"] body.cinematic-home .search::placeholder{color:#62676d!important}
+html[data-theme="light"] body.cinematic-home .svc p,
+html[data-theme="light"] body.cinematic-home .sec-head p{color:#363a40!important}
+html[data-theme="dark"] body.cinematic-home .hero h1,
+html[data-theme="dark"] body.cinematic-home .sec-head h2,
+html[data-theme="dark"] body.cinematic-home .services h2{color:#f5f6f7!important}
+html[data-theme="dark"] body.cinematic-home .intro,
+html[data-theme="dark"] body.cinematic-home .sec-head p,
+html[data-theme="dark"] body.cinematic-home .svc p{color:#d9dce0!important}
+html[data-theme="dark"] body.cinematic-home #grid .w .cap b{color:#f5f6f7!important}
+html[data-theme="dark"] body.cinematic-home #grid .w .cap small{color:#d7dbe0!important}
+html[data-theme="dark"] body.cinematic-home .chip,
+html[data-theme="dark"] body.cinematic-home .view button{color:#f4f5f6!important;border-color:#898c92!important}
+html[data-theme="dark"] body.cinematic-home .chip[aria-pressed="true"],
+html[data-theme="dark"] body.cinematic-home .view button[aria-pressed="true"]{color:#111!important;border-color:#FFC107!important}
+html[data-theme] body.cinematic-home a:focus-visible,
+html[data-theme] body.cinematic-home button:focus-visible,
+html[data-theme] body.cinematic-home input:focus-visible{outline:3px solid #FFC107!important;outline-offset:3px}
