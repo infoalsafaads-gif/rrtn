@@ -1,0 +1,51 @@
+/* AL SAFA / November 2026 reference: additive refinements, no structural rebuild. */
+html[data-theme="dark"]{background:#090a0c;color-scheme:dark}
+html[data-theme="light"]{background:#fff;color-scheme:light}
+html[data-theme] body.cinematic-home{--sa-gold:#FFC107;--sa-gold-bright:#FFC107;--sa-gold-soft:#FFDA55;--accent:#FFC107;--gold:#FFC107}
+html[data-theme="dark"] body.cinematic-home{--white:#0b0c0e;--ink:#f7f7f7;--paper:#151618;--line:#424448;--olive:#FFC107;--olive-ink:#d3d5d8;--sa-border:rgba(255,193,7,.28);background:#0b0c0e!important;color:#f7f7f7!important}
+html[data-theme="light"] body.cinematic-home{--white:#fff;--ink:#17181a;--paper:#f7f8f9;--line:#d8dadd;--olive:#66686b;--olive-ink:#414449;--sa-border:rgba(255,193,7,.35);background:#fff!important;color:#17181a!important}
+html[data-theme="dark"] body.cinematic-home header{background:rgba(11,12,14,.95)!important;border-color:#424448}
+html[data-theme="light"] body.cinematic-home header{background:rgba(255,255,255,.96)!important;border-color:#d8dadd}
+html[data-theme="dark"] body.cinematic-home .hero h1 .l2{color:#FFC107}
+html[data-theme="light"] body.cinematic-home .hero h1 .l2{color:#64676a}
+html[data-theme] body.cinematic-home .chip[aria-pressed="true"],
+html[data-theme] body.cinematic-home .view button[aria-pressed="true"],
+html[data-theme] body.cinematic-home .btn.solid,
+html[data-theme] body.cinematic-home .mbar a:first-child{background:#FFC107!important;color:#151515!important;border-color:#FFC107!important;box-shadow:none}
+html[data-theme] body.cinematic-home .chip:hover,
+html[data-theme] body.cinematic-home .view button:hover,
+html[data-theme] body.cinematic-home .w:hover .fr{border-color:#FFC107}
+html[data-theme="dark"] body.cinematic-home .search{background:#1b1c1e;color:#fff;border-color:#505256}
+html[data-theme="light"] body.cinematic-home .search{background:#fff;color:#17181a;border-color:#bfc2c7}
+html[data-theme="dark"] body.cinematic-home .band{background:#17181a;border-color:#424448}
+html[data-theme="light"] body.cinematic-home .band{background:#f4f5f6;border-color:#d8dadd}
+html[data-theme] body.cinematic-home .band p{color:var(--ink)}
+html[data-theme="dark"] body.cinematic-home .ticker-card{background:#191a1c;border-color:#4a4c50}
+html[data-theme="light"] body.cinematic-home .ticker-card{background:#fff;border-color:#d8dadd}
+html[data-theme="dark"] body.cinematic-home .infinite-gallery{background:#131416;border-color:#424448}
+html[data-theme="light"] body.cinematic-home .infinite-gallery{background:#f7f8f9;border-color:#d8dadd}
+html[data-theme="dark"] body.cinematic-home .ov{background:#0b0c0e;color:#fff}
+html[data-theme="dark"] body.cinematic-home .ov-bar{background:rgba(11,12,14,.96)}
+html[data-theme="light"] body.cinematic-home .ov,html[data-theme="light"] body.cinematic-home .lb{background:#fff;color:#17181a}
+html[data-theme="light"] body.cinematic-home .ov-bar{background:rgba(255,255,255,.96)}
+html[data-theme="dark"] body.cinematic-home .mbar{background:#0b0c0e;border-color:#424448}
+html[data-theme="light"] body.cinematic-home .mbar{background:#fff;border-color:#d8dadd}
+html[data-theme] body.cinematic-home .sa-wheel-panel{--sa-gold:#FFC107;--sa-gold-bright:#FFC107;--sa-gold-soft:#FFDA55}
+html[data-theme="light"] body.cinematic-home .sa-wheel-panel{background:#f7f8f9;border-color:#cbb25d}
+html[data-theme="dark"] body.cinematic-home .sa-wheel-panel{background:#121315;border-color:#8a6c17}
+html[data-theme] body.cinematic-home .sa-wheel-item.is-active{border-color:#FFC107}
+html[data-theme] body.cinematic-home .sa-wheel-heading h2 span{color:#FFC107}
+html[data-theme="light"] body.cinematic-home .sa-wheel-heading h2 span{color:#846000}
+html[data-theme] body.cinematic-home :focus-visible{outline:3px solid #FFC107;outline-offset:3px}
+html[data-theme] body.cinematic-home .logo{position:relative;isolation:isolate;overflow:hidden;align-items:center}
+html[data-theme] body.cinematic-home .logo::after{content:"";position:absolute;z-index:2;inset:-15% auto -15% -50%;width:28%;background:linear-gradient(90deg,transparent,rgba(255,193,7,.03),rgba(255,193,7,.38),rgba(255,255,255,.08),transparent);transform:skewX(-22deg);pointer-events:none;animation:al-safa-logo-sweep 6s ease-in-out infinite}
+html[data-theme] body.cinematic-home .logo:hover .site-logo{animation:al-safa-logo-return .75s ease-out}
+@keyframes al-safa-logo-sweep{0%,64%{left:-50%;opacity:0}72%{opacity:.62}90%,100%{left:125%;opacity:0}}
+@keyframes al-safa-logo-return{0%{opacity:.5;transform:scale(.96)}60%{opacity:1;transform:scale(1.045)}100%{opacity:1;transform:scale(1)}}
+html[data-theme="light"] body.cinematic-home .site-logo{filter:brightness(0) saturate(100%)}
+html[data-theme="light"] body.cinematic-home .cinematic-intro-logo img{filter:none}
+html[data-theme] body.cinematic-home .cinematic-intro-logo img{transform-origin:center;animation:sa-logo-mask 1.08s cubic-bezier(.76,0,.18,1) .42s forwards,sa-logo-glow .95s ease 1.14s forwards}
+html[data-theme] body.cinematic-home .work-view-row{margin-bottom:14px}
+html[data-theme] body.cinematic-home .tools{margin-bottom:24px}
+@media(max-width:760px){html[data-theme] body.cinematic-home .nav .logo{width:min(142px,34vw)}html[data-theme] body.cinematic-home .nav .site-logo{max-width:100%;height:auto}html[data-theme] body.cinematic-home .theme-actions{flex-shrink:0}html[data-theme] body.cinematic-home .mbar{box-shadow:0 -8px 26px rgba(0,0,0,.12)}html[data-theme] body.cinematic-home .sa-wheel-panel{padding-inline:14px}}
+@media(prefers-reduced-motion:reduce){html[data-theme] body.cinematic-home .logo::after,html[data-theme] body.cinematic-home .logo:hover .site-logo{animation:none!important}}
