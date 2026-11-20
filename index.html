@@ -58,12 +58,47 @@ dialog{border-radius:16px 16px 0 0;overscroll-behavior:contain}
 @media(max-width:1000px){.projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.projects{grid-template-columns:1fr;gap:18px}.project .picture{aspect-ratio:4/3}.project .details{min-height:0;padding:17px 19px}.projects.list .project{grid-template-columns:120px minmax(0,1fr)}.projects.list .project .picture{min-height:140px}.projects.list .project .details{padding:12px}.projects.list .project strong{font-size:15px}.projects.list .project .details small{font-size:11px}.projects.list .openhint{margin-top:8px}.flow{margin-block:30px 42px}.flowitem{width:240px;height:200px}.bar .btn{margin-inline-start:auto}.dialoghead{padding:12px 16px}}
 @media(prefers-reduced-motion:reduce){.project,.project .picture img,.flowitem{transition:none}}
+
+.logo{display:flex;align-items:center;flex:none}
+.logo img{display:block;width:clamp(142px,15vw,190px);height:auto;max-height:none}
+#intro img{height:auto}
+.new-section{padding-top:0}
+.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.video-card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.video-card video{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#0d0d0d}
+.video-card h3{margin:0;padding:14px 18px;font-size:16px}
+#video-status{color:var(--mute)}
+.about-card{padding:clamp(24px,5vw,48px);background:var(--card);border:1px solid var(--line);border-radius:20px}
+.about-card p{max-width:66ch;color:var(--mute)}
+.about-card p:last-child{margin-bottom:0}
+.about-card strong{color:var(--ink)}
+@media(max-width:920px){
+ .bar{flex-wrap:wrap}
+ .bar nav{display:flex;order:3;width:100%;margin:0;gap:clamp(5px,2vw,18px);justify-content:space-between;border-top:1px solid var(--line);padding-top:7px;font-size:clamp(11px,2.9vw,14px)}
+ .bar nav a{padding-block:5px;white-space:nowrap}
+ html{scroll-padding-top:130px}
+ .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+ .video-grid{grid-template-columns:1fr}
+}
 </style></head><body>
-<div id="intro"><button id="skip" type="button">تخطّي المقدمة</button><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></div>
-<header><div class="bar"><a class="logo" href="#top"><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></a><nav><a href="#work">الأعمال</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a></nav><a class="btn" href="https://wa.me/972594753699">لنتحدث</a></div></header>
+<div id="intro"><button id="skip" type="button">تخطّي المقدمة</button><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA Advertising &amp; Media" width="800" height="199"></div>
+<header><div class="bar"><a class="logo" href="#top"><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA Advertising &amp; Media" width="800" height="199"></a><nav aria-label="القائمة الرئيسية"><a href="#work">الأعمال</a><a href="#videos">الفيديوهات</a><a href="#about">نبذة عني</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a></nav><a class="btn" href="https://wa.me/972594753699">لنتحدث</a></div></header>
 <main id="top"><div class="wrap hero"><h1>أفكار تتحوّل إلى أثر بصري.</h1><p>أنا صفا. أصمّم هويات وإعلانات وحملات سوشيال ميديا، لعلامات تريد أن يُرى حضورها بوضوح.</p><div class="cta"><a class="btn" href="#work">شاهد الأعمال</a><a class="btn ghost" href="https://wa.me/972594753699">راسلني على واتساب</a></div></div>
 <div class="tick" aria-hidden="true"><span id="ticker"></span></div>
 <section id="work"><div class="wrap"><h2>تفاصيل تستحق أن تُرى.</h2><p class="lead">تحرّك بين نماذج من الهوية البصرية والحملات والتصاميم. اضغط على أي مشروع لمشاهدة كل تصاميمه بحجم كبير.</p></div><div class="flow" id="flow"></div><div class="wrap"><div class="tools"><div class="chips" id="chips"></div><div class="views"><button class="view" data-view="grid" aria-pressed="true">شبكة</button><button class="view" data-view="list" aria-pressed="false">قائمة</button></div></div><p id="workcount" class="workcount" aria-live="polite"></p><div class="projects" id="projects"></div><p style="margin-top:28px"><a class="btn ghost" href="https://www.behance.net/a2b6d985" target="_blank" rel="noopener">المزيد على Behance</a></p></div></section>
+<section id="videos" class="new-section" aria-labelledby="videos-title"><div class="wrap">
+<h2 id="videos-title">الفيديوهات</h2>
+<p class="lead">إعلانات منتجات وريلز ومشاهد أُنتجت بأدوات الذكاء الاصطناعي.</p>
+<p id="video-status" aria-live="polite">جارٍ تحميل الفيديوهات…</p>
+<div class="video-grid" id="video-grid"></div>
+</div></section>
+<section id="about" class="new-section" aria-labelledby="about-title"><div class="wrap"><div class="about-card">
+<h2 id="about-title">نبذة عني</h2>
+<p>أنا <strong>صفا أبو صفا</strong>، مصمم جرافيك ومسوق رقمي من طولكرم، فلسطين. عملت بشكل مستقل، وفي التصميم والتسويق لدى المؤسسة الوطنية للخدمات الجامعية.</p>
+<p>أصمّم الهويات البصرية ومحتوى السوشيال ميديا للعلامات التجارية، وأنتج إعلانات فيديو للمنتجات، وأستخدم أدوات الذكاء الاصطناعي في تنفيذ بعض المشاهد الإعلانية.</p>
+</div></div></section>
 <section id="circle" style="padding-top:0"><div class="wrap"><h2>من الفكرة إلى الانتشار.</h2><p class="lead">منظومة متكاملة تحوّل فكرتك إلى حضور ملموس. اختر الخدمة لاستكشافها.</p><div class="circle"><div class="nodes" id="nodes"></div><div class="panel" aria-live="polite"><small id="panelnum"></small><h3 id="paneltitle"></h3><p id="paneldesc"></p></div></div></div></section>
 <section id="services" style="padding-top:0"><div class="wrap"><h2>ما أقدّمه</h2><div class="svc"><div><h3>تصميم جرافيك</h3><p>هوية بصرية وتصاميم إعلانية تمنح علامتك حضوراً مميزاً.</p></div><div><h3>إنتاج فيديو</h3><p>إعلانات منتجات ومونتاج وموشن بجودة احترافية.</p></div><div><h3>إعلانات بالذكاء الاصطناعي</h3><p>مشاهد سينمائية وتحويل الصور إلى فيديوهات إعلانية.</p></div><div><h3>محتوى العلامات التجارية</h3><p>منشورات وحملات متناسقة للسوشيال ميديا.</p></div></div></div></section>
 <section id="contact" style="padding-top:0"><div class="wrap"><div class="contact"><div><h2>عندك فكرة؟ خلّينا نبدأ.</h2><p>0594753699 · info.alsafa.ads@gmail.com</p></div><div class="cta"><a class="btn" href="https://wa.me/972594753699">واتساب</a><a class="btn ghost" href="tel:+972594753699">اتصال مباشر</a><a class="btn ghost" href="mailto:info.alsafa.ads@gmail.com">البريد الإلكتروني</a><a class="btn ghost" href="https://www.facebook.com/profile.php?id=61596477453982">فيسبوك</a></div></div></div></section></main>
@@ -72,7 +107,7 @@ dialog{border-radius:16px 16px 0 0;overscroll-behavior:contain}
 <dialog id="dialog"><div class="dialoghead"><div><small id="dialogcategory"></small><h3 id="dialogtitle"></h3></div><button id="close" aria-label="إغلاق">✕</button></div><div class="gallery" id="gallery"></div></dialog>
 <script>
 const $=s=>document.querySelector(s);const projects=$('#projects');let all=[],filter='all';
-const categories=[['all','الكل'],['brand','هوية بصرية'],['social','حملات سوشيال'],['video','فيديوهات']];
+const categories=[['all','الكل'],['brand','هوية بصرية'],['social','حملات سوشيال']];
 const category=p=>p.category.includes('فيديو')?'video':p.category.includes('هوية')||p.category.includes('مطبوع')?'brand':'social';
 function openProject(p){
  $('#dialogtitle').textContent=p.title;$('#dialogcategory').textContent=p.category;
@@ -94,7 +129,6 @@ function render(){
   const b=document.createElement('button');b.className='project';b.type='button';b.setAttribute('aria-label','استعراض مشروع '+p.title);
   const picture=document.createElement('div');picture.className='picture';
   const im=document.createElement('img');im.src=p.coverImage;im.loading=i<3?'eager':'lazy';im.decoding='async';im.alt=p.coverAlt||p.title;picture.append(im);
-  if(category(p)==='video'){let play=document.createElement('span');play.className='play';play.textContent='▶';play.setAttribute('aria-hidden','true');picture.append(play)}
   const d=document.createElement('div');d.className='details';const heading=document.createElement('strong');heading.textContent=p.title;
   const description=document.createElement('small');description.textContent=p.category;
   const hint=document.createElement('span');hint.className='openhint';hint.textContent='استعرض المشروع ←';
@@ -103,7 +137,44 @@ function render(){
 }
 for(const [key,name] of categories){let b=document.createElement('button');b.className='chip';b.textContent=name;b.setAttribute('aria-pressed',key==='all');b.onclick=()=>{filter=key;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render()};$('#chips').append(b)}
 document.querySelectorAll('.view').forEach(b=>b.onclick=()=>{document.querySelectorAll('.view').forEach(x=>x.setAttribute('aria-pressed',x===b));projects.classList.toggle('list',b.dataset.view==='list')});
-fetch('./portfolio-data.json').then(r=>{if(!r.ok)throw Error('Portfolio data');return r.json()}).then(data=>{all=data.projects||[];render();for(let i=0;i<3;i++){let row=document.createElement('div');row.className='flowrow';const picks=all.filter(p=>p.coverImage).filter((_,j)=>j%3===i);for(let repeat=0;repeat<2;repeat++){for(const p of picks){const b=document.createElement('button');b.className='flowitem';b.type='button';let img=document.createElement('img');img.src=p.coverImage;img.alt='';img.loading='lazy';let title=document.createElement('span');title.textContent=p.title;b.append(img,title);b.onclick=()=>openProject(p);row.append(b)}}$('#flow').append(row)}}).catch(e=>{projects.textContent='تعذر تحميل المشاريع. يرجى تحديث الصفحة.';console.error(e)});
+const videoTitles={
+ 'kling-water-closeup.mp4':'المياه عن قرب',
+ 'kling-image-campaign.mp4':'تحريك صور حملة إعلانية',
+ 'hatlo-whatsapp.mp4':'هاتلو — فيديو للواتساب',
+ 'all-reels.mp4':'مختارات من الريلز'
+};
+function renderVideos(portfolio){
+ const grid=$('#video-grid');
+ const status=$('#video-status');
+ for(const project of portfolio){
+  for(const item of project.sections||[]){
+   if(item.type!=='video'||!item.src) continue;
+   const card=document.createElement('article');
+   card.className='video-card';
+   const title=document.createElement('h3');
+   title.id='video-title-'+grid.childElementCount;
+   title.textContent=item.alt||videoTitles[item.src.split('/').pop()]||project.title;
+   const video=document.createElement('video');
+   video.src=item.src;
+   const poster=item.poster||project.coverImage;
+   if(poster) video.poster=poster;
+   video.controls=true;
+   video.playsInline=true;
+   video.preload='none';
+   video.setAttribute('aria-labelledby',title.id);
+   video.addEventListener('play',()=>{
+    for(const other of grid.querySelectorAll('video')){
+     if(other!==video) other.pause();
+    }
+   });
+   card.append(video,title);
+   grid.append(card);
+  }
+ }
+ status.textContent=grid.childElementCount?'':'ما في فيديوهات متاحة حاليًا.';
+ status.hidden=grid.childElementCount>0;
+}
+fetch('./portfolio-data.json').then(r=>{if(!r.ok)throw Error('Portfolio data');return r.json()}).then(data=>{const portfolio=data.projects||[];renderVideos(portfolio);all=portfolio.filter(p=>category(p)!=='video');render();for(let i=0;i<3;i++){let row=document.createElement('div');row.className='flowrow';const picks=all.filter(p=>p.coverImage).filter((_,j)=>j%3===i);for(let repeat=0;repeat<2;repeat++){for(const p of picks){const b=document.createElement('button');b.className='flowitem';b.type='button';let img=document.createElement('img');img.src=p.coverImage;img.alt='';img.loading='lazy';let title=document.createElement('span');title.textContent=p.title;b.append(img,title);b.onclick=()=>openProject(p);row.append(b)}}$('#flow').append(row)}}).catch(e=>{projects.textContent='تعذر تحميل المشاريع. يرجى تحديث الصفحة.';$('#video-status').textContent='تعذر تحميل الفيديوهات. يرجى تحديث الصفحة.';console.error(e)});
 $('#close').onclick=()=>$('#dialog').close();$('#dialog').addEventListener('click',e=>{if(e.target===$('#dialog'))$('#dialog').close()});
 const services=[['01','تصميم','DESIGN','تصميم يصنع الانطباع','هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.'],['02','طباعة','PRINT','مطبوعات جاهزة للاستخدام','بطاقات أعمال وقرطاسية ولافتات وتصاميم بملفات جاهزة للطباعة.'],['03','توزيع','DISTRIBUTION','انتشار يصل لجمهورك','تجهيز المحتوى بمقاسات المنصات المختلفة وجدولة النشر.']];
 function choose(i){document.querySelectorAll('.node').forEach((x,j)=>x.setAttribute('aria-pressed',i===j));$('#panelnum').textContent=services[i][0]+' / '+services[i][2];$('#paneltitle').textContent=services[i][3];$('#paneldesc').textContent=services[i][4]}
