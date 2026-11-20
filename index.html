@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ar" dir="rtl"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#141414"><meta name="description" content="AL SAFA — تصميم جرافيك، هويات بصرية، إعلانات وفيديوهات إبداعية.">
-<title>AL SAFA — صفا | تصميم · إعلانات · هوية بصرية</title>
+<meta name="theme-color" content="#ffffff"><meta name="description" content="الموقع الرسمي لصفا أبو صفا، مصمم جرافيك ومسوق رقمي من طولكرم. استعرض أعمال الهوية البصرية والحملات وإعلانات الفيديو.">
+<title>صفا أبو صفا | AL SAFA للتصميم والإعلان</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -58,15 +58,61 @@ dialog{border-radius:16px 16px 0 0;overscroll-behavior:contain}
 @media(max-width:1000px){.projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.projects{grid-template-columns:1fr;gap:18px}.project .picture{aspect-ratio:4/3}.project .details{min-height:0;padding:17px 19px}.projects.list .project{grid-template-columns:120px minmax(0,1fr)}.projects.list .project .picture{min-height:140px}.projects.list .project .details{padding:12px}.projects.list .project strong{font-size:15px}.projects.list .project .details small{font-size:11px}.projects.list .openhint{margin-top:8px}.flow{margin-block:30px 42px}.flowitem{width:240px;height:200px}.bar .btn{margin-inline-start:auto}.dialoghead{padding:12px 16px}}
 @media(prefers-reduced-motion:reduce){.project,.project .picture img,.flowitem{transition:none}}
+
+:root{--bg:#fff;--ink:#20201d;--mute:#595650;--card:#faf9f6;--line:#e1ddd5;--y:#f1c550;--yink:#211b10;color-scheme:light}
+body{background:var(--bg)}
+.bar .logo,#intro img{background:#191815;border-radius:10px;padding:5px 8px}
+.bar .logo img{display:block}
+nav a:hover,.openhint,.dialoghead small,.panel small,.node b{color:#765208}
+.hero{padding-block:clamp(48px,9vw,108px) clamp(46px,7vw,84px)}
+.hero h1{font-size:clamp(48px,9vw,96px);margin-bottom:12px}
+.hero .hero-brand{font-size:13px;letter-spacing:.16em;color:#765208;font-weight:700;margin:0 0 14px}
+.hero .hero-role{font-weight:600;color:var(--ink);margin:0}
+#work{padding-top:clamp(40px,7vw,76px);border-top:1px solid var(--line)}
+#work h3{margin:0 0 12px;font-size:20px}
+.flow{direction:rtl;mask-image:none;margin:0 0 36px;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible}
+.flowitem{width:100%;height:auto;aspect-ratio:4/3;background:#252420;border-color:#35342f;box-shadow:none}
+.flowitem span{font-weight:600;background:linear-gradient(transparent,#151411 78%)}
+.project{border-color:var(--line);box-shadow:none}
+.project:hover{box-shadow:0 10px 26px #2e251014}
+.project .picture{background:#efede8}
+.project .details small{color:var(--mute)}
+.galleryitem{background:var(--card)}
+#about{padding-top:0}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:24px 48px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,52px)}
+.about p{color:var(--mute);margin:0 0 12px}
+.about p:last-child{margin-bottom:0}
+.about .about-role{font-weight:600}
+#intro{pointer-events:none;background:transparent;place-items:end center;padding-bottom:84px}
+#intro #skip{pointer-events:auto;background:var(--bg)}
+#intro.off #skip{pointer-events:none}
+#intro img{width:min(170px,45vw)}
+@media(max-width:820px){
+ .bar{flex-wrap:wrap}
+ nav{display:flex;order:3;width:100%;justify-content:space-between;gap:8px;margin:0;padding-top:8px;border-top:1px solid var(--line)}
+ nav a{padding:4px 2px}
+ html{scroll-padding-top:125px}
+}
+@media(max-width:620px){
+ .wrap{padding-inline:16px}
+ .about{grid-template-columns:1fr}
+ .flow{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory;padding:3px 3px 10px}
+ .flowitem{scroll-snap-align:start}
+ .float{bottom:max(12px,env(safe-area-inset-bottom))}
+}
 </style></head><body>
 <div id="intro"><button id="skip" type="button">تخطّي المقدمة</button><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></div>
-<header><div class="bar"><a class="logo" href="#top"><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></a><nav><a href="#work">الأعمال</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a></nav><a class="btn" href="https://wa.me/972594753699">لنتحدث</a></div></header>
-<main id="top"><div class="wrap hero"><h1>أفكار تتحوّل إلى أثر بصري.</h1><p>أنا صفا. أصمّم هويات وإعلانات وحملات سوشيال ميديا، لعلامات تريد أن يُرى حضورها بوضوح.</p><div class="cta"><a class="btn" href="#work">شاهد الأعمال</a><a class="btn ghost" href="https://wa.me/972594753699">راسلني على واتساب</a></div></div>
-<div class="tick" aria-hidden="true"><span id="ticker"></span></div>
-<section id="work"><div class="wrap"><h2>تفاصيل تستحق أن تُرى.</h2><p class="lead">تحرّك بين نماذج من الهوية البصرية والحملات والتصاميم. اضغط على أي مشروع لمشاهدة كل تصاميمه بحجم كبير.</p></div><div class="flow" id="flow"></div><div class="wrap"><div class="tools"><div class="chips" id="chips"></div><div class="views"><button class="view" data-view="grid" aria-pressed="true">شبكة</button><button class="view" data-view="list" aria-pressed="false">قائمة</button></div></div><p id="workcount" class="workcount" aria-live="polite"></p><div class="projects" id="projects"></div><p style="margin-top:28px"><a class="btn ghost" href="https://www.behance.net/a2b6d985" target="_blank" rel="noopener">المزيد على Behance</a></p></div></section>
+<header><div class="bar"><a class="logo" href="#top"><img src="./assets/al-safa-logo-clean.svg" alt="AL SAFA"></a><nav aria-label="التنقل الرئيسي"><a href="#work">الأعمال</a><a href="#about">نبذة عني</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a></nav><a class="btn" href="https://wa.me/972594753699">واتساب</a></div></header>
+<main id="top"><div class="wrap hero"><p class="hero-brand" lang="en">AL SAFA</p><h1>صفا أبو صفا</h1><p class="hero-role">مصمم جرافيك ومسوق رقمي</p><p>أصمّم هويات بصرية وحملات إعلانية، وأنتج فيديوهات للمنتجات والعلامات التجارية.</p><div class="cta"><a class="btn" href="#work">شاهد الأعمال</a><a class="btn ghost" href="https://wa.me/972594753699">راسلني على واتساب</a></div></div>
+<section id="work"><div class="wrap"><h2>معرض الأعمال</h2><p class="lead">نماذج من الهويات البصرية والحملات الإعلانية والفيديوهات. افتح أي مشروع لمشاهدة تفاصيله.</p><h3>مشاريع مختارة</h3><div class="flow" id="flow"></div><h3>جميع المشاريع</h3><div class="tools"><div class="chips" id="chips"></div><div class="views"><button class="view" data-view="grid" aria-pressed="true">شبكة</button><button class="view" data-view="list" aria-pressed="false">قائمة</button></div></div><p id="workcount" class="workcount" aria-live="polite"></p><div class="projects" id="projects"></div><p style="margin-top:28px"><a class="btn ghost" href="https://www.behance.net/a2b6d985" target="_blank" rel="noopener">المزيد على Behance</a></p></div></section>
+<section id="about"><div class="wrap"><div class="about">
+<div><h2>نبذة عني</h2><p class="about-role">صفا أبو صفا · طولكرم، فلسطين</p></div>
+<div><p>أنا صفا أبو صفا، مصمم جرافيك ومسوق رقمي. عملت بشكل مستقل، وفي التصميم والتسويق لدى المؤسسة الوطنية للخدمات الجامعية.</p>
+<p>أساعد المشاريع والعلامات التجارية في بناء هويتها البصرية، وتجهيز محتوى السوشيال ميديا، وإنتاج فيديوهات إعلانية للمنتجات. أستخدم أدوات الذكاء الاصطناعي ضمن عملي في إنتاج الفيديو.</p></div>
+</div></div></section>
 <section id="circle" style="padding-top:0"><div class="wrap"><h2>من الفكرة إلى الانتشار.</h2><p class="lead">منظومة متكاملة تحوّل فكرتك إلى حضور ملموس. اختر الخدمة لاستكشافها.</p><div class="circle"><div class="nodes" id="nodes"></div><div class="panel" aria-live="polite"><small id="panelnum"></small><h3 id="paneltitle"></h3><p id="paneldesc"></p></div></div></div></section>
 <section id="services" style="padding-top:0"><div class="wrap"><h2>ما أقدّمه</h2><div class="svc"><div><h3>تصميم جرافيك</h3><p>هوية بصرية وتصاميم إعلانية تمنح علامتك حضوراً مميزاً.</p></div><div><h3>إنتاج فيديو</h3><p>إعلانات منتجات ومونتاج وموشن بجودة احترافية.</p></div><div><h3>إعلانات بالذكاء الاصطناعي</h3><p>مشاهد سينمائية وتحويل الصور إلى فيديوهات إعلانية.</p></div><div><h3>محتوى العلامات التجارية</h3><p>منشورات وحملات متناسقة للسوشيال ميديا.</p></div></div></div></section>
-<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact"><div><h2>عندك فكرة؟ خلّينا نبدأ.</h2><p>0594753699 · info.alsafa.ads@gmail.com</p></div><div class="cta"><a class="btn" href="https://wa.me/972594753699">واتساب</a><a class="btn ghost" href="tel:+972594753699">اتصال مباشر</a><a class="btn ghost" href="mailto:info.alsafa.ads@gmail.com">البريد الإلكتروني</a><a class="btn ghost" href="https://www.facebook.com/profile.php?id=61596477453982">فيسبوك</a></div></div></div></section></main>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact"><div><h2>لنتحدث عن مشروعك</h2><p>0594753699 · info.alsafa.ads@gmail.com</p></div><div class="cta"><a class="btn" href="https://wa.me/972594753699">واتساب</a><a class="btn ghost" href="tel:+972594753699">اتصال مباشر</a><a class="btn ghost" href="mailto:info.alsafa.ads@gmail.com">البريد الإلكتروني</a><a class="btn ghost" href="https://www.facebook.com/profile.php?id=61596477453982">فيسبوك</a></div></div></div></section></main>
 <div class="wrap"><footer><span>© AL SAFA Advertising & Media</span><span><a href="https://www.facebook.com/profile.php?id=61596477453982">فيسبوك</a> · <a href="#top">العودة للأعلى</a></span></footer></div>
 <div class="float"><a href="https://wa.me/972594753699">واتساب</a><a href="tel:+972594753699">اتصال</a></div>
 <dialog id="dialog"><div class="dialoghead"><div><small id="dialogcategory"></small><h3 id="dialogtitle"></h3></div><button id="close" aria-label="إغلاق">✕</button></div><div class="gallery" id="gallery"></div></dialog>
@@ -103,11 +149,38 @@ function render(){
 }
 for(const [key,name] of categories){let b=document.createElement('button');b.className='chip';b.textContent=name;b.setAttribute('aria-pressed',key==='all');b.onclick=()=>{filter=key;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render()};$('#chips').append(b)}
 document.querySelectorAll('.view').forEach(b=>b.onclick=()=>{document.querySelectorAll('.view').forEach(x=>x.setAttribute('aria-pressed',x===b));projects.classList.toggle('list',b.dataset.view==='list')});
-fetch('./portfolio-data.json').then(r=>{if(!r.ok)throw Error('Portfolio data');return r.json()}).then(data=>{all=data.projects||[];render();for(let i=0;i<3;i++){let row=document.createElement('div');row.className='flowrow';const picks=all.filter(p=>p.coverImage).filter((_,j)=>j%3===i);for(let repeat=0;repeat<2;repeat++){for(const p of picks){const b=document.createElement('button');b.className='flowitem';b.type='button';let img=document.createElement('img');img.src=p.coverImage;img.alt='';img.loading='lazy';let title=document.createElement('span');title.textContent=p.title;b.append(img,title);b.onclick=()=>openProject(p);row.append(b)}}$('#flow').append(row)}}).catch(e=>{projects.textContent='تعذر تحميل المشاريع. يرجى تحديث الصفحة.';console.error(e)});
+fetch('./portfolio-data.json')
+ .then(response=>{
+  if(!response.ok) throw Error('Portfolio data');
+  return response.json();
+ })
+ .then(data=>{
+  all=data.projects||[];
+  render();
+  const featured=['brand','social','video'].map(key=>all.find(project=>project.coverImage&&category(project)===key)).filter(Boolean);
+  for(const project of featured){
+   const button=document.createElement('button');
+   button.className='flowitem';
+   button.type='button';
+   const image=document.createElement('img');
+   image.src=project.coverImage;
+   image.alt='';
+   image.loading='lazy';
+   image.decoding='async';
+   const title=document.createElement('span');
+   title.textContent=project.title;
+   button.append(image,title);
+   button.onclick=()=>openProject(project);
+   $('#flow').append(button);
+  }
+ })
+ .catch(error=>{
+  projects.textContent='تعذر تحميل المشاريع. يرجى تحديث الصفحة.';
+  console.error(error);
+ });
 $('#close').onclick=()=>$('#dialog').close();$('#dialog').addEventListener('click',e=>{if(e.target===$('#dialog'))$('#dialog').close()});
 const services=[['01','تصميم','DESIGN','تصميم يصنع الانطباع','هوية بصرية وتصاميم إعلانية تلفت الانتباه وتمنح علامتك حضوراً واضحاً.'],['02','طباعة','PRINT','مطبوعات جاهزة للاستخدام','بطاقات أعمال وقرطاسية ولافتات وتصاميم بملفات جاهزة للطباعة.'],['03','توزيع','DISTRIBUTION','انتشار يصل لجمهورك','تجهيز المحتوى بمقاسات المنصات المختلفة وجدولة النشر.']];
 function choose(i){document.querySelectorAll('.node').forEach((x,j)=>x.setAttribute('aria-pressed',i===j));$('#panelnum').textContent=services[i][0]+' / '+services[i][2];$('#paneltitle').textContent=services[i][3];$('#paneldesc').textContent=services[i][4]}
 services.forEach((s,i)=>{let b=document.createElement('button');b.className='node';b.innerHTML='<b>'+s[0]+'</b><strong>'+s[1]+'</strong>';b.onclick=()=>choose(i);$('#nodes').append(b)});choose(0);
-$('#ticker').textContent=('GRAPHIC DESIGN  ·  BRAND VISUALS  ·  SOCIAL CAMPAIGNS  ·  PRINT  ·  ').repeat(10);
-const hide=()=>$('#intro').classList.add('off');$('#skip').onclick=hide;setTimeout(hide,matchMedia('(prefers-reduced-motion:reduce)').matches?0:3000);
+const hide=()=>$('#intro').classList.add('off');$('#skip').onclick=hide;setTimeout(hide,matchMedia('(prefers-reduced-motion:reduce)').matches?0:1250);
 </script></body></html>
