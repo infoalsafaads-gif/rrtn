@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "a": { "title": "إعلان يوقف", "accent": "التمرير." },
+    "b": { "title": "خلّي علامتك", "accent": "تلفت النظر." },
+    "description": "هويات بصرية، حملات سوشيال وفيديوهات منتجات من الصفا في طولكرم."
+  },
+  "contact": {
+    "title": "شو المشروع اللي ببالك؟",
+    "description": "ابعث لي فكرة مشروعك على واتساب ونحكي بالتفاصيل."
+  },
+  "analytics": {
+    "measurementId": "",
+    "experimentEnabled": false,
+    "experimentId": "hero_headline_v1"
+  },
+  "services": [
+    { "title": "تصميم", "description": "هويات بصرية وتصاميم سوشيال وفيديوهات منتجات، من الفكرة الأولى إلى الملفات الجاهزة للنشر." },
+    { "title": "طباعة", "description": "تصميم وتجهيز بطاقات العمل والمطبوعات واللافتات وفق المقاس وخامة الطباعة." },
+    { "title": "توزيع", "description": "تجهيز نسخ الحملة لقنوات النشر وتنسيق المواد الإعلانية للتوزيع." }
+  ],
+  "projects": [
+    {
+      "id": "hatlo",
+      "title": "هاتلو",
+      "category": "حملة منتج وفيديو",
+      "summary": "من لقطة حبوب دوار الشمس إلى إعلان يخلّي القرمشة جزء من الصورة.",
+      "cover": {
+        "src": "./assets/landing/hatlo-800.webp", "small": "./assets/landing/hatlo-400.webp", "smallWidth": 400,
+        "alt": "عبوة هاتلو بين حبوب دوار الشمس المتطايرة", "width": 800, "height": 800
+      },
+      "media": [
+        {
+          "type": "video", "src": "./assets/landing/hatlo-reel.mp4",
+          "poster": "./assets/landing/hatlo-reel.webp", "width": 480, "height": 480,
+          "alt": "إعلان هاتلو · ١٠ ثوانٍ",
+          "caption": "لقطة مقرّبة لحبّة دوار الشمس تتبعها حركة الحبوب أمام عبوة هاتلو على خلفية صفراء وخضراء."
+        },
+        {
+          "type": "image", "src": "./assets/reference-portfolio/5bc267c950598473.webp", "width": 1000, "height": 1000,
+          "alt": "تصميم هاتلو احسبها صح لتجار التجزئة",
+          "caption": "نسخة موجّهة للتجار ضمن الحملة."
+        },
+        {
+          "type": "video", "src": "./assets/landing/hatlo-social.mp4",
+          "poster": "./assets/landing/hatlo-social.webp", "width": 360, "height": 506,
+          "alt": "هاتلو مع الأصحاب · ٨ ثوانٍ",
+          "caption": "لقطة من إعلان السوشيال تُظهر مجموعة أصدقاء في السيارة يتشاركون عبوة هاتلو."
+        }
+      ]
+    },
+    {
+      "id": "rami-market",
+      "title": "رامي ماركت",
+      "category": "حملة افتتاح",
+      "summary": "تصاميم تشويقية لافتتاح الفرع الثاني، بالأصفر والأسود.",
+      "cover": {
+        "src": "./assets/landing/rami-800.webp", "small": "./assets/landing/rami-400.webp", "smallWidth": 320,
+        "alt": "إعلان رامي ماركت التشويقي جاهزين للمفاجآت", "width": 640, "height": 800
+      },
+      "media": [
+        {
+          "type": "image", "src": "./assets/reference-portfolio/f68ef2067f126c9f.webp", "width": 800, "height": 1000,
+          "alt": "بوستر الفرع الجديد قريبًا لرامي ماركت",
+          "caption": "إعلان اقتراب الافتتاح."
+        },
+        {
+          "type": "image", "src": "./assets/reference-portfolio/b97dd1ca9f015797.webp", "width": 800, "height": 1000,
+          "alt": "تصميم مسابقة رامي ماركت",
+          "caption": "منشور مسابقة للتفاعل مع متابعي الصفحة."
+        }
+      ]
+    },
+    {
+      "id": "dalma",
+      "title": "دلما",
+      "category": "إعلانات منتجات",
+      "summary": "تصاميم لمياه دلما توظّف صورة العبوة والطبيعة لإبراز الإحساس بالانتعاش.",
+      "cover": {
+        "src": "./assets/landing/dalma-800.webp", "small": "./assets/landing/dalma-400.webp", "smallWidth": 400,
+        "alt": "عبوة مياه دلما وسط مشهد جبلي", "width": 800, "height": 534
+      },
+      "media": [
+        {
+          "type": "image", "src": "./assets/reference-portfolio/782da8b79dd4b557.webp", "width": 1000, "height": 667,
+          "alt": "تصميم دلما النقاء والطبيعة",
+          "caption": "تنويع على الحملة يركّز على الماء والطبيعة."
+        }
+      ]
+    },
+    {
+      "id": "alsafa-identity",
+      "title": "الصفا",
+      "category": "هوية بصرية ومطبوعات",
+      "summary": "تطبيق الهوية السوداء والذهبية على اللافتة وبطاقات الأعمال والقرطاسية.",
+      "cover": {
+        "src": "./assets/landing/identity-800.webp", "small": "./assets/landing/identity-400.webp", "smallWidth": 400,
+        "alt": "شعار الصفا الذهبي والأبيض على جدار المكتب", "width": 800, "height": 800
+      },
+      "media": [
+        {
+          "type": "image", "src": "./assets/reference-portfolio/ad3304ac3993493e.webp", "width": 1000, "height": 1000,
+          "alt": "القرطاسية المطبوعة بهوية الصفا",
+          "caption": "تطبيق الألوان والشعار على مواد المكتب."
+        },
+        {
+          "type": "image", "src": "./assets/reference-portfolio/a14988be3f036499.webp", "width": 1000, "height": 1000,
+          "alt": "بطاقات أعمال الصفا للدعاية والإعلان",
+          "caption": "بطاقات العمل والبيانات الأساسية للتواصل."
+        }
+      ]
+    }
+  ]
+}

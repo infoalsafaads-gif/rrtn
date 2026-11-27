@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>إدارة محتوى الصفا</title>
+  <link rel="stylesheet" href="../landing.css">
+  <link rel="stylesheet" href="./admin.css">
+  <script type="module" src="./admin.js"></script>
+</head>
+<body>
+<main class="admin wrap">
+  <a class="text-link" href="../">← موقع الصفا</a>
+  <h1>إدارة المحتوى</h1>
+  <p>عدّل الحقول وعاين المسودة، ثم صدّرها للنشر عبر GitHub.</p>
+  <div class="admin-actions">
+    <button type="button" class="button primary" id="preview" disabled>معاينة المسودة</button>
+    <button type="button" class="button secondary" id="export" disabled>تنزيل ملف المحتوى</button>
+    <button type="button" class="button secondary" id="reset" hidden>إعادة تحميل المحتوى المنشور</button>
+    <button type="button" class="button secondary" id="copy" disabled>نسخ ملف المحتوى</button>
+    <label class="button secondary import">استيراد <input type="file" id="import" accept="application/json,.json" aria-label="استيراد ملف محتوى JSON"></label>
+    <a class="button secondary" href="https://github.com/infoalsafaads-gif/rrtn/edit/main/landing-content.json" target="_blank" rel="noopener">فتح محرّر GitHub</a>
+  </div>
+  <p id="status" role="status">جارٍ تحميل المحتوى…</p>
+  <ul id="errors" hidden></ul>
+  <form id="fields" hidden></form>
+</main>
+</body>
+</html>
