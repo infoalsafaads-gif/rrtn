@@ -1,0 +1,24 @@
+.admin { max-width: 920px; padding-block: 20px 60px; }
+.admin h1 { font-size: clamp(2rem, 8vw, 3.75rem); }
+.admin > p { color: var(--muted); }
+.admin-actions, .list-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 15px; }
+.admin-actions button:disabled { cursor: default; opacity: .5; }
+.admin #fields { display: grid; gap: 10px; }
+.admin #status { margin-bottom: 18px; }
+.admin #errors { color: #ffbd97; }
+.editor-section { padding: 11px 15px; border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.editor-section summary { min-height: 44px; display: list-item; align-content: center; cursor: pointer; }
+.admin fieldset { border: 1px solid var(--line); border-radius: 10px; min-width: 0; padding: 12px; margin-block: 0 12px; }
+.editor-fields { display: grid; gap: 9px 13px; }
+.admin label:not(.import) { display: grid; gap: 4px; align-content: start; font-size: .9rem; }
+.admin input:not([type=checkbox]), .admin select, .admin textarea { min-height: 44px; min-width: 0; padding: 7px 9px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; width: 100%; }
+.admin input[type=checkbox] { justify-self: start; width: 24px; height: 24px; accent-color: var(--yellow); }
+.admin label:has([type=checkbox]) { min-height: 52px; }
+.admin textarea { min-height: 76px; resize: vertical; }
+.import { position: relative; cursor: pointer; }
+.import input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.import:focus-within { outline: 2px solid var(--yellow); }
+@media (min-width: 570px) {
+  .editor-fields { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .editor-fields label:has(textarea) { grid-column: 1/-1; }
+}
